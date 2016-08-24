@@ -1,0 +1,84 @@
+/*.boomcity { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll top center / cover;  }*/ /* / 100vw*/
+
+
+.header { background-color: #CDE3F4; text-align:center; position:relative; }
+/*.main { position: relative; }*/
+.main { display:block; position:absolute; top:0; width:100%; }
+.secondary { position: relative; }
+.footer { position: relative; }
+
+.overlay {overflow-x: hidden; }
+.overlay { position: absolute; top: 0; left: 0; text-align:center; width:100%; }
+/*.overlay { left: -50%; position: fixed; text-align: center; top: 0; width: 200%; }*/
+.overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll top center / contain;  }
+.overlay.bgnd { z-index:10; }
+.overlay.start { z-index:12; }
+/*.overlay.start {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll top center / contain;}*/
+.overlay.two { z-index:14; }
+.overlay.three { z-index:16; }
+.overlay.four { z-index:18; }
+.overlay.five { z-index:20; }
+.overlay.six { z-index:22; }
+.overlay.seven { z-index:24; }
+
+.interact { padding-top:1em; position:relative; z-index:100; }
+.content { text-align:center; }
+
+/*.query { font-size:1.125em; }*/
+
+.interact button { background-color:#fff; border-color:#f07d00; color:#f07d00; border-radius:25px; border-width:1px; padding:0.25rem 0.95rem; margin:0; }
+.interact button:hover, .interact button:focus { background-color:#f07d00; }
+
+.off { display:none; }
+
+/* FOUNDATION OVERRIDES */
+p { line-height: 1.25; }
+
+
+/* Small screens */
+@media only screen {
+    .main { top:20%;}
+    .query { font-size:.75em; }
+    .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 75% / 150% 150%;  }
+    .overlay.start {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.two.alpha {background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.two.beta {background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.five {background: url(./images/mic-bc-grfx-main-os-no.png) no-repeat scroll 50% 75% / 150% 150%; }
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) {
+    .main { top:15%;}
+    .query { font-size:1.125em; }
+    .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 25% / 100% 100%;  }
+    .overlay.start {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.alpha {background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.beta {background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.five {background: url(./images/mic-bc-grfx-main-os-no.png) no-repeat scroll 50% 25% / 100% 100%; }
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) {
+    .main { top:15%;}
+    .query { font-size:1.125em; }
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) {
+    .main { top:0;}
+    .query { font-size:1.25em; }
+} /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) {
+    .main { top:0;}
+    .query { font-size:1.25em; }
+} /* min-width 1921px, xxlarge screens */
