@@ -12,28 +12,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.js"></script>
 
     <script type="text/javascript">
-        var callThisOnReturn = function(resp) {
-            if(resp && resp.contact) {
-                var contact = resp.contact;
-                //exposed values incude SharpSpring ID, First Name, Last Name, Email, Website, Lead Status
-                var name = contact['First Name'];
-                var elem = document.getElementById('dynamicContentID');
-                elem.innerHTML = 'Taking the 1st step, ' + name + '!';
-            } else {
-                window.location.href='http://marketingincolor.com/boomcity/';
-            }
-        };
+        var inbound = window.location.search;
+        //inbound = inbound.substring(1);
+        //alert(inbound);
 
         $(document).ready(function(){
-
-            console.debug($.cookie("__ss_referrer"));
-
             $( '#step2-a' ).click(function() {
-                window.location.href='./step2-a';
+                window.location.href='./step2-a?type=b2b';
             });
 
             $( '#step2-b' ).click(function() {
-                window.location.href='./step2-b';
+                window.location.href='./step2-b?type=b2c';
             });
         });
     </script>
@@ -55,7 +44,7 @@
     </script>
 
 </head>
-<body>
+<body class="boomcity">
     <div class="header">
         <div class="row">
             <div class="small-8 medium-10 small-centered columns">
@@ -68,36 +57,30 @@
             <div class="small-12 small-centered columns">
                 <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay start"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay two alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay type two alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay type two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay team three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay team three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
             </div>
         </div>
     </div>
 
-
-
-
-
-
-
-<div class="overlayzzz interact">
-    <div class="row">
-        <div class="content small-10 small-centered columns">
-            <p class="query">Are your marketing initiatives targeted primarily to other businesses or to consumers?</p>
-            <button id="step2-a">B2B</button>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <button id="step2-b">B2C</button>
+    <div class="interact">
+        <div class="row">
+            <div class="content small-10 small-centered columns">
+                <p class="query">Are your marketing initiatives targeted primarily to other businesses or to consumers?</p>
+                <button id="step2-a">B2B</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="step2-b">B2C</button>
+            </div>
         </div>
     </div>
-</div>
 
 </body>
 </html>

@@ -15,26 +15,28 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-10 small-centered columns">
+            <div class="small-8 medium-10 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
-        <a href="./step1" style="z-index:100;">Start</a>
     </div>
     <div class="main">
-        <div class="overlay bgnd">
-            <img src="./images/mic-bc-grfx-main-clear.png" />
+        <div class="row medium-collapse">
+            <div class="small-12 small-centered columns">
+                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay start"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay two alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+            </div>
         </div>
-
-        <div class="overlay start">
-            <img src="./images/mic-bc-grfx-main-construct.png" />
-        </div>
-
-        <div class="overlay two"> </div>
-        <div class="overlay three"> </div>
-        <div class="overlay four"> </div>
-        <div class="overlay five"> </div>
-        <div class="overlay six"> </div>
     </div>
 
 

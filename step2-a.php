@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><?php include 'create-queries.php'; ?>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -13,25 +13,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.js"></script>
 
     <script type="text/javascript">
-        var callThisOnReturn = function(resp) {
-            if(resp && resp.contact) {
-                var contact = resp.contact;
-                //exposed values incude SharpSpring ID, First Name, Last Name, Email, Website, Lead Status
-                var name = contact['First Name'];
-                var elem = document.getElementById('dynamicContentID');
-                elem.innerHTML = 'Taking the 2nd step, ' + name + '!';
-            } else {
-                window.location.href='http://dev.marketingincolor.com/micmatool/index.html';
-            }
-        };
-
         $(document).ready(function(){
             $( '#step3-a' ).click(function() {
-                window.location.href='./step3-a';
+                window.location.href='./step3-a<?php echo $type; ?>&team=yes';
             });
 
             $( '#step3-b' ).click(function() {
-                window.location.href='./step3-b';
+                window.location.href='./step3-b<?php echo $type; ?>&team=no';
             });
         });
     </script>
@@ -53,7 +41,7 @@
     </script>
 
 </head>
-<body>
+<body class="boomcity">
     <div class="header">
         <div class="row">
             <div class="small-8 medium-10 small-centered columns">
@@ -66,29 +54,30 @@
             <div class="small-12 small-centered columns">
                 <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay type two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay team three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay team three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
             </div>
         </div>
     </div>
 
-
-<div class="row">
-    <div class="content large-12 columns">
-        <h2>Do you have a Sales Team?</h2>
-
-        <button id="step3-a">Yes</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <button id="step3-b">No</button>
+    <div class="interact">
+        <div class="row">
+            <div class="content small-10 small-centered columns">
+                <p class="query">Do you have a Sales Team?</p>
+                <button id="step3-a">Yes</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="step3-b">No</button>
+            </div>
+        </div>
     </div>
-</div>
+
 </body>
 </html>

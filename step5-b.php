@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><?php include 'create-queries.php'; ?>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta content="web-based" property="step4:value">
+    <meta content="no" property="step4:value">
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
@@ -13,17 +13,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.js"></script>
 
     <script type="text/javascript">
-        var callThisOnReturn = function(resp) {
-            if(resp && resp.contact) {
-                var contact = resp.contact;
-                //exposed values incude SharpSpring ID, First Name, Last Name, Email, Website, Lead Status
-                var name = contact['First Name'];
-                var elem = document.getElementById('dynamicContentID');
-                elem.innerHTML = 'Taking the 5th step, ' + name + '!';
-            } else {
-                window.location.href='http://dev.marketingincolor.com/micmatool/index.html';
-            }
-        };
+        $(document).ready(function(){
+            $( '#step6-a' ).click(function() {
+                window.location.href='./step6-a<?php echo $type . $team . $crm . $online; ?>&frequency=frequent';
+            });
+
+            $( '#step6-b' ).click(function() {
+                window.location.href='./step6-b<?php echo $type . $team . $crm . $oniline; ?>&frequency=inferquent';
+            });
+        });
     </script>
 
     <script type="text/javascript">
@@ -43,24 +41,51 @@
     </script>
 
 </head>
-<body>
-<div class="row">
-    <div class="large-12 columns">
-        <h1 style="text-align:center;">Marketing Automation Demo</h1>
-        <div class="overlay start">
-
+<body class="boomcity">
+    <div class="header">
+        <div class="row">
+            <div class="small-8 medium-10 small-centered columns">
+                <img src="./images/mic-bc-grfx-main-hdr.png" />
+            </div>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="content large-12 columns">
-        <h6 id="dynamicContentID">Step 5</h6>
-        <h2>Do you sell a Product or provide a Service?</h2>
-
-        <button onclick="window.location.href='./step6-a'">Product</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <button onclick="window.location.href='./step6-b'">Service</button>
+    <div class="main">
+        <div class="row medium-collapse">
+            <div class="small-12 small-centered columns">
+                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay type two alpha <?php echo ($type_class == 'b2b' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay type two beta <?php echo ($type_class == 'b2c' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay team three alpha <?php echo ($team_class == 'yes' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay team three beta <?php echo ($team_class == 'no' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four alpha <?php echo ($crm_class == 'yes' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four beta <?php echo ($crm_class == 'no' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five alpha <?php echo ($online_class == 'yes' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five beta <?php echo ($online_class == 'no' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+            </div>
+        </div>
     </div>
-</div>
+
+    <div class="interact">
+        <div class="row">
+            <div class="content small-10 small-centered columns">
+                <p class="query">How often do your customers purchase your product or service?</p>
+                <button id="step6-a">Frequently</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="step6-b">Infrequently</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
