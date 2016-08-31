@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en"><?php include 'create-queries.php'; ?>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta content="B2B" property="step1:value">
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
@@ -13,31 +12,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.js"></script>
 
     <script type="text/javascript">
+        var inbound = window.location.search;
+        //inbound = inbound.substring(1);
+        //alert(inbound);
+
         $(document).ready(function(){
-            $( '#step3-a' ).click(function() {
-                window.location.href='./step3-a<?php echo $type; ?>&team=yes';
+            $( '#step2-a' ).click(function() {
+                window.location.href='./do-you-have-a-sales-team?type=b2b';
             });
 
-            $( '#step3-b' ).click(function() {
-                window.location.href='./step3-b<?php echo $type; ?>&team=no';
+            $( '#step2-b' ).click(function() {
+                window.location.href='./does-your-company-have-a-sales-team?type=b2c';
             });
         });
     </script>
 
     <script type="text/javascript">
-        var _ss = _ss || [];
-        _ss.push(['_setDomain', 'https://koi-MPZ0EPRI.sharpspring.com/net']);
-        _ss.push(['_setAccount', 'KOI-137R3CMWE']);
-        _ss.push(['_setResponseCallback', callThisOnReturn]);
-        _ss.push(['_trackPageView']);
-        (function() {
-            var ss = document.createElement('script');
-            ss.type = 'text/javascript'; ss.async = true;
+    var _ss = _ss || [];
+    _ss.push(['_setDomain', 'https://koi-UUHGVW.marketingautomation.services/net']);
+    _ss.push(['_setAccount', 'KOI-YU6QP0']);
+    _ss.push(['_setResponseCallback', callThisOnReturn]);
+    _ss.push(['_trackPageView']);
+    (function() {
+        var ss = document.createElement('script');
+        ss.type = 'text/javascript'; ss.async = true;
 
-            ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-MPZ0EPRI.sharpspring.com/client/ss.js?ver=1.1.1';
-            var scr = document.getElementsByTagName('script')[0];
-            scr.parentNode.insertBefore(ss, scr);
-        })();
+        ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-UUHGVW.marketingautomation.services/client/ss.js?ver=1.1.1';
+        var scr = document.getElementsByTagName('script')[0];
+        scr.parentNode.insertBefore(ss, scr);
+    })();
     </script>
 
 </head>
@@ -53,8 +56,8 @@
         <div class="row medium-collapse">
             <div class="small-12 small-centered columns">
                 <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay start"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay type two alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay type two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay team three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay team three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
@@ -71,10 +74,10 @@
     <div class="interact">
         <div class="row">
             <div class="content small-10 small-centered columns">
-                <p class="query">Do you have a Sales Team?</p>
-                <button id="step3-a">Yes</button>
+                <p class="query">Are your marketing initiatives targeted primarily to other businesses or to consumers?</p>
+                <button id="step2-a">B2B</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <button id="step3-b">No</button>
+                <button id="step2-b">B2C</button>
             </div>
         </div>
     </div>

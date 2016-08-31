@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta content="yes" property="step4:value">
+    <meta content="no" property="step2:value">
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
@@ -14,12 +14,12 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            $( '#step6-a' ).click(function() {
-                window.location.href='./step6-a<?php echo $type . $team . $crm . $online; ?>&frequency=frequent';
+            $( '#step4-a' ).click(function() {
+                window.location.href='./online-purchasing<?php echo $type . $team; ?>&crm=yes';
             });
 
-            $( '#step6-b' ).click(function() {
-                window.location.href='./step6-b<?php echo $type . $team . $crm . $online; ?>&frequency=infrequent';
+            $( '#step4-b' ).click(function() {
+                window.location.href='./buy-online<?php echo $type . $team; ?>&crm=no';
             });
         });
     </script>
@@ -62,14 +62,10 @@
                     <img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay team three beta <?php echo ($team_class == 'no' ? '' : 'off'); ?>">
                     <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four alpha <?php echo ($crm_class == 'yes' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four beta <?php echo ($crm_class == 'no' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five alpha <?php echo ($online_class == 'yes' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five beta <?php echo ($online_class == 'no' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
             </div>
@@ -79,10 +75,10 @@
     <div class="interact">
         <div class="row">
             <div class="content small-10 small-centered columns">
-                <p class="query">How often do your customers purchase your product or service?</p>
-                <button id="step6-a">Frequently</button>
+                <p class="query">Do you have a Customer Relationship Managment (CRM) System?</p>
+                <button id="step4-a">Yes</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <button id="step6-b">Infrequently</button>
+                <button id="step4-b">No</button>
             </div>
         </div>
     </div>

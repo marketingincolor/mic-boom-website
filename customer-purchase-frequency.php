@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta content="B2C" property="step1:value">
+    <meta content="yes" property="step4:value">
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
@@ -14,12 +14,12 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            $( '#step3-a' ).click(function() {
-                window.location.href='./step3-a<?php echo $type; ?>&team=yes';
+            $( '#step6-a' ).click(function() {
+                window.location.href='./welcome-to-your-company<?php echo $type . $team . $crm . $online; ?>&frequency=frequent';
             });
 
-            $( '#step3-b' ).click(function() {
-                window.location.href='./step3-b<?php echo $type; ?>&team=no';
+            $( '#step6-b' ).click(function() {
+                window.location.href='./learn-how-to-boom-your-biz<?php echo $type . $team . $crm . $online; ?>&frequency=infrequent';
             });
         });
     </script>
@@ -54,14 +54,22 @@
             <div class="small-12 small-centered columns">
                 <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay type two alpha <?php echo ($type_class == 'b2b' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay type two beta <?php echo ($type_class == 'b2c' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay team three alpha <?php echo ($team_class == 'yes' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay team three beta <?php echo ($team_class == 'no' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four alpha <?php echo ($crm_class == 'yes' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four beta <?php echo ($crm_class == 'no' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five alpha <?php echo ($online_class == 'yes' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five beta <?php echo ($online_class == 'no' ? '' : 'off'); ?>">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
             </div>
@@ -71,10 +79,10 @@
     <div class="interact">
         <div class="row">
             <div class="content small-10 small-centered columns">
-                <p class="query">Do you have a Sales Team?</p>
-                <button id="step3-a">Yes</button>
+                <p class="query">How often do your customers purchase your product or service?</p>
+                <button id="step6-a">Frequently</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <button id="step3-b">No</button>
+                <button id="step6-b">Infrequently</button>
             </div>
         </div>
     </div>

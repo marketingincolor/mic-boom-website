@@ -15,11 +15,11 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $( '#step4-a' ).click(function() {
-                window.location.href='./step4-a<?php echo $type . $team; ?>&crm=yes';
+                window.location.href='./online-purchasing<?php echo $type . $team; ?>&crm=yes';
             });
 
             $( '#step4-b' ).click(function() {
-                window.location.href='./step4-b<?php echo $type . $team; ?>&crm=no';
+                window.location.href='./buy-online<?php echo $type . $team; ?>&crm=no';
             });
         });
     </script>

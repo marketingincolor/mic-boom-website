@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><?php include 'create-queries.php'; ?>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/jquery.cookie.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.js"></script>
-    
+
     <script type="text/javascript">
         var callThisOnReturn = function(resp) {
             if(resp && resp.contact) {
@@ -44,14 +44,14 @@
             scr.parentNode.insertBefore(ss, scr);
         })();
     </script>
-    
+
 </head>
 <body>
 <div class="row">
     <div class="large-12 columns">
         <h1 style="text-align:center;">Marketing Automation Demo</h1>
         <div class="overlay start">
-            
+
         </div>
     </div>
 </div>
@@ -59,8 +59,8 @@
     <div class="content large-12 columns">
         <h1 id="dynamicContentID">Results</h1>
         <h6 id="dynamicContentID2">&nbsp;</h6>
-        
+
     </div>
-</div>  
+</div>
 </body>
 </html>
