@@ -7,8 +7,10 @@
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
-
+    <?php include 'page-includes.php'; ?>
     <script type="text/javascript">
+        var path = document.URL;
+        linkpath = path.substring(0,url.lastIndexOf("/"));
         $(document).ready(function(){
             $( '#step3-a' ).click(function() {
                 window.location.href='./do-you-have-crm<?php echo $type; ?>&team=yes';
@@ -76,6 +78,5 @@
         </div>
     </div>
 
-<?php include 'page-includes.php'; ?>
 </body>
 </html>

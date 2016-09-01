@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><?php include 'create-queries.php'; ?>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
-
+    <?php include 'page-includes.php'; ?>
+<?php include 'page-includes.php'; ?>
     <script type="text/javascript">
-        var inbound = window.location.search;
-        //inbound = inbound.substring(1);
-        //alert(inbound);
-
+        var path = document.URL;
+        linkpath = path.substring(0,url.lastIndexOf("/"));
         $(document).ready(function(){
             $( '#step2-a' ).click(function() {
-                window.location.href='./do-you-have-a-sales-team?type=b2b';
+                window.location.href = linkpath + '/do-you-have-a-sales-team?type=b2b';
             });
 
             $( '#step2-b' ).click(function() {
-                window.location.href='./does-your-company-have-a-sales-team?type=b2c';
+                window.location.href = linkpath + '/does-your-company-have-a-sales-team?type=b2c';
             });
         });
     </script>
@@ -77,7 +76,6 @@
             </div>
         </div>
     </div>
-    
-<?php include 'page-includes.php'; ?>
+
 </body>
 </html>

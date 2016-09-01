@@ -7,9 +7,11 @@
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
-
+    <?php include 'page-includes.php'; ?>
     <script type="text/javascript">
         $(document).ready(function(){
+            var path = document.URL;
+            linkpath = path.substring(0,url.lastIndexOf("/"));
             $( '#step5-a' ).click(function() {
                 window.location.href='./customer-purchase-frequency<?php echo $type . $team . $crm; ?>&online=yes';
             });
@@ -81,6 +83,5 @@
         </div>
     </div>
 
-<?php include 'page-includes.php'; ?>
 </body>
 </html>

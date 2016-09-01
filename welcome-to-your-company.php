@@ -7,7 +7,7 @@
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
-
+    <?php include 'page-includes.php'; ?>
     <script type="text/javascript">
         var callThisOnReturn = function(resp) {
             if(resp && resp.contact) {
@@ -84,6 +84,5 @@
         </div>
     </div>
 
-<?php include 'page-includes.php'; ?>
 </body>
 </html>
