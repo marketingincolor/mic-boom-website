@@ -13,11 +13,11 @@
         linkpath = path.substring(0,url.lastIndexOf("/"));
         $(document).ready(function(){
             $( '#step6-a' ).click(function() {
-                window.location.href='./welcome-to-your-company<?php echo $type . $team . $crm . $online; ?>&frequency=frequent';
+                window.location.href = linkpath + '/welcome-to-your-company<?php echo $type . $team . $crm . $online; ?>&frequency=frequent';
             });
 
             $( '#step6-b' ).click(function() {
-                window.location.href='./learn-how-to-boom-your-biz<?php echo $type . $team . $crm . $online; ?>&frequency=infrequent';
+                window.location.href = linkpath + '/learn-how-to-boom-your-biz<?php echo $type . $team . $crm . $online; ?>&frequency=infrequent';
             });
         });
     </script>

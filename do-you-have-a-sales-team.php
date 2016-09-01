@@ -13,11 +13,11 @@
         linkpath = path.substring(0,url.lastIndexOf("/"));
         $(document).ready(function(){
             $( '#step3-a' ).click(function() {
-                window.location.href='./do-you-have-crm<?php echo $type; ?>&team=yes';
+                window.location.href = linkpath + '/do-you-have-crm<?php echo $type; ?>&team=yes';
             });
 
             $( '#step3-b' ).click(function() {
-                window.location.href='./do-you-use-a-crm<?php echo $type; ?>&team=no';
+                window.location.href = linkpath + '/do-you-use-a-crm<?php echo $type; ?>&team=no';
             });
         });
     </script>
