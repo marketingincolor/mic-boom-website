@@ -6,7 +6,7 @@
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
-    <?php include 'page-includes.php'; ?>
+
 </head>
 <body class="boomcity">
     <div class="header">
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div class="interact">
+    <div class="intro">
         <div class="row">
             <div class="content small-10 small-centered columns">
                 <h3>See how marketing automation can make your business boom.</h3>
@@ -77,5 +77,6 @@ _ss.push(['_trackPageView']);
 })();
 </script>
 
+<?php include 'page-includes.php'; ?>
 </body>
 </html>

@@ -11,7 +11,7 @@
     <script type="text/javascript">
         $(document).ready(function(){
             var path = document.URL;
-            linkpath = path.substring(0,url.lastIndexOf("/"));
+            linkpath = path.substring(0,path.lastIndexOf("/"));
             $( '#step6-a' ).click(function() {
                 window.location.href = linkpath + '/welcome-to-your-company<?php echo $type . $team . $crm . $online; ?>&frequency=frequent';
             });

@@ -10,7 +10,7 @@
     <?php include 'page-includes.php'; ?>
     <script type="text/javascript">
         var path = document.URL;
-        linkpath = path.substring(0,url.lastIndexOf("/"));
+        linkpath = path.substring(0,path.lastIndexOf("/"));
         $(document).ready(function(){
             $( '#step4-a' ).click(function() {
                 window.location.href = linkpath + '/online-purchasing<?php echo $type . $team; ?>&crm=yes';

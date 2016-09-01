@@ -78,7 +78,7 @@
             <div class="content small-10 small-centered columns">
                 <h3>Congratulations!</h3>
                 <h4>Your Boom City business is now up and running.</h4>
-                <h4>Check your email not to check it out!</h4>
+                <h4>Check your email now to check it out!</h4>
                 <p>You'll also learn how marketing automation gets your buisness booming - in Boom City and in real life!</p>
             </div>
         </div>

@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
     <?php include 'page-includes.php'; ?>
-<?php include 'page-includes.php'; ?>
     <script type="text/javascript">
         var path = document.URL;
-        linkpath = path.substring(0,url.lastIndexOf("/"));
+        linkpath = path.substring(0,path.lastIndexOf("/"));
         $(document).ready(function(){
             $( '#step2-a' ).click(function() {
                 window.location.href = linkpath + '/do-you-have-a-sales-team?type=b2b';
@@ -23,7 +22,7 @@
     </script>
 
     <script type="text/javascript">
-    var _ss = _ss || [];
+    /*var _ss = _ss || [];
     _ss.push(['_setDomain', 'https://koi-UUHGVW.marketingautomation.services/net']);
     _ss.push(['_setAccount', 'KOI-YU6QP0']);
     _ss.push(['_setResponseCallback', callThisOnReturn]);
@@ -35,7 +34,7 @@
         ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-UUHGVW.marketingautomation.services/client/ss.js?ver=1.1.1';
         var scr = document.getElementsByTagName('script')[0];
         scr.parentNode.insertBefore(ss, scr);
-    })();
+    })();*/
     </script>
 
 </head>
