@@ -21,6 +21,10 @@
 .interact { padding-top:1em; position:relative; z-index:100; }
 .interact button { background-color:#fff; border-color:#f07d00; color:#f07d00; border-radius:25px; border-width:1px; padding:0.25rem 0.95rem; margin:0; }
 .interact button:hover, .interact button:focus { background-color:#f07d00; }
+.interact .content h3 { line-height:1; }
+.interact .content p { text-align:left; line-height:1.125; }
+.interact .content .play-button { font-size:1.25em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
+
 .off { display:none; }
 
 /* FOUNDATION OVERRIDES */
