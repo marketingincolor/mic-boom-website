@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta content="infrequently" property="step6:value">
+    <meta content="regularly" property="step6:value">
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
@@ -13,12 +13,12 @@
             if(resp && resp.contact) {
                 var contact = resp.contact;
                 //exposed values incude SharpSpring ID, First Name, Last Name, Email, Website, Lead Status
-                //console.warn(contact);
+                console.warn(contact);
                 var name = contact['First Name'];
                 var elem = document.getElementById('dynamicContentID');
                 elem.innerHTML = 'Your Results, ' + name + '!';
                 var elem2 = document.getElementById('dynamicContentID2');
-                elem2.innerHTML = 'ID: ' + contact['SharpSpring ID'] + '<br>' + 'Lead Status: ' + contact['Lead Status'] + '<br>' + 'Format: ' + contact['B2B or B2C'] + '<br>' + 'CRM: ' + contact['CRM?'] + '<br>' + 'Frequency: ' + contact['Frequency of Purchase'] + '<br>' + 'Type: ' + contact['Product or Service?'] + '<br>' + 'Sales Team: ' + contact['Sales Team?'] + '<br>' + 'Webstore: ' + contact['Webstore?'];
+                elem2.innerHTML = 'ID: ' + contact['SharpSpring ID'] + '<br>' + 'Lead Status: ' + contact['Lead Status'] + '<br>' /*+ 'Format: ' + contact['B2B or B2C'] + '<br>' + 'CRM: ' + contact['CRM?'] + '<br>' + 'Frequency: ' + contact['Frequency of Purchase'] + '<br>' + 'Type: ' + contact['Product or Service?'] + '<br>' + 'Sales Team: ' + contact['Sales Team?'] + '<br>' + 'Webstore: ' + contact['Webstore?']*/;
             } else {
                 window.location.href='http://dev.marketingincolor.com/micmatool/index.html';
             }
