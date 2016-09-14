@@ -26,6 +26,7 @@
 .intro .content .play-button { font-size:1.25em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
 
 .off { display:none; }
+.on { display:inherit; }
 
 /* FOUNDATION OVERRIDES */
 p { line-height: 1.25; }
@@ -55,7 +56,9 @@ p { line-height: 1.25; }
     .main { top:15%;}
     .query { font-size:1.125em; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 25% / 100% 100%;  }
+    .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 25% / 100% 100%;  }
     .overlay.start {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.result {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.two.alpha {background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.two.beta {background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.three.alpha {background: url(./images/mic-bc-grfx-main-team-yes.png) no-repeat scroll 50% 25% / 100% 100%; }

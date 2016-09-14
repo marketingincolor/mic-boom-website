@@ -12,12 +12,7 @@
         var callThisOnReturn = function(resp) {
             if(resp && resp.contact) {
                 var contact = resp.contact;
-                //exposed values incude SharpSpring ID, First Name, Last Name, Email, Website, Lead Status
-                var name = contact['First Name'];
-                var elem = document.getElementById('dynamicContentID');
-                elem.innerHTML = 'Taking the 6th step, ' + name + '!';
-            } else {
-                window.location.href='http://dev.marketingincolor.com/micmatool/index.html';
+                console.warn(contact);
             }
         };
     </script>
