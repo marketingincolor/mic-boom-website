@@ -91,11 +91,22 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-8 medium-10 small-centered columns">
+	        <div class="small-10 medium-6 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
     </div>
+
+    <div class="interact">
+        <div class="row">
+            <div class="content large-12 columns">
+                <h5 id="dynamicContentID">Results</h5>
+                <h6 id="dynamicContentID2">&nbsp;</h6>
+
+            </div>
+        </div>
+    </div>
+
     <div class="main">
         <div class="row medium-collapse">
             <div class="small-12 small-centered columns">
@@ -112,19 +123,14 @@
                 <div id="online_beta" class="overlay online five beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="frequency_alpha" class="overlay frequency six alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="frequency_beta" class="overlay frequency six beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay foot">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="interact">
-        <div class="row">
-            <div class="content large-12 columns">
-                <h5 id="dynamicContentID">Results</h5>
-                <h6 id="dynamicContentID2">&nbsp;</h6>
-
-            </div>
-        </div>
-    </div>
 
 </body>
 </html>

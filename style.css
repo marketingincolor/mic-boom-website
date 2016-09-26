@@ -1,10 +1,10 @@
 /* Custom CSS for Boom City SharpSpring Game! */
 .boomcity { }
 .header { background-color: #CDE3F4; text-align:center; position:relative; }
-.main { display:block; position:absolute; top:0; width:100%; }
+.main { display:block; position:relative; top:0; width:100%; }
 .secondary { position: relative; }
-.footer { position: relative; }
-
+.foot { }
+.foot-cta { background-color: #B2B4BB; padding:1em; }
 /* Overlay Controls */
 .overlay {overflow-x: hidden; }
 .overlay { position: absolute; top: 0; left: 0; text-align:center; width:100%; }
@@ -18,7 +18,7 @@
 .overlay.six { z-index:22; }
 .overlay.seven { z-index:24; }
 .content { text-align:center; }
-.interact, .intro { padding-top:1em; position:relative; z-index:100; }
+.interact, .intro { padding-top:1em; width:100%; z-index:100; }
 .interact button { background-color:#fff; border-color:#f07d00; color:#f07d00; border-radius:25px; border-width:1px; padding:0.25rem 0.95rem; margin:0; }
 .interact button:hover, .interact button:focus { background-color:#f07d00; }
 .interact .content h3 { line-height:1; }
@@ -29,16 +29,22 @@
 .on { display:inherit; }
 
 /* FOUNDATION OVERRIDES */
-p { line-height: 1.25; }
+p { line-height: 1.25 !important; margin-bottom:5px !important; }
 
 /* Small screens */
 @media only screen {
-    .main { top:20%;}
+    .main { /*top:20%;*/ }
+    .interact, .intro { position:relative; }
+    .interact { height:75px; }
     .query { font-size:.75em; }
+    .interact button { font-size:.75em; padding: 0.15rem 0.75rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 75% / 150% 150%;  }
-    .overlay.start {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.start.alpha {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.start.beta {background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.two.alpha {background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.two.beta {background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.two.gamma {background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.two.delta {background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.three.alpha {background: url(./images/mic-bc-grfx-main-team-yes.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.three.beta {background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.three.gamma {background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 75% / 150% 150%; }
@@ -53,14 +59,19 @@ p { line-height: 1.25; }
 
 /* Medium screens */
 @media only screen and (min-width: 40.063em) {
-    .main { top:15%;}
+    .main { /*top:15%;*/ top:-10%; }
+    .interact, .intro { position:absolute; }
     .query { font-size:1.125em; }
+    .interact button { font-size:1.125em; padding:0.25rem 0.95rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 25% / 100% 100%;  }
     .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 25% / 100% 100%;  }
-    .overlay.start {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.start.alpha {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.start.beta {background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.result {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.two.alpha {background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.two.beta {background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.gamma {background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.delta {background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.three.alpha {background: url(./images/mic-bc-grfx-main-team-yes.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.three.beta {background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.three.gamma {background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 25% / 100% 100%; }
@@ -75,7 +86,8 @@ p { line-height: 1.25; }
 
 /* Large screens */
 @media only screen and (min-width: 64.063em) {
-    .main { top:15%;}
+    .main { /*top:15%;*/ }
+    .interact, .intro { position:absolute; }
     .query { font-size:1.125em; }
 } /* min-width 1025px, large screens */
 
@@ -83,7 +95,8 @@ p { line-height: 1.25; }
 
 /* XLarge screens */
 @media only screen and (min-width: 90.063em) {
-    .main { top:5%;}
+    .main { /*top:5%;*/ }
+    .interact, .intro { position:absolute; }
     .query { font-size:1.25em; }
 } /* min-width 1441px, xlarge screens */
 
@@ -91,6 +104,7 @@ p { line-height: 1.25; }
 
 /* XXLarge screens */
 @media only screen and (min-width: 120.063em) {
-    .main { top:5%;}
+    .main { /*top:5%;*/ }
+    .interact, .intro { position:absolute; }
     .query { font-size:1.25em; }
 } /* min-width 1921px, xxlarge screens */

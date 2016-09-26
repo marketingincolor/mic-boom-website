@@ -42,11 +42,23 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-8 medium-10 small-centered columns">
+            <div class="small-10 medium-6 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
     </div>
+
+    <div class="interact">
+        <div class="row">
+            <div class="content small-10 small-centered columns">
+                <p class="query">Are your products or services available for purchase online?</p>
+                <button id="step5-a">Yes</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="step5-b">No</button>
+            </div>
+        </div>
+    </div>
+
     <div class="main">
         <div class="row medium-collapse">
             <div class="small-12 small-centered columns">
@@ -68,17 +80,10 @@
                 <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="interact">
-        <div class="row">
-            <div class="content small-10 small-centered columns">
-                <p class="query">Are your products or services available for purchase online?</p>
-                <button id="step5-a">Yes</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <button id="step5-b">No</button>
+                <div class="overlay foot">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
             </div>
         </div>
     </div>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><?php include 'create-queries.php'; ?>
 <head>
+    <meta http-equiv="Pragma" content="no-cache">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Marketing Automation Game - Dynamic Content</title>
@@ -20,11 +21,11 @@
         linkpath = path.substring(0,path.lastIndexOf("/"));
         $(document).ready(function(){
             $( '#step2-a' ).click(function() {
-                window.location.href = linkpath + '/do-you-have-a-sales-team?type=b2b';
+                window.location.href = linkpath + '/does-your-company-have-a-sales-team?type=b2b';
             });
 
             $( '#step2-b' ).click(function() {
-                window.location.href = linkpath + '/does-your-company-have-a-sales-team?type=b2c';
+                window.location.href = linkpath + '/do-you-have-a-sales-team?type=b2c';
             });
         });
     </script>
@@ -49,26 +50,8 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-8 medium-10 small-centered columns">
+            <div class="small-10 medium-6 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <div class="row medium-collapse">
-            <div class="small-12 small-centered columns">
-                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay start"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
             </div>
         </div>
     </div>
@@ -83,6 +66,32 @@
             </div>
         </div>
     </div>
+
+    <div class="main">
+        <div class="row medium-collapse">
+            <div class="small-12 small-centered columns">
+                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay start beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay start alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay type two alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay type two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay team three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay team three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay foot">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 </html>

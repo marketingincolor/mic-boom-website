@@ -37,11 +37,23 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-8 medium-10 small-centered columns">
+            <div class="small-10 medium-6 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
     </div>
+
+    <div class="interact">
+        <div class="row">
+            <div class="content small-10 small-centered columns">
+                <h3>Congratulations!</h3>
+                <h4>Your Boom City business is now up and running.</h4>
+                <h4>Check your email now to check it out!</h4>
+                <p>You'll also learn how marketing automation gets your buisness booming - in Boom City and in real life!</p>
+            </div>
+        </div>
+    </div>
+
     <div class="main">
         <div class="row medium-collapse">
             <div class="small-12 small-centered columns">
@@ -65,16 +77,10 @@
                     <img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-            </div>
-        </div>
-    </div>
-    <div class="interact">
-        <div class="row">
-            <div class="content small-10 small-centered columns">
-                <h3>Congratulations!</h3>
-                <h4>Your Boom City business is now up and running.</h4>
-                <h4>Check your email now to check it out!</h4>
-                <p>You'll also learn how marketing automation gets your buisness booming - in Boom City and in real life!</p>
+                <div class="overlay foot">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
             </div>
         </div>
     </div>

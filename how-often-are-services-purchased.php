@@ -42,11 +42,23 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-8 medium-10 small-centered columns">
+            <div class="small-10 medium-6 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
     </div>
+
+    <div class="interact">
+        <div class="row">
+            <div class="content small-10 small-centered columns">
+                <p class="query">How often do your customers purchase your product or service?</p>
+                <button id="step6-a">Frequently</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="step6-b">Infrequently</button>
+            </div>
+        </div>
+    </div>
+
     <div class="main">
         <div class="row medium-collapse">
             <div class="small-12 small-centered columns">
@@ -70,17 +82,10 @@
                     <img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="interact">
-        <div class="row">
-            <div class="content small-10 small-centered columns">
-                <p class="query">How often do your customers purchase your product or service?</p>
-                <button id="step6-a">Frequently</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <button id="step6-b">Infrequently</button>
+                <div class="overlay foot">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
             </div>
         </div>
     </div>

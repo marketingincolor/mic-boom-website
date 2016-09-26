@@ -11,26 +11,8 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-8 medium-10 small-centered columns">
+            <div class="small-10 medium-6 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <div class="row medium-collapse">
-            <div class="small-12 small-centered columns">
-                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay two alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
             </div>
         </div>
     </div>
@@ -61,6 +43,30 @@
             <a class="close-reveal-modal" aria-label="Close">&#215;</a>
         </div>
     </div>
+
+    <div class="main">
+        <div class="row medium-collapse">
+            <div class="small-12 small-centered columns">
+                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay two alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay foot">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 <script type="text/javascript">
 var _ss = _ss || [];
