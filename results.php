@@ -56,13 +56,13 @@
                     document.getElementById('online_alpha').className += " off";
                     document.getElementById('online_beta').className += " on";
                 }
-                if(ss_frequency == 'Frequently') {
+                /*if(ss_frequency == 'Frequently') {
                     document.getElementById('frequency_alpha').className += " on";
                     document.getElementById('frequency_beta').className += " off";
                 } else {
                     document.getElementById('frequency_alpha').className += " off";
                     document.getElementById('frequency_beta').className += " on";
-                }
+                }*/
 
 
             } else {
@@ -91,7 +91,7 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-	        <div class="small-10 medium-6 small-centered columns">
+	        <div class="small-6 medium-4 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
@@ -107,22 +107,23 @@
         </div>
     </div>
 
-    <div class="main">
+    <div class="results-main">
         <div class="row medium-collapse">
             <div class="small-12 small-centered columns">
                 <div class="overlay bgnd-after"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
 
                 <div id="type_alpha" class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="type_beta" class="overlay type two beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="type_beta" class="overlay type two epsilon"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="team_alpha" class="overlay team three alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="team_beta" class="overlay team three beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="crm_alpha" class="overlay crm four alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="crm_beta" class="overlay crm four beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="online_alpha" class="overlay online five alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="online_beta" class="overlay online five beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="frequency_alpha" class="overlay frequency six alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="frequency_beta" class="overlay frequency six beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="frequency_alpha" class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="owner_alpha" class="overlay owner seven alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="owner_beta" class="overlay owner seven beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay foot">
                     <img src="./images/mic-bc-grfx-main-clear.png" /></br>
                     <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>

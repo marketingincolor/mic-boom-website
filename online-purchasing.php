@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"><?php include 'create-queries.php'; ?>
 <head>
-    <meta charset="utf-8" />
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta content="yes" property="step3:value">
     <title>Marketing Automation Game - Dynamic Content</title>
@@ -42,7 +43,7 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-10 medium-6 small-centered columns">
+            <div class="small-6 medium-4 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>

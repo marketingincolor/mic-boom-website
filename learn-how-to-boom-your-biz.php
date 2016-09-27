@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"><?php include 'create-queries.php'; ?>
 <head>
-    <meta charset="utf-8" />
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta content="service" property="step5:value">
     <title>Marketing Automation Game - Dynamic Content</title>
@@ -37,7 +38,7 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-10 medium-6 small-centered columns">
+            <div class="small-6 medium-4 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
@@ -45,7 +46,7 @@
 
     <div class="interact">
         <div class="row">
-            <div class="content small-10 small-centered columns">
+            <div class="content small-12 small-centered columns">
                 <h3>Congratulations!</h3>
                 <h4>Your Boom City business is now up and running.</h4>
                 <h4>Check your email now to check it out!</h4>
@@ -63,20 +64,8 @@
                     <img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay type two beta <?php echo ($type_class == 'b2c' ? '' : 'off'); ?>">
                     <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three alpha <?php echo ($team_class == 'yes' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three beta <?php echo ($team_class == 'no' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four alpha <?php echo ($crm_class == 'yes' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four beta <?php echo ($crm_class == 'no' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five alpha <?php echo ($online_class == 'yes' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five beta <?php echo ($online_class == 'no' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay frequency six alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay frequency seven alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay foot">
                     <img src="./images/mic-bc-grfx-main-clear.png" /></br>
                     <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
