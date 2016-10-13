@@ -18,6 +18,7 @@
 .overlay.six { z-index:22; }
 .overlay.seven { z-index:24; }
 .overlay.eight { z-index:26; }
+.overlay.busname { z-index:15; }
 .content { text-align:center; }
 .interact, .intro { padding-top:1em; width:100%; z-index:100; }
 .interact button { background-color:#fff; border-color:#f07d00; color:#f07d00; border-radius:25px; border-width:1px; padding:0.25rem 0.95rem; margin:0; }
@@ -61,7 +62,8 @@ p { line-height: 1.25 !important; margin-bottom:5px !important; }
     .overlay.five.beta { background: url(./images/mic-bc-grfx-main-os-no.gif) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.six.alpha { background: url(./images/mic-bc-grfx-main-ribbon.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.seven.alpha { background: url(./images/mic-bc-grfx-main-ribbon-shine.gif) no-repeat scroll 50% 75% / 150% 150%; }
-
+    .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 50% 75% / 150% 150%; }
 } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -94,6 +96,8 @@ p { line-height: 1.25 !important; margin-bottom:5px !important; }
     .overlay.five.beta {background: url(./images/mic-bc-grfx-main-os-no.gif) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.six.alpha { background: url(./images/mic-bc-grfx-main-ribbon.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.seven.alpha { background: url(./images/mic-bc-grfx-main-ribbon-shine.gif) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 50% 25% / 100% 100%; }
 
 } /* min-width 641px, medium screens */
 

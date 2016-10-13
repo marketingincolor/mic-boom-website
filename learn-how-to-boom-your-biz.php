@@ -74,5 +74,6 @@
         </div>
     </div>
 
+<?php include 'page-includes.php'; ?>
 </body>
 </html>
