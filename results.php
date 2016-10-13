@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
     <?php include 'page-includes.php'; ?>
+    <!--<script src="generatecontent.js" type="text/javascript"></script>-->
     <script type="text/javascript">
         var callThisOnReturn = function(resp) {
             if(resp && resp.contact) {
                 var contact = resp.contact;
-                //exposed values incude SharpSpring ID, First Name, Last Name, Email, Website, Lead Status
                 console.warn(contact);
                 var name = contact['First Name'];
                 var ss_id = contact['SharpSpring ID'];
@@ -22,11 +22,61 @@
                 var ss_crm = contact['Do you use a CRM?'];
                 var ss_online = contact['Online Purchase?'];
                 var ss_frequency = contact['How often do your customers purchase your product or service?'];
+                var result_name = contact['bcd_name'];
+                var result_b_sng = contact['bcd_business_single'];
+                var result_b_pos = contact['bcd_business_name_possessive'];
+                var result_site = contact['bcd_website'];
+                var result_product = contact['bcd_product'];
+                var result_accessory = contact['bcd_accessory'];
+                var result_his = contact['bcd_pronoun_his'];
+                var result_him = contact['bcd_pronoun_him'];
+                var result_he = contact['bcd_pronoun_he'];
+
 
                 var elem = document.getElementById('dynamicContentID');
                 elem.innerHTML = 'Testing results for : ' + name ;
+
                 var elem2 = document.getElementById('dynamicContentID2');
-                elem2.innerHTML = 'ID: ' + ss_id + '&nbsp;|&nbsp;' + 'Sales Team: ' + ss_team + '&nbsp;|&nbsp;' + 'CRM: ' + ss_crm + '&nbsp;|&nbsp;' + 'Frequency: ' + ss_frequency + '&nbsp;|&nbsp;' + 'Online Purchase: ' + ss_online + '&nbsp;|&nbsp;' + 'Type: ' + ss_type + '<br>';
+                elem2.innerHTML = 'Sales Team: ' + ss_team + '&nbsp;|&nbsp;' + 'CRM: ' + ss_crm + '&nbsp;|&nbsp;' + 'Frequency: ' + ss_frequency + '&nbsp;|&nbsp;' + 'Online Purchase: ' + ss_online + '&nbsp;|&nbsp;' + 'Type: ' + ss_type + '<br>';
+
+                var elem3 = document.getElementById('dynamicContentID3');
+                elem3.innerHTML = result_name + '&nbsp;' + result_b_sng + '&nbsp;' + result_b_pos + '&nbsp;' + result_site + '&nbsp;' + result_product + '&nbsp;' + result_accessory + '&nbsp;' + result_his + '&nbsp;' + result_him + '&nbsp;' + result_he + '<br>';
+
+                var elem4 = document.getElementById('dynamicContentID4');
+                var company_data = [
+                    ['Tina', 'Tina\'s Tatoos', 'Tina\'s Tatoos\'', 'TinasTatoos.com', 'Tatoo', 'Piercing', 'her', 'her', 'she'],
+                    ['George', 'Giraffe Emporium', 'Giraffe Emporium\'s', 'GiraffeEmporium.com', 'Giraffe', 'Giraffe Collar', 'his', 'him', 'he'],
+                    ['Tom', 'Tenacious Toupees', 'Tenacious Toupees', 'TenaciousToupees.com', 'Toupee', 'Hat', 'his', 'his', 'he'],
+                    ['Hank', 'Hanky-Panky Love Seats', 'Hanky-Panky Love Seats\'', 'HankyPankyLoveSeats.com', 'Love Seat', 'Footsy Stool', 'his', 'his', 'he'],
+                    ['Tina', 'Tina\'s Tatoos', 'Tina\'s Tatoos\'', 'TinasTatoos.com', 'Tatoo', 'Piercing', 'her', 'her', 'she'],
+                    ['Tina', 'Tina\'s Tatoos', 'Tina\'s Tatoos\'', 'TinasTatoos.com', 'Tatoo', 'Piercing', 'her', 'her', 'she'],
+                    ['Tina', 'Tina\'s Tatoos', 'Tina\'s Tatoos\'', 'TinasTatoos.com', 'Tatoo', 'Piercing', 'her', 'her', 'she'],
+                    ['Tina', 'Tina\'s Tatoos', 'Tina\'s Tatoos\'', 'TinasTatoos.com', 'Tatoo', 'Piercing', 'her', 'her', 'she']
+                ];
+                if((ss_type == 'B2C') && (ss_team == 'No') && (ss_crm == 'No') && (ss_online == 'No') && (ss_frequency == 'Frequently') ) {
+                    result_name = company_data[0][0];
+                    result_b_sng = company_data[0][1];
+                    result_b_pos = company_data[0][2];
+                    result_site = company_data[0][3];
+                    result_product = company_data[0][4];
+                    result_accessory = company_data[0][5];
+                    result_his = company_data[0][6];
+                    result_him = company_data[0][7];
+                    result_he = company_data[0][8];
+                }
+                if((ss_type == 'B2C') && (ss_team != 'No') && (ss_crm == 'No') && (ss_online == 'No') && (ss_frequency != 'Frequently') )
+                {
+                    result_name = company_data[1][0];
+                    result_b_sng = company_data[1][1];
+                    result_b_pos = company_data[1][2];
+                    result_site = company_data[1][3];
+                    result_product = company_data[1][4];
+                    result_accessory = company_data[1][5];
+                    result_his = company_data[1][6];
+                    result_him = company_data[1][7];
+                    result_he = company_data[1][8];
+                }
+                elem4.innerHTML = '&nbsp;' + result_name + '&nbsp;|&nbsp;' + result_b_sng + '&nbsp;|&nbsp;' + result_b_pos + '&nbsp;|&nbsp;' + result_site + '&nbsp;|&nbsp;' + result_product + '<br>';
 
                 if(ss_type == 'B2B') {
                     document.getElementById('type_alpha').className += " on";
@@ -63,8 +113,6 @@
                     document.getElementById('frequency_alpha').className += " off";
                     document.getElementById('frequency_beta').className += " on";
                 }*/
-
-
             } else {
                 window.location.href='http://dev.marketingincolor.com/micmatool/index.html';
             }
@@ -72,19 +120,19 @@
     </script>
 
     <script type="text/javascript">
-    var _ss = _ss || [];
-    _ss.push(['_setDomain', 'https://koi-UUHGVW.marketingautomation.services/net']);
-    _ss.push(['_setAccount', 'KOI-YU6QP0']);
-    _ss.push(['_setResponseCallback', callThisOnReturn]);
-    _ss.push(['_trackPageView']);
-    (function() {
-        var ss = document.createElement('script');
-        ss.type = 'text/javascript'; ss.async = true;
+        var _ss = _ss || [];
+        _ss.push(['_setDomain', 'https://koi-UUHGVW.marketingautomation.services/net']);
+        _ss.push(['_setAccount', 'KOI-YU6QP0']);
+        _ss.push(['_setResponseCallback', callThisOnReturn]);
+        _ss.push(['_trackPageView']);
+        (function() {
+            var ss = document.createElement('script');
+            ss.type = 'text/javascript'; ss.async = true;
 
-        ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-UUHGVW.marketingautomation.services/client/ss.js?ver=1.1.1';
-        var scr = document.getElementsByTagName('script')[0];
-        scr.parentNode.insertBefore(ss, scr);
-    })();
+            ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-UUHGVW.marketingautomation.services/client/ss.js?ver=1.1.1';
+            var scr = document.getElementsByTagName('script')[0];
+            scr.parentNode.insertBefore(ss, scr);
+        })();
     </script>
 
 </head>
@@ -102,7 +150,8 @@
             <div class="content large-12 columns">
                 <h5 id="dynamicContentID">Results</h5>
                 <h6 id="dynamicContentID2">&nbsp;</h6>
-
+                <div id="dynamicContentID3">&nbsp;</div>
+                <div id="dynamicContentID4">&nbsp;</div>
             </div>
         </div>
     </div>
