@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><?php //include 'create-queries.php'; ?>
+<html lang="en"><?php include 'create-queries.php'; ?>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -37,24 +37,12 @@
     <div class="interact">
         <div class="row">
             <div class="small-10 medium-12 large-10 small-centered columns">
-            <!--<div class="content small-12 columns">
-                <h5 id="dynamicContentIDX">Results</h5>
-            </div>-->
-                <div class="row">
-                    <div class="content small-4 columns"><a href="#" data-reveal-id="de-modal"><img src="images/email-automation-cloud.png" class="clouds"/></a></div>
-                    <div class="content small-4 columns">&nbsp;</div>
-                    <div class="content small-4 columns"><a href="#" data-reveal-id="crm-modal"><img src="images/crm-cloud.png" class="clouds"/></a></div>
-                </div>
-                <div class="row">
-                    <div class="content small-4 columns">&nbsp;</div>
-                    <div class="content small-4 columns"><a href="#" data-reveal-id="dwc-modal"><img src="images/dynamic-web-content-cloud.png" class="clouds"/></a></div>
-                    <div class="content small-4 columns">&nbsp;</div>
-                </div>
-                <div class="row">
-                    </a></div>
-                    <div class="content small-4 columns overlay nine alpha"><a href="#" data-reveal-id="ea-modal"><img src="images/dynamic-email-button.png" class="clouds"/></a></div>
-                    <div class="content small-4 columns">&nbsp;</div>
-                    <div class="content small-4 columns"><a href="#" data-reveal-id="ct-modal"><img src="images/call-tracking-cloud.png" class="clouds"/></a></div>
+                <div class="content">
+                    <h5 id="dynamicContentIDX">Your Boom City company is<br>&nbsp;.<br></h5>
+                    <div class="small-6 small-offset-3">
+                        <a id="dynamicContentClick" href="./results-details"><img src="./images/click-here-cloud.png"></a>
+                    </div>
+                    <h5 id="dynamicContentIDY">to see how its owner, &nbsp;, got his business booming.<br></h5>
                 </div>
             </div>
         </div>
@@ -65,7 +53,7 @@
             <div class="small-12 small-centered columns">
                 <div class="overlay bgnd-results"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                
+
                 <div id="type_alpha" class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="type_beta" class="overlay type two epsilon"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="company_name" class="overlay busname">

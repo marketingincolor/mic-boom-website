@@ -6,7 +6,8 @@
 .foot { }
 .foot-cta { background-color: #B2B4BB; padding:1em; }
 .clouds { width: 50%; }
-
+#dynamicContentID0 div { width:25%; margin:auto; line-height:1.125; font-weight:bold; }
+#dynamicContentClick { /*display:inline-block;*/ }
 /* Overlay Controls */
 .overlay { overflow-x: hidden; }
 .overlay { position: absolute; top: 0; left: 0; text-align:center; width:100%; }
@@ -29,7 +30,7 @@
 .interact .content h3 { line-height:1; }
 .intro .content p { text-align:left; line-height:1.125; }
 .intro .content .play-button { font-size:1.25em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
-
+#modalTitle { color:#f07d00; font-weight:bold; }
 .off { display:none; }
 .on { display:inherit; }
 
@@ -52,7 +53,7 @@ p { line-height: 1.25 !important; margin-bottom:5px !important; }
     .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 75% / 150% 150%; }
     .overlay.start.beta { background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.result { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.alpha { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.two.alpha { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.two.beta { background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.two.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.two.delta { background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
@@ -69,6 +70,10 @@ p { line-height: 1.25 !important; margin-bottom:5px !important; }
     .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 50% 75% / 150% 150%; }
     .clouds { width: 100%; }
+    #dynamicContentID0 { }
+    #dynamicContentID0 div { font-size:0.5em; }
+    #dynamicContentIDX, #dynamicContentIDY { font-size:0.75em; }
+    #dynamicContentClick { /*max-width:40%;*/ }
 } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -105,7 +110,9 @@ p { line-height: 1.25 !important; margin-bottom:5px !important; }
     .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 50% 25% / 100% 100%; }
     .clouds { width: 50%; }
-
+    #dynamicContentID0 div { font-size:1em; }
+    #dynamicContentIDX, #dynamicContentIDY { font-size:1em; }
+    #dynamicContentClick { /*max-width:40%;*/ }
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
@@ -115,7 +122,7 @@ p { line-height: 1.25 !important; margin-bottom:5px !important; }
     .main { /*top:15%;*/ top:-20%; }
     .interact, .intro { position:absolute; }
     .query { font-size:1.125em; }
-        .overlay.nine.alpha { background: url(./images/email-automation-button.png) no-repeat scroll 50% 75% / 150% 150%; }
+    /*.overlay.nine.alpha { background: url(./images/email-automation-button.png) no-repeat scroll 50% 75% / 150% 150%; }*/
 } /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
