@@ -42,13 +42,16 @@ p { line-height: 1.25 !important; margin-bottom:5px !important; }
     .content h3 { font-size: 1em !important; font-weight:bold !important; margin-bottom: 0.25em; }
     .content h4 { font-size: .75em !important; font-weight:bold !important; margin-bottom: 0.25em; }
     .content p { font-size: .75em !important; }
+    .start .content p { font-size: 1em !important; }
+    .start .content h3 { font-size: 1.25em !important; }
     .main { /*top:20%;*/ }
     .interact, .intro { position:relative; }
     .interact { height:75px; }
     .query { font-size:.75em; }
     .interact button { font-size:.75em; padding: 0.15rem 0.75rem; }
-    .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 75% / 150% 150%;  }
-    .overlay.bgnd-results { background: url(./images/mic-bc-main-bgnd-results.png) repeat-x scroll 50% 75% / 100% 100%; }
+    .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 75% / 150% 150%; }
+    .overlay.bgnd-2x { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 50% 75% / 100% 100%; }
+    .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-results.png) repeat-x scroll 50% 75% / 100% 100%; }
     .overlay.start.alpha { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 75% / 150% 150%; }
     .overlay.start.beta { background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
@@ -87,8 +90,9 @@ p { line-height: 1.25 !important; margin-bottom:5px !important; }
     .interact, .intro { position:absolute; padding-top:3em;}
     .query { font-size:1.125em; }
     .interact button { font-size:1.125em; padding:0.25rem 0.95rem; }
-    .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 25% / 100% 100%;  }
-    .overlay.bgnd.results { background: url(./images/mic-bc-main-bgnd-results.png) repeat-x scroll 50% 25% / 100% 100%; }
+    .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 25% / 100% 100%; }
+    .overlay.bgnd-2 { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 50% 25% / 100% 100%; }
+    .overlay.bgnd.results { background: url(./images/mic-bc-gfrx-main-bgnd-results.png) repeat-x scroll 50% 25% / 100% 100%; }
     .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 25% / 100% 100%; }
     .overlay.start.alpha {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.start.beta {background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 50% 25% / 100% 100%; }

@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
 
 </head>
-<body class="boomcity">
+<body class="boomcity start">
     <div class="header">
         <div class="row">
             <div class="small-6 medium-4 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-12 columns">
+                <img src="./images/mic-bc-grfx-main-skyline-start.png" />
             </div>
         </div>
     </div>
@@ -22,7 +27,7 @@
             <div class="content small-10 small-centered columns">
                 <h3>See how marketing automation can make your business boom.</h3>
                 <p>Play the Boom City game - it's quick, easy and fun! Simply answer a few questions to build a Boom City business modeled after your real-life business. Then you'll learn about all of the marketing automation tools that can make your buisness boom - effortlessly!</p>
-                <p>Ready to enter the thriving metropolis of Boom City?</p>
+                <p>Ready to enter the thriving metropolis of Boom City?</p><br/>
                 <a href="#" class="play-button" data-reveal-id="formModal">Play Now</a>
             </div>
         </div>
@@ -47,7 +52,8 @@
     <div class="main">
         <div class="row medium-collapse">
             <div class="small-12 small-centered columns">
-                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay bgnd off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay bgnd-2 off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay two alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
