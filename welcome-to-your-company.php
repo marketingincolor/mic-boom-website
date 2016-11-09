@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width" />
     <meta content="product" property="step5:value">
     <title>Marketing Automation Game - Dynamic Content</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
     <?php include 'page-includes.php'; ?>
@@ -38,24 +39,25 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-6 medium-4 small-centered columns">
+            <div class="small-10 medium-4 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
     </div>
 
-    <div class="interact">
+    <div class="learn-interact">
         <div class="row">
             <div class="content small-12 small-centered columns">
+            	<img src="images/party-icon.png" class="party-hat" alt="Party Hat Icon">
                 <h3>Congratulations!</h3>
                 <h4>Your Boom City business is now up and running.</h4>
-                <h4>Check your email now to check it out!</h4>
-                <p>You'll also learn how marketing automation gets your buisness booming - in Boom City and in real life!</p>
+                <h4 class="welcome-paragraph">Check your email now to check it out!</h4>
+                <p class="welcome-p">You'll also learn how marketing automation gets your buisness booming - in Boom City and in real life!</p>
             </div>
         </div>
     </div>
 
-    <div class="main">
+    <div class="main welcome-main">
         <div class="row medium-collapse">
             <div class="small-12 small-centered columns">
                 <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>

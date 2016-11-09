@@ -8,7 +8,7 @@
 var callThisOnReturn = function(resp) {
     if(resp && resp.contact) {
         var contact = resp.contact;
-        console.warn(contact);
+        //console.warn(contact);
         //var name = contact['First Name'];
         var ss_id = contact['SharpSpring ID'];
         var ss_status = contact['Lead Status'];
@@ -192,11 +192,16 @@ var callThisOnReturn = function(resp) {
         }
 
         // Define containers for dynamic content
+        // Results Page message one
+        var elemX = document.getElementById('dynamicContentIDX');
+        elemX.innerHTML = 'Your Boom City company is<br>' + result_b_sng + '.<br>';
+        //Results PSage message two
+        var elemY = document.getElementById('dynamicContentIDY');
+        elemY.innerHTML = 'to see how its owner,' + result_name + ', got ' + result_his + ' business booming.';
+
+        // Business signage
         var elem0 = document.getElementById('dynamicContentID0');
         elem0.innerHTML = '<div>' + result_b_sng +'</div>';
-        //var elemX = document.getElementById('dynamicContentIDX');
-        //elemX.innerHTML = 'Sales Team: ' + ss_team + '&nbsp;|&nbsp;' + 'CRM: ' + ss_crm + '&nbsp;|&nbsp;' + 'Frequency: ' + ss_frequency + '&nbsp;|&nbsp;' + 'Online Purchase: ' + ss_online + '&nbsp;|&nbsp;' + 'Type: ' + ss_type + '<br>';
-
         // Email Automation Container
         var elem1 = document.getElementById('dynamicContentID1');
         elem1.innerHTML = email_automation_blurb;
@@ -249,6 +254,6 @@ var callThisOnReturn = function(resp) {
             document.getElementById('owner_beta').className += " on";
         }
     } else {
-        window.location.href='http://dev.marketingincolor.com/micmatool/index.html';
+        window.location.href='http://marketingincolor.com/boomcity';
     }
 };

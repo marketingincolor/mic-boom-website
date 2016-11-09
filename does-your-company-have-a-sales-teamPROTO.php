@@ -44,7 +44,7 @@
 
     <div class="header">
         <div class="row">
-            <div class="small-6 medium-4 small-centered columns">
+            <div class="small-10 medium-4 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
