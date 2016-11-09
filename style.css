@@ -170,7 +170,7 @@ and (max-device-width : 568px) { }
     .interact { height:75px; }
     .welcome-interact { height:150px; margin-top:2em; }
     .query { font-size:.75em; }
-    .interact button { font-size:.75em; padding: 0.15rem 0.75rem; }
+    .interact button { font-size:.75em; /*padding: 0.15rem 0.75rem;*/ padding: .4rem 1.4rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 75% / 150% 150%; }
     .overlay.bgnd-2x { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 50% 75% / 100% 100%; }
     .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-results.png) repeat-x scroll 50% 75% / 100% 100%; }
@@ -230,7 +230,7 @@ and (max-device-width : 568px) { }
     .interact, .intro { position:absolute; margin-top:4em;}
     .interact-welcome { height: 50px; }
     .query { font-size:1.125em; }
-    .interact button { font-size:1.125em; padding:0.25rem 0.95rem; }
+    .interact button { font-size:1.125em; /*padding:0.25rem 0.95rem;*/ padding: .4rem 1.5rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 25% / 100% 100%; }
     .overlay.bgnd-2 { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 50% 25% / 100% 100%; }
     .overlay.bgnd.results { background: url(./images/mic-bc-gfrx-main-bgnd-results.png) repeat-x scroll 50% 25% / 100% 100%; }
