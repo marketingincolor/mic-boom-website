@@ -145,6 +145,7 @@ and (max-device-width : 568px) { }
 ========================================================================== */
 @media only screen {
     h3 { line-height: 1.2em !important; }
+    #click-here-cloud { padding:.5em; }
     .foot-cta-home { margin-top:5em; }
     .intro .content .play-button { font-size:1.28em; }
     .intro-home .content .play-button { font-size:1.28em; }
@@ -257,6 +258,7 @@ and (max-device-width : 568px) { }
     #dynamicContentID0 div { font-size:1em; }
     #dynamicContentIDX, #dynamicContentIDY { font-size:1em; }
     #dynamicContentClick { /*max-width:40%;*/ }
+    #click-here-cloud { width: 45%; padding-bottom:1em; }
     .foot-cta img { width: 31%; }
     .foot-cta-home img { width: 25%; margin: 0 auto; display:block; }
     .spot2 { left: 45%; -webkit-animation: move2 5s infinite; }
@@ -285,12 +287,14 @@ and (max-device-width : 568px) { }
     footer { height: 4%; }
     .foot-cta-home img { width: 16%; }
     h3 { line-height:1.4em !important; }
+    #click-here-cloud { width: 50%; padding-bottom:2em; }
     .main { /*top:15%;*/ top:-10%; }
     .interact, .intro { position:absolute; }
     .query { font-size:1.125em; }
     .welcome-p { padding:0 22em; }
     .learn-p { padding:0 22em; }
     .welcome-main { top: 0%; }
+
     /*.overlay.nine.alpha { background: url(./images/email-automation-button.png) no-repeat scroll 50% 75% / 150% 150%; }*/
 } /* min-width 1025px, large screens */
 

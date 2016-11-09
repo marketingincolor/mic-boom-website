@@ -41,7 +41,7 @@
                 <div class="content">
                     <h3 id="dynamicContentIDX">Your Boom City company is<br>&nbsp;.<br></h3>
                     <div class="small-6 small-offset-3">
-                        <a id="dynamicContentClick" href="./results-details"><img src="./images/click-here-cloud.png"></a>
+                        <a id="dynamicContentClick" href="./results-details"><img id="click-here-cloud" src="./images/click-here-cloud.png"></a>
                     </div>
                     <h5 id="dynamicContentIDY">to see how its owner, &nbsp;, got his business booming.<br></h5>
                 </div>
