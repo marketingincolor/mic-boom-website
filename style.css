@@ -1,6 +1,35 @@
-/* Custom CSS for Boom City SharpSpring Game! */
+/*==========================================================================
+[Marketing In Color]
+
+Project:        MA Game
+Version:        0.0.2
+Last change:    11/09/16 [Updated Style Sheet, AD]
+Assigned to:    ET, AD
+Primary use:    Digital Marketing
+
+
+[Table of contents]
+
+1.0 Main
+2.0 Foundation Overides
+3.0 Overlay Controls
+4.0 Animations
+    4.1 Spotlight
+    4.2 Close Button
+
+[5.0 Media Queries]
+
+    5.1 iPhone 5
+    5.2 Small Screens
+    5.3 Medium Screens
+    5.4 Large Screens
+    5.5 XLarge Screens
+    5.6 XXLarge Screens
+
+/* ==========================================================================
+1.0 MAIN
+========================================================================== */
 .boomcity { }
-.start .content p:last-child { margin-bottom:2em; }
 #wrapper { min-height:96%; position:relative; }
 .header { background-color: #CDE3F4; text-align:center; position:relative; padding:1em 0; }
 .header-home { background-color: #CDE3F4; text-align:center; position:relative; }
@@ -9,11 +38,37 @@
 .foot { }
 .foot-cta { background-color: #B2B4BB; padding:1em; }
 .foot-cta-home { background-color: #848792; padding:1em;  bottom:0px;  bottom:0px; }
-.clouds { width: 50%; }
 #dynamicContentID0 div { width:25%; margin:auto; line-height:1.125; font-weight:bold; }
 #dynamicContentClick { /*display:inline-block;*/ }
 #container { height:100%; }
-/* Overlay Controls */
+#modalTitle { color:#f07d00; font-weight:bold; }
+.start .content p:last-child { margin-bottom:2em; }
+.start-p { margin-bottom:1.5em; }
+.intro .content .play-button { font-size:2.5em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
+.intro-home .content .play-button { font-size:2.5em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
+.intro .content p { text-align:left; line-height:1.125; }
+.intro-home .content p { text-align:left; line-height:1.125; }
+.content { text-align:center; }
+.interact, .intro { margin-top:2em;  width:100%; z-index:100; padding-bottom:30px; }
+.interact, .intro-home { margin-top:2em;  width:100%; z-index:100; padding-bottom:30px; }
+.interact button { background-color:#fff; border-color:#f07d00; color:#f07d00; border-radius:25px; border-width:1px; padding:0.25rem 0.95rem; margin:0; }
+.interact button:hover, .interact button:focus { background-color:#f07d00; }
+.interact .content h3 { line-height:1; }
+.tablet-footer { position: relative; bottom:0px; }
+.clouds { width: 50%; }
+
+/* ==========================================================================
+2.0 FOUNDATION OVERIDES
+========================================================================== */
+body { font-size: 14px !important; }
+p { line-height: 1.5em !important; margin-bottom:5px !important; font-family: 'Open Sans', sans-serif !important; color: #404040 !important; }
+h3 { font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; }
+h4 { font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; line-height: 1.2em !important; }
+footer { position: absolute ; bottom:0;width:100%; height:30px; padding-top: 2em; height:4%;}
+
+/* ==========================================================================
+3.0 OVERLAY CONTROLS
+========================================================================== */
 .overlay { overflow-x: hidden; }
 .overlay { position: absolute; top: 0; left: 0; text-align:center; width:100%; }
 .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll top center / contain;  }
@@ -27,29 +82,12 @@
 .overlay.seven { z-index:24; }
 .overlay.eight { z-index:26; }
 .overlay.busname { z-index:15; }
-.content { text-align:center; }
-.interact, .intro { margin-top:2em;  width:100%; z-index:100; padding-bottom:30px; }
-.interact, .intro-home { margin-top:2em;  width:100%; z-index:100; padding-bottom:30px; }
-.interact button { background-color:#fff; border-color:#f07d00; color:#f07d00; border-radius:25px; border-width:1px; padding:0.25rem 0.95rem; margin:0; }
-.interact button:hover, .interact button:focus { background-color:#f07d00; }
-.interact .content h3 { line-height:1; }
-.intro .content p { text-align:left; line-height:1.125; }
-.intro-home .content p { text-align:left; line-height:1.125; }
-.intro .content .play-button { font-size:2.5em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
-.intro-home .content .play-button { font-size:2.5em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
-#modalTitle { color:#f07d00; font-weight:bold; }
 .off { display:none; }
 .on { display:inherit; }
-.tablet-footer { position: relative; bottom:0px; }
-.start-p { margin-bottom:1.5em; }
 
-/* FOUNDATION OVERRIDES */
-body { font-size: 14px !important; }
-p { line-height: 1.5em !important; margin-bottom:5px !important; font-family: 'Open Sans', sans-serif !important; color: #404040 !important; }
-h3 { font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; }
-h4 { font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; line-height: 1.2em !important; }
-footer { position: absolute ; bottom:0;width:100%; height:30px; padding-top: 2em; height:4%;}
-/*Animations*/
+/* ==========================================================================
+4.1 SPOTLIGHT
+========================================================================== */
 .spot1 { left: 40%; -webkit-animation: move 10s infinite; }
 .spot2 { left: 45%; -webkit-animation: move 5s infinite; }
 .spot3 { left: 50%; -webkit-animation: move 5s infinite; }
@@ -69,17 +107,24 @@ footer { position: absolute ; bottom:0;width:100%; height:30px; padding-top: 2em
     z-index:1;
     /*-webkit-transition-timing: ease-in-out;*/
 }
-.reveal-modal .close-reveal-modal {
-	padding: 0px 8px;
-	border-radius: 50%;
-	color: #f07d00 !important;
+
+ @-webkit-keyframes move {
+  0%  { -webkit-transform: rotate(30deg); }
+  50% { -webkit-transform: rotate(-30deg); }
+  100% { -webkit-transform: rotate(30deg); }
 }
 
-.reveal-modal .close-reveal-modal:hover { 
-    animation-name: rotate;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
+ @-webkit-keyframes move2 {
+  0%  { -webkit-transform: rotate(-30deg); }
+  50% { -webkit-transform: rotate(30deg); }
+  100% { -webkit-transform: rotate(-30deg); }
 }
+
+/* ==========================================================================
+4.2 CLOSE BUTTON
+========================================================================== */
+.reveal-modal .close-reveal-modal { padding: 0px 8px; border-radius: 50%; color: #f07d00 !important; }
+.reveal-modal .close-reveal-modal:hover { animation-name: rotate; animation-duration: 2s; animation-iteration-count: 1; }
 
 @keyframes rotate {
     25% { transform: rotate(90deg); }
@@ -88,39 +133,16 @@ footer { position: absolute ; bottom:0;width:100%; height:30px; padding-top: 2em
     100% { transform: rotate(360deg); }
 }
 
-
- @-webkit-keyframes move {
-  0%  { 
-    -webkit-transform: rotate(30deg);
-  }
-  50% {
-    -webkit-transform: rotate(-30deg);
-  }
-  100% {
-    -webkit-transform: rotate(30deg);
-  }
-}
-
- @-webkit-keyframes move2 {
-  0%  { 
-    -webkit-transform: rotate(-30deg);
-  }
-  50% {
-    -webkit-transform: rotate(30deg);
-  }
-  100% {
-    -webkit-transform: rotate(-30deg);
-  }
-}
-/*iPhone 5*/
+/* ==========================================================================
+5.1 IPHONE 5
+========================================================================== */
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 568px) { 
+and (max-device-width : 568px) { }
 
-
-}
-
-/* Small screens */
+/* ==========================================================================
+5.2 SMALL SCREENS
+========================================================================== */
 @media only screen {
     h3 { line-height: 1.2em !important; }
     .foot-cta-home { margin-top:5em; }
@@ -191,7 +213,9 @@ and (max-device-width : 568px) {
 
 @media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
-/* Medium screens */
+/* ==========================================================================
+5.3 MEDIUM SCREENS
+========================================================================== */
 @media only screen and (min-width: 40.063em) {
     footer { height: 2%; }
     .foot-cta-home { margin-top:0em; }
@@ -254,7 +278,9 @@ and (max-device-width : 568px) {
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
-/* Large screens */
+/* ==========================================================================
+5.4 LARGE SCREENS
+========================================================================== */
 @media only screen and (min-width: 64.063em) {
     footer { height: 4%; }
     .foot-cta-home img { width: 16%; }
@@ -270,7 +296,9 @@ and (max-device-width : 568px) {
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
-/* XLarge screens */
+/* ==========================================================================
+5.5 XLARGE SCREENS
+========================================================================== */
 @media only screen and (min-width: 90.063em) {
     .main { /*top:5%;*/ }
     .interact, .intro { position:absolute; }
@@ -279,7 +307,9 @@ and (max-device-width : 568px) {
 
 @media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
-/* XXLarge screens */
+/* ==========================================================================
+5.6 XXLARGE SCREENS
+========================================================================== */
 @media only screen and (min-width: 120.063em) {
     .main { /*top:5%;*/ }
     .interact, .intro { position:absolute; }
