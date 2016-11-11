@@ -37,7 +37,7 @@
 
     <div class="interact">
         <div class="row">
-            <div class="small-10 medium-12 large-10 small-centered columns">
+            <div class="small-8 medium-6 large-10 small-centered columns">
                 <div class="content">
                     <h3 id="dynamicContentIDX">Your Boom City company is<br>&nbsp;.<br></h3>
                     <div class="small-6 small-offset-3">
@@ -55,7 +55,7 @@
                 <div class="overlay bgnd-results"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
 
-                <div id="type_alpha" class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="type_alpha" class="overlay type two feta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="type_beta" class="overlay type two epsilon"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="company_name" class="overlay busname">
                     <img src="./images/mic-bc-grfx-main-clear-name.png" />

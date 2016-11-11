@@ -46,13 +46,12 @@
     </div>
 
     <div class="learn-interact">
+        <img src="images/party-icon.png" class="party-hat alt="Party Hat Icon">
         <div class="row">
-            <div class="content small-12 small-centered columns">
-            	<img src="images/party-icon.png" class="party-hat" alt="Party Hat Icon">
-                <h3>Congratulations!</h3>
-                <h4>Your Boom City business is now up and running.</h4>
-                <h4 class="welcome-paragraph">Check your email now to check it out!</h4>
-                <p class="welcome-p">You'll also learn how marketing automation gets your buisness booming - in Boom City and in real life!</p>
+            <div class="content small-10 medium-8 large-6 small-centered columns">
+                    <h3>Congratulations!</h3>
+                    <h4>Your Boom City business is now up and running. Check your email now to check it out!</h4>
+                    <p class="welcome-p">You'll also learn how marketing automation gets your business booming - in Boom City and in real life!</p>
             </div>
         </div>
     </div>

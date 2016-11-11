@@ -254,6 +254,6 @@ var callThisOnReturn = function(resp) {
             document.getElementById('owner_beta').className += " on";
         }
     } else {
-        window.location.href='http://marketingincolor.com/boomcity';
+        /*window.location.href='http://marketingincolor.com/boomcity';*/
     }
 };

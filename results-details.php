@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div class="interact">
+    <div class="interact results-clouds">
         <div class="row">
             <div class="small-10 medium-12 large-10 small-centered columns">
                 <div class="row">

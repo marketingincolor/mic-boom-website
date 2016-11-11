@@ -3,7 +3,7 @@
 
 Project:        MA Game
 Version:        0.0.2
-Last change:    11/09/16 [Updated Style Sheet, AD]
+Last change:    11/10/16 [Results Page Edits, AD]
 Assigned to:    ET, AD
 Primary use:    Digital Marketing
 
@@ -13,7 +13,8 @@ Primary use:    Digital Marketing
 1.0 Main
 2.0 Foundation Overides
 3.0 Overlay Controls
-4.0 Animations
+
+[4.0 Animations]
     4.1 Spotlight
     4.2 Close Button
 
@@ -56,6 +57,8 @@ Primary use:    Digital Marketing
 .interact .content h3 { line-height:1; }
 .tablet-footer { position: relative; bottom:0px; }
 .clouds { width: 50%; }
+.results-clouds { padding-top:3em !important; }
+
 
 /* ==========================================================================
 2.0 FOUNDATION OVERIDES
@@ -89,7 +92,7 @@ footer { position: absolute ; bottom:0;width:100%; height:30px; padding-top: 2em
 4.1 SPOTLIGHT
 ========================================================================== */
 .spot1 { left: 40%; -webkit-animation: move 10s infinite; }
-.spot2 { left: 45%; -webkit-animation: move 5s infinite; }
+.spot2 { -webkit-animation: move 5s infinite; }
 .spot3 { left: 50%; -webkit-animation: move 5s infinite; }
 .spot4 { left: 55%; -webkit-animation: move2 10s infinite; }
 .spotlight {
@@ -134,18 +137,33 @@ footer { position: absolute ; bottom:0;width:100%; height:30px; padding-top: 2em
 }
 
 /* ==========================================================================
-5.1 IPHONE 5
+5.1.1 IPHONE 5
 ========================================================================== */
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 568px) { }
+and (max-device-width : 568px) { 
+
+    .interact button { font-size: .8em; }
+    .interact .content h3 { font-size: 1.245em; }
+}
+
+/* ==========================================================================
+5.1.2 IPHONE 6
+========================================================================== */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+
+    .interact .content h3 { font-size: 1.45em; }
+}
 
 /* ==========================================================================
 5.2 SMALL SCREENS
 ========================================================================== */
 @media only screen {
     h3 { line-height: 1.2em !important; }
-    #click-here-cloud { padding:.5em; }
+    #click-here-cloud { padding:.5em; margin: .5em; }
     .foot-cta-home { margin-top:5em; }
     .intro .content .play-button { font-size:1.28em; }
     .intro-home .content .play-button { font-size:1.28em; }
@@ -155,14 +173,14 @@ and (max-device-width : 568px) { }
     .foot-cta-home img { width: 65%; display: block; margin: 0 auto; }
     .content h3 { font-size: 1.45em !important; font-weight:600 !important; margin-bottom: 0.25em; }
     .content h4 { font-size: 1.125em !important; font-weight:bold !important; margin-bottom: 0.25em; }
-    .content p { font-size: 1.142em; margin-bottom:1em !important; }
+    .content p { font-size: 1em; margin-bottom:1em !important; }
     /*.welcome-paragraph { padding-top:1em; }*/
-    .welcome-main { top: 22%; }
+    /*.welcome-main { top: 22%; }*/
     .welcome-interact h3 { margin:.5em 0; }
     .welcome-interact p { margin-top: .5em; }
-    .learn-interact { margin-top:2em; height: 250px; }
-    .learn-interact h3 { margin: .5em 0; }
-    .learn-interact p { margin-top:.5em; }
+    .learn-interact { margin-top:2em; height: 250px; padding-top:1em; }
+    .learn-interact h3 { margin: .5em 0 1em; }
+    .learn-interact p { margin-top:1em; }
     .start .content h3 { letter-spacing: .04em; padding-bottom: .7em; margin-top: 0; margin-bottom: 0;}
     .main { /*top:20%;*/ }
     .interact, .intro { position:relative; }
@@ -170,7 +188,7 @@ and (max-device-width : 568px) { }
     .interact { height:75px; }
     .welcome-interact { height:150px; margin-top:2em; }
     .query { font-size:.75em; }
-    .interact button { font-size:.75em; /*padding: 0.15rem 0.75rem;*/ padding: .4rem 1.4rem; }
+    .interact button { font-size:1.1.6666em; /*padding: 0.15rem 0.75rem;*/ padding: .4rem 1.4rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 75% / 150% 150%; }
     .overlay.bgnd-2x { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 50% 75% / 100% 100%; }
     .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-results.png) repeat-x scroll 50% 75% / 100% 100%; }
@@ -178,11 +196,12 @@ and (max-device-width : 568px) { }
     .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 75% / 150% 150%; }
     .overlay.start.beta { background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.result { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.alpha { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.alpha { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.two.beta { background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.two.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.two.delta { background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.two.epsilon { background: url(./images/mic-bc-grfx-main-b2c-open.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.feta { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.three.alpha { background: url(./images/mic-bc-grfx-main-team-yes.gif) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.three.beta { background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.three.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 75% / 150% 150%; }
@@ -199,17 +218,17 @@ and (max-device-width : 568px) { }
     #dynamicContentID0 div { font-size:0.5em; }
     #dynamicContentIDX, #dynamicContentIDY { font-size:0.75em; }
     #dynamicContentClick { /*max-width:40%;*/ }
-    .spotlight { border-top: 90px solid rgba(255,255,255,0.25); border-left: 0px solid transparent; border-right: 65px solid transparent; }
-    .spot2 { left: 48%; }
-    .spot3 { left: 52%; }
-    .party-hat { width:18%; }
+    .spotlight { border-top: 100px solid rgba(255,255,255,0.25); border-left: 20px solid transparent; border-right: 30px solid transparent; }
+    .party-hat { width:18%; display:block; margin:0 auto;}
     .spotlight { 
-        filter: blur(2px;);     
-        -webkit-filter: blur(2px);
-        -moz-filter: blur(2px);
-        -o-filter: blur(2px);
-        -ms-filter: blur(2px);
+        filter: blur(4px;);     
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
     }
+    .spot2 { display:none; left: 35%; }
+    .spot3 { display:none; }
 } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -224,9 +243,11 @@ and (max-device-width : 568px) { }
     .intro-home .content .play-button { font-size:1.428em; }
     .start .content p { font-size: 1em !important; padding: 0 3em; }
     .content h3 { font-size:1.571em !important; font-weight:600 !important; margin-bottom: 0.25em; padding-bottom: .8em; }
-    .content h4 { font-size: 1.149em !important; margin-bottom: 0.25em; }
-    .content p { font-size: 1em; margin-bottom:2em !important; margin-top: .8em; !important;  }
+    .content h4 { font-size: 1.2em !important; margin-bottom: 0.25em; }
+    .welcome-p { font-size:1.149em !important; margin-bottom: 0.25em; }
+    .content p { font-size: 1.2em; margin-bottom:2em !important; margin-top: .8em; !important;  }
     .main { /*top:15%;*/ top:15%; }
+    .results-main { display:block; position:relative; top:15%; width:100%; }
     .interact, .intro { position:absolute; margin-top:4em;}
     .interact-welcome { height: 50px; }
     .query { font-size:1.125em; }
@@ -256,18 +277,21 @@ and (max-device-width : 568px) { }
     .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 50% 25% / 100% 100%; }
     .clouds { width: 50%; }
     #dynamicContentID0 div { font-size:1em; }
-    #dynamicContentIDX, #dynamicContentIDY { font-size:1em; }
+    #dynamicContentIDX, #dynamicContentIDY { font-size:1em; padding: 0 0 0 0; }
+    #dynamicContentIDY p { padding: 1em 0; }
     #dynamicContentClick { /*max-width:40%;*/ }
-    #click-here-cloud { width: 45%; padding-bottom:1em; }
+    #click-here-cloud { width: 100%; padding:1em 0; }
     .foot-cta img { width: 31%; }
-    .foot-cta-home img { width: 25%; margin: 0 auto; display:block; }
-    .spot2 { left: 45%; -webkit-animation: move2 5s infinite; }
-    .spot3 { left: 50%; -webkit-animation: move 5s infinite; }
+    .foot-cta-home img { width: 33%; margin: 0 auto; display:block; }
+    .spot1 { display:initial; }
+    .spot2 { left: 45%; -webkit-animation: move2 5s infinite; display:initial; }
+    .spot3 { left: 50%; -webkit-animation: move 5s infinite; display:initial; }
+    .spot4 { display:initial; }
     .spotlight { border-top: 260px solid rgba(255,255,255,0.25); border-left: 40px solid transparent; border-right: 40px solid transparent; }
     .welcome-paragraph { padding-top:0; }
     .welcome-main { top: 15%; }
     .learn-interact { height: 0px; }
-    .party-hat { width:6%; }
+    .party-hat { width:10%; padding-top:4em; }
     .spotlight { 
         filter: blur(7px;);
         -webkit-filter: blur(7px);
@@ -287,13 +311,15 @@ and (max-device-width : 568px) { }
     footer { height: 4%; }
     .foot-cta-home img { width: 16%; }
     h3 { line-height:1.4em !important; }
-    #click-here-cloud { width: 50%; padding-bottom:2em; }
-    .main { /*top:15%;*/ top:-10%; }
+    #click-here-cloud { width: 80%; padding-bottom:2em; }
+    .main { /*top:15%;*/ top:0%; }
     .interact, .intro { position:absolute; }
     .query { font-size:1.125em; }
-    .welcome-p { padding:0 22em; }
-    .learn-p { padding:0 22em; }
     .welcome-main { top: 0%; }
+    .welcome-p { font-size:1em !important; }
+    .content p { font-size: 1em; }
+    .party-hat { padding-top:3em; width: 4%; }
+    .results-clouds { padding-top:6em !important; }
 
     /*.overlay.nine.alpha { background: url(./images/email-automation-button.png) no-repeat scroll 50% 75% / 150% 150%; }*/
 } /* min-width 1025px, large screens */
