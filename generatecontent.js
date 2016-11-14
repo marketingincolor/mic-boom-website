@@ -19,7 +19,6 @@ var callThisOnReturn = function(resp) {
         var ss_frequency = contact['How often do your customers purchase your product or service?'];
         var result_name = contact['bcd_name'];
         var result_b_sng = contact['bcd_business_single'];
-        // var namelength = result_b_sng.length;
         var result_b_pos = contact['bcd_business_name_possessive'];
         var result_site = contact['bcd_website'];
         var result_product = contact['bcd_product'];
@@ -202,7 +201,11 @@ var callThisOnReturn = function(resp) {
 
         // Business signage
         var elem0 = document.getElementById('dynamicContentID0');
-        elem0.innerHTML = '<div class="sign">' + result_b_sng +'</div>';
+        if(result_b_sng.indexOf(' ') >= 1){
+            elem0.innerHTML = '<div class="sign">' + result_b_sng +'</div>';
+        } else {
+            elem0.innerHTML = '<div>' + result_b_sng +'</div>';
+        }
         // Email Automation Container
         var elem1 = document.getElementById('dynamicContentID1');
         elem1.innerHTML = email_automation_blurb;
