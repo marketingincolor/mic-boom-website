@@ -39,11 +39,11 @@
         <div class="row">
             <div class="small-8 medium-6 large-10 small-centered columns">
                 <div class="content">
-                    <h3 id="dynamicContentIDX">Your Boom City company is<br>&nbsp;.<br></h3>
+                    <h3 id="dynamicContentIDX" class="">Your Boom City company is<br>&nbsp;.<br></h3>
                     <div class="small-6 small-offset-3">
                         <a id="dynamicContentClick" href="./results-details"><img id="click-here-cloud" src="./images/click-here-cloud.png"></a>
                     </div>
-                    <h5 id="dynamicContentIDY">to see how its owner, &nbsp;, got his business booming.<br></h5>
+                    <h5 id="dynamicContentIDY" style="color: #6e727f !important; ">to see how its owner, &nbsp;, got his business booming.<br></h5>
                 </div>
             </div>
         </div>
@@ -58,7 +58,8 @@
                 <div id="type_alpha" class="overlay type two feta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="type_beta" class="overlay type two epsilon"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="company_name" class="overlay busname">
-                    <img src="./images/mic-bc-grfx-main-clear-name.png" />
+                    <img src="./images/mic-bc-grfx-main-clear-name-small.png" class="show-for-small-only">
+                    <img src="./images/mic-bc-grfx-main-clear-name.png" class="show-for-medium-up" />
                     <div id="dynamicContentID0">&nbsp;</div>
                 </div>
                 <div id="team_alpha" class="overlay team three alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
@@ -105,5 +106,16 @@
     </div>
 
 <?php include 'page-includes.php'; ?>
+
+<script>
+//Check String Length
+$( document ).ready(function() {
+    
+    // var namelength = result_b_sng.length;
+    // console.log(namelength);
+
+});
+</script>
+
 </body>
 </html>

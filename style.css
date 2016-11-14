@@ -183,6 +183,7 @@ and (max-device-width : 667px) {
     .learn-interact p { margin-top:1em; }
     .start .content h3 { letter-spacing: .04em; padding-bottom: .7em; margin-top: 0; margin-bottom: 0;}
     .main { /*top:20%;*/ }
+    .results-main { top: 10%; }
     .interact, .intro { position:relative; }
     .interact, .intro-home {  }
     .interact { height:75px; }
@@ -191,7 +192,8 @@ and (max-device-width : 667px) {
     .interact button { font-size:1.1.6666em; /*padding: 0.15rem 0.75rem;*/ padding: .4rem 1.4rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 75% / 150% 150%; }
     .overlay.bgnd-2x { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 50% 75% / 100% 100%; }
-    .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-results.png) repeat-x scroll 50% 75% / 100% 100%; }
+    /*.overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-results.png) repeat-x scroll 50% 75% / 100% 100%; }*/
+    .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 75% / 150% 150%; }
     .overlay.start.alpha { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 75% / 150% 150%; }
     .overlay.start.beta { background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
@@ -200,8 +202,8 @@ and (max-device-width : 667px) {
     .overlay.two.beta { background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.two.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.two.delta { background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.epsilon { background: url(./images/mic-bc-grfx-main-b2c-open.png) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.two.feta { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.epsilon { background: url(./images/mic-bc-grfx-main-b2c-open.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.two.feta { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.three.alpha { background: url(./images/mic-bc-grfx-main-team-yes.gif) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.three.beta { background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.three.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 75% / 150% 150%; }
@@ -217,6 +219,7 @@ and (max-device-width : 667px) {
     #dynamicContentID0 { }
     #dynamicContentID0 div { font-size:0.5em; }
     #dynamicContentIDX, #dynamicContentIDY { font-size:0.75em; }
+    #dynamicContentIDX { font-size: 1em; font-weight:600 !important; font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; }
     #dynamicContentClick { /*max-width:40%;*/ }
     .spotlight { border-top: 100px solid rgba(255,255,255,0.25); border-left: 20px solid transparent; border-right: 30px solid transparent; }
     .party-hat { width:18%; display:block; margin:0 auto;}
@@ -247,14 +250,16 @@ and (max-device-width : 667px) {
     .welcome-p { font-size:1.149em !important; margin-bottom: 0.25em; }
     .content p { font-size: 1.2em; margin-bottom:2em !important; margin-top: .8em; !important;  }
     .main { /*top:15%;*/ top:15%; }
+    .results-main { top:initial; }
     .results-main { display:block; position:relative; top:15%; width:100%; }
-    .interact, .intro { position:absolute; margin-top:4em;}
+    .interact, .intro { position:absolute; margin-top:4em; }
     .interact-welcome { height: 50px; }
     .query { font-size:1.125em; }
     .interact button { font-size:1.125em; /*padding:0.25rem 0.95rem;*/ padding: .4rem 1.5rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 25% / 100% 100%; }
     .overlay.bgnd-2 { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 50% 25% / 100% 100%; }
-    .overlay.bgnd.results { background: url(./images/mic-bc-gfrx-main-bgnd-results.png) repeat-x scroll 50% 25% / 100% 100%; }
+    /*.overlay.bgnd.results { background: url(./images/mic-bc-gfrx-main-bgnd-results.png) repeat-x scroll 50% 25% / 100% 100%; }*/
+    .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 25% / 100% 100%; }
     .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 25% / 100% 100%; }
     .overlay.start.alpha {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.start.beta {background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 50% 25% / 100% 100%; }
@@ -264,6 +269,7 @@ and (max-device-width : 667px) {
     .overlay.two.gamma {background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.two.delta {background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.two.epsilon {background: url(./images/mic-bc-grfx-main-b2c-open.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.feta { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.three.alpha {background: url(./images/mic-bc-grfx-main-team-yes.gif) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.three.beta {background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.three.gamma {background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 25% / 100% 100%; }
@@ -311,7 +317,7 @@ and (max-device-width : 667px) {
     footer { height: 4%; }
     .foot-cta-home img { width: 16%; }
     h3 { line-height:1.4em !important; }
-    #click-here-cloud { width: 80%; padding-bottom:2em; }
+    #click-here-cloud { width: 60%; padding-bottom:2em; }
     .main { /*top:15%;*/ top:0%; }
     .interact, .intro { position:absolute; }
     .query { font-size:1.125em; }
@@ -320,6 +326,7 @@ and (max-device-width : 667px) {
     .content p { font-size: 1em; }
     .party-hat { padding-top:3em; width: 4%; }
     .results-clouds { padding-top:6em !important; }
+    .results-main { top: 5%; }
 
     /*.overlay.nine.alpha { background: url(./images/email-automation-button.png) no-repeat scroll 50% 75% / 150% 150%; }*/
 } /* min-width 1025px, large screens */
