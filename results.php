@@ -37,7 +37,7 @@
 
     <div class="interact">
         <div class="row">
-            <div class="small-8 medium-6 large-10 small-centered columns">
+            <div class="small-12 medium-6 large-10 small-centered columns">
                 <div class="content">
                     <h3 id="dynamicContentIDX" class="">Your Boom City company is<br>&nbsp;.<br></h3>
                     <div class="small-6 small-offset-3">
@@ -52,7 +52,8 @@
     <div class="results-main">
         <div class="row medium-collapse">
             <div class="small-12 small-centered columns">
-                <div class="overlay bgnd-results"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay bgnd-results-beta show-for-small-only"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay bgnd-results show-for-medium-up"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
 
                 <div id="type_alpha" class="overlay type two feta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>

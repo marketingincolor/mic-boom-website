@@ -76,7 +76,8 @@
                 <div id="type_alpha" class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="type_beta" class="overlay type two epsilon"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="company_name" class="overlay busname">
-                    <img src="./images/mic-bc-grfx-main-clear-name.png" />
+                    <img src="./images/mic-bc-grfx-main-clear-name-small.png" class="show-for-small-only">
+                    <img src="./images/mic-bc-grfx-main-clear-name.png" class="show-for-medium-up" />
                     <div id="dynamicContentID0">&nbsp;</div>
                 </div>
                 <div id="team_alpha" class="overlay team three alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>

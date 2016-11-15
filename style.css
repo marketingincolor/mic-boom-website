@@ -3,7 +3,7 @@
 
 Project:        MA Game
 Version:        0.0.2
-Last change:    11/10/16 [Results Page Edits, AD]
+Last change:    11/15/16 [Results Page Edits, AD]
 Assigned to:    ET, AD
 Primary use:    Digital Marketing
 
@@ -39,7 +39,7 @@ Primary use:    Digital Marketing
 .foot { }
 .foot-cta { background-color: #B2B4BB; padding:1em; }
 .foot-cta-home { background-color: #848792; padding:1em;  bottom:0px;  bottom:0px; }
-#dynamicContentID0 div { width:25%; margin:auto; line-height:1.125; font-weight:bold; }
+#dynamicContentID0 div { width:30%; margin:auto; line-height:1.125; font-weight:bold; }
 #dynamicContentClick { /*display:inline-block;*/ }
 #container { height:100%; }
 #modalTitle { color:#f07d00; font-weight:bold; }
@@ -58,6 +58,7 @@ Primary use:    Digital Marketing
 .tablet-footer { position: relative; bottom:0px; }
 .clouds { width: 50%; }
 .results-clouds { padding-top:3em !important; }
+.sign { padding-top: .125em; display: inline-block; }
 
 
 /* ==========================================================================
@@ -193,6 +194,7 @@ and (max-device-width : 667px) {
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 75% / 150% 150%; }
     .overlay.bgnd-2x { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 50% 75% / 100% 100%; }
     /*.overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-results.png) repeat-x scroll 50% 75% / 100% 100%; }*/
+    .overlay.bgnd-results-beta { background: url(./images/small-results.png) repeat-x scroll 50% 75% / 150% 150%; }
     .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 75% / 150% 150%; }
     .overlay.start.alpha { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
     .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 75% / 150% 150%; }
@@ -217,7 +219,7 @@ and (max-device-width : 667px) {
     .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 50% 75% / 150% 150%; }
     .clouds { width: 100%; }
     #dynamicContentID0 { }
-    #dynamicContentID0 div { font-size:0.5em; }
+    #dynamicContentID0 div { font-size:0.75em; }
     #dynamicContentIDX, #dynamicContentIDY { font-size:0.75em; }
     #dynamicContentIDX { font-size: 1em; font-weight:600 !important; font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; }
     #dynamicContentClick { /*max-width:40%;*/ }
@@ -232,6 +234,7 @@ and (max-device-width : 667px) {
     }
     .spot2 { display:none; left: 35%; }
     .spot3 { display:none; }
+    .sign { padding-top: .0125em; }
 } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -305,6 +308,7 @@ and (max-device-width : 667px) {
         -o-filter: blur(7px);
         -ms-filter: blur(7px); 
     }
+    .sign { padding-top: .75em; }
 
 } /* min-width 641px, medium screens */
 
@@ -327,6 +331,7 @@ and (max-device-width : 667px) {
     .party-hat { padding-top:3em; width: 4%; }
     .results-clouds { padding-top:6em !important; }
     .results-main { top: 5%; }
+    .sign { padding-top: 1.125em; }
 
     /*.overlay.nine.alpha { background: url(./images/email-automation-button.png) no-repeat scroll 50% 75% / 150% 150%; }*/
 } /* min-width 1025px, large screens */

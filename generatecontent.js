@@ -201,7 +201,8 @@ var callThisOnReturn = function(resp) {
 
         // Business signage
         var elem0 = document.getElementById('dynamicContentID0');
-        if(result_b_sng.indexOf(' ') >= 1){
+        var space_count = ( result_b_sng.split(' ').length-1 );
+        if( space_count < 2 ){
             elem0.innerHTML = '<div class="sign">' + result_b_sng +'</div>';
         } else {
             elem0.innerHTML = '<div>' + result_b_sng +'</div>';
