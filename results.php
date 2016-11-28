@@ -43,7 +43,7 @@
                     <div class="small-6 small-offset-3">
                         <a id="dynamicContentClick" href="./results-details"><img id="click-here-cloud" src="./images/click-here-cloud.png"></a>
                     </div>
-                    <h5 id="dynamicContentIDY" style="color: #6e727f !important; ">to see how its owner, &nbsp;, got his business booming.<br></h5>
+                    <h5 id="dynamicContentIDY" style="color: #6e727f !important;" class="small-10 medium-8 columns small-centered">to see how its owner, &nbsp;, got his business booming.<br></h5>
                 </div>
             </div>
         </div>

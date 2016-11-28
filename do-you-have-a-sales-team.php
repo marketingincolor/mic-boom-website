@@ -52,7 +52,7 @@
     <div class="interact">
         <div class="row">
             <div class="content small-10 small-centered columns">
-                <p class="query">Do you have a Sales Team?</p>
+                <p class="query">Do you have a sales team?</p>
                 <button id="step3-a">Yes</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <button id="step3-b">No</button>

@@ -70,7 +70,8 @@
     <div class="results-main">
         <div class="row medium-collapse">
             <div class="small-12 small-centered columns">
-                <div class="overlay bgnd-results"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay bgnd-results-beta show-for-small-only"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay bgnd-results show-for-medium-up"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
 
                 <div id="type_alpha" class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>

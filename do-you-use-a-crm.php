@@ -52,7 +52,7 @@
     <div class="interact">
         <div class="row">
             <div class="content small-10 small-centered columns">
-                <p class="query">Do you have a Customer Relationship Management (CRM) System?</p>
+                <p class="query">Do you have a Customer Relationship Management (CRM) system?</p>
                 <button id="step4-a">Yes</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <button id="step4-b">No</button>
