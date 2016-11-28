@@ -43,7 +43,7 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-	        <div class="small-6 medium-4 small-centered columns">
+	        <div class="small-10 medium-4 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
@@ -52,7 +52,7 @@
     <div class="interact">
         <div class="row">
             <div class="content small-10 small-centered columns">
-                <p class="query">Does your company have a Sales Team?</p>
+                <p class="query">Does your company have a sales team?</p>
                 <button id="step3-a">Yes</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <button id="step3-b">No</button>

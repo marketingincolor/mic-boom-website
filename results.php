@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><?php //include 'create-queries.php'; ?>
+<html lang="en"><?php include 'create-queries.php'; ?>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta content="regularly" property="step6:value">
     <title>Marketing Automation Game - Dynamic Content</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
     <?php include 'page-includes.php'; ?>
@@ -28,7 +29,7 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-	        <div class="small-6 medium-4 small-centered columns">
+	        <div class="small-10 medium-4 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
@@ -36,33 +37,30 @@
 
     <div class="interact">
         <div class="row">
-            <!--<div class="content small-12 columns">
-                <h5 id="dynamicContentIDX">Results</h5>
-            </div>-->
-            <div class="content small-4 columns"><a href="#" data-reveal-id="ea-modal">Email Automation</a></div>
-            <div class="content small-4 columns">&nbsp;</div>
-            <div class="content small-4 columns"><a href="#" data-reveal-id="crm-modal">CRM</a></div>
-
-            <div class="content small-4 columns">&nbsp;</div>
-            <div class="content small-4 columns"><a href="#" data-reveal-id="dwc-modal">Dynamic Web Content</a></div>
-            <div class="content small-4 columns">&nbsp;</div>
-
-            <div class="content small-4 columns"><a href="#" data-reveal-id="de-modal">Dyamic Email</a></div>
-            <div class="content small-4 columns">&nbsp;</div>
-            <div class="content small-4 columns"><a href="#" data-reveal-id="ct-modal">Call Tracking</a></div>
+            <div class="small-12 medium-6 large-10 small-centered columns">
+                <div class="content">
+                    <h3 id="dynamicContentIDX" class="">Your Boom City company is<br>&nbsp;.<br></h3>
+                    <div class="small-6 small-offset-3">
+                        <a id="dynamicContentClick" href="./results-details"><img id="click-here-cloud" src="./images/click-here-cloud.png"></a>
+                    </div>
+                    <h5 id="dynamicContentIDY" style="color: #6e727f !important;" class="small-10 medium-8 columns small-centered">to see how its owner, &nbsp;, got his business booming.<br></h5>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="results-main">
         <div class="row medium-collapse">
             <div class="small-12 small-centered columns">
-                <div class="overlay bgnd-after"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay bgnd-results-beta show-for-small-only"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay bgnd-results show-for-medium-up"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
 
-                <div id="type_alpha" class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="type_alpha" class="overlay type two feta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="type_beta" class="overlay type two epsilon"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
                 <div id="company_name" class="overlay busname">
-                    <img src="./images/mic-bc-grfx-main-clear-name.png" />
+                    <img src="./images/mic-bc-grfx-main-clear-name-small.png" class="show-for-small-only">
+                    <img src="./images/mic-bc-grfx-main-clear-name.png" class="show-for-medium-up" />
                     <div id="dynamicContentID0">&nbsp;</div>
                 </div>
                 <div id="team_alpha" class="overlay team three alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
@@ -109,5 +107,16 @@
     </div>
 
 <?php include 'page-includes.php'; ?>
+
+<script>
+//Check String Length
+$( document ).ready(function() {
+    
+    // var namelength = result_b_sng.length;
+    // console.log(namelength);
+
+});
+</script>
+
 </body>
 </html>

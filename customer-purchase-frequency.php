@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width" />
     <meta content="yes" property="step4:value">
     <title>Marketing Automation Game - Dynamic Content</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
     <?php include 'page-includes.php'; ?>
     <script type="text/javascript">
@@ -43,7 +43,7 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-6 medium-4 small-centered columns">
+            <div class="small-10 medium-4 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>

@@ -38,19 +38,20 @@
 <body class="boomcity">
     <div class="header">
         <div class="row">
-            <div class="small-6 medium-4 small-centered columns">
+            <div class="small-10 medium-4 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
     </div>
 
-    <div class="interact">
+    <div class="learn-interact">
+    <img src="images/party-icon.png" alt="Party Hat Icon" class="party-hat">
         <div class="row">
-            <div class="content small-12 small-centered columns">
+            <div class="content small-10 medium-8 large-6 small-centered columns">
+            <!-- <img src="images/party-icon.png" alt="Party Hat Icon" class="party-hat"> -->
                 <h3>Congratulations!</h3>
-                <h4>Your Boom City business is now up and running.</h4>
-                <h4>Check your email now to check it out!</h4>
-                <p>You'll also learn how marketing automation gets your buisness booming - in Boom City and in real life!</p>
+                <h4>Your Boom City business is now up and running. Check your email now to check it out!</h4>
+                <p class="learn-p">You'll also learn how marketing automation gets your buisness booming - in Boom City and in real life!</p>
             </div>
         </div>
     </div>
