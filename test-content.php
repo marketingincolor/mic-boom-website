@@ -202,8 +202,8 @@
         }
 
         // Define containers for dynamic content
-        var elem0 = document.getElementById('dynamicContentID0');
-        elem0.innerHTML = '<div>' + result_b_sng +'</div>';
+        //var elem0 = document.getElementById('dynamicContentID0');
+        //elem0.innerHTML = '<div>' + result_b_sng +'</div>';
         //var elemX = document.getElementById('dynamicContentIDX');
         //elemX.innerHTML = 'Sales Team: ' + ss_team + '&nbsp;|&nbsp;' + 'CRM: ' + ss_crm + '&nbsp;|&nbsp;' + 'Frequency: ' + ss_frequency + '&nbsp;|&nbsp;' + 'Online Purchase: ' + ss_online + '&nbsp;|&nbsp;' + 'Type: ' + ss_type + '<br>';
 
