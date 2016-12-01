@@ -27,7 +27,6 @@
     var _ss = _ss || [];
     _ss.push(['_setDomain', 'https://koi-UUHGVW.marketingautomation.services/net']);
     _ss.push(['_setAccount', 'KOI-YU6QP0']);
-    _ss.push(['_setResponseCallback', callThisOnReturn]);
     _ss.push(['_trackPageView']);
     (function() {
         var ss = document.createElement('script');

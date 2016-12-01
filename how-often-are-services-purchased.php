@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
     <?php include 'page-includes.php'; ?>
     <script type="text/javascript">
+        var path = document.URL;
+        linkpath = path.substring(0,path.lastIndexOf("/"));
         $(document).ready(function(){
-            var path = document.URL;
-            linkpath = path.substring(0,path.lastIndexOf("/"));
             $( '#step6-a' ).click(function() {
                 window.location.href = linkpath + '/welcome-to-your-company<?php echo $type . $team . $crm . $online; ?>&frequency=frequent';
             });
 
             $( '#step6-b' ).click(function() {
-                window.location.href = linkpath + '/learn-how-to-boom-your-biz<?php echo $type . $team . $crm . $oniline; ?>&frequency=inferquent';
+                window.location.href = linkpath + '/learn-how-to-boom-your-biz<?php echo $type . $team . $crm . $online; ?>&frequency=infrequent';
             });
         });
     </script>
@@ -27,7 +27,6 @@
     var _ss = _ss || [];
     _ss.push(['_setDomain', 'https://koi-UUHGVW.marketingautomation.services/net']);
     _ss.push(['_setAccount', 'KOI-YU6QP0']);
-    _ss.push(['_setResponseCallback', callThisOnReturn]);
     _ss.push(['_trackPageView']);
     (function() {
         var ss = document.createElement('script');
