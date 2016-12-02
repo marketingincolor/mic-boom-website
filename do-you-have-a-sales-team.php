@@ -26,13 +26,11 @@
     <script type="text/javascript">
     var _ss = _ss || [];
     _ss.push(['_setDomain', 'https://koi-UUHGVW.marketingautomation.services/net']);
-    _ss.push(['_setAccount', 'KOI-YU6QP0']);
-    _ss.push(['_setResponseCallback', callThisOnReturn]);
+    _ss.push(['_setAccount', 'KOI-YU6QP0']); 
     _ss.push(['_trackPageView']);
     (function() {
         var ss = document.createElement('script');
         ss.type = 'text/javascript'; ss.async = true;
-
         ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-UUHGVW.marketingautomation.services/client/ss.js?ver=1.1.1';
         var scr = document.getElementsByTagName('script')[0];
         scr.parentNode.insertBefore(ss, scr);

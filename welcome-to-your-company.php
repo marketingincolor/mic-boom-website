@@ -11,19 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
     <?php include 'page-includes.php'; ?>
     <script type="text/javascript">
-        var callThisOnReturn = function(resp) {
-            if(resp && resp.contact) {
-                var contact = resp.contact;
-                console.warn(contact);
-            }
-        };
-    </script>
-
-    <script type="text/javascript">
     var _ss = _ss || [];
     _ss.push(['_setDomain', 'https://koi-UUHGVW.marketingautomation.services/net']);
     _ss.push(['_setAccount', 'KOI-YU6QP0']);
-    _ss.push(['_setResponseCallback', callThisOnReturn]);
     _ss.push(['_trackPageView']);
     (function() {
         var ss = document.createElement('script');

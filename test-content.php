@@ -1,100 +1,138 @@
-/**
- * Content Generation Arrays for Marketing Automation Game
- * Contains ALL reqiured SharpSpring codes and functions (resp)
- * by EJT @ MIC
- *
-**/
+<!DOCTYPE html>
+<html lang="en"><?php //include 'create-queries.php'; ?>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta content="regularly" property="step6:value">
+    <title>Marketing Automation Game - Dynamic Content</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
+    <?php include 'page-includes.php'; ?>
 
-function titleCase(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1); 
-}
 
-var callThisOnReturn = function(resp) {
-    if(resp && resp.contact) {
-        var contact = resp.contact;
-        //console.warn(contact);
-        //var name = contact['First Name'];
-        var ss_id = contact['SharpSpring ID'];
-        var ss_status = contact['Lead Status'];
-        var ss_type = contact['What type of business best describes your business?'];
-        if ( ss_type == undefined || ss_type == '' )
-        {
-        	ss_type = 'B2B';
-        }
-        var ss_team = contact['Do you have a sales team?'];
-        if ( ss_team == undefined || ss_team == '' )
-        {
-        	ss_team = 'Yes';
-        }
-        var ss_crm = contact['Do you use a CRM?'];
-        if ( ss_crm == undefined || ss_crm == '' )
-        {
-        	ss_crm = 'No';
-        }
-        var ss_online = contact['Online Purchase?'];
-        if ( ss_online == undefined || ss_online == '' )
-        {
-        	ss_online = 'No';
-        }
-        var ss_frequency = contact['How often do your customers purchase your product or service?'];
-        if ( ss_frequency == undefined || ss_frequency == '' )
-        {
-        	ss_frequency = 'Frequently';
-        }
+</head>
+<body class="boomcity">
+    <div class="header">
+        <div class="row">
+	        <div class="small-6 medium-4 small-centered columns">
+                <img src="./images/mic-bc-grfx-main-hdr.png" />
+            </div>
+        </div>
+    </div>
 
-        var result_name = contact['bcd_name'];
-        if ( result_name == undefined || result_name == '' ) 
-        {
-        	result_name = 'Cheryl';
-        }
+    <div class="interact">
+        <div class="row">
+            <!--<div class="content small-12 columns">
+                <h5 id="dynamicContentIDX">Results</h5>
+            </div>-->
+            <div class="content small-4 columns"><a href="#" data-reveal-id="ea-modal">Email Automation</a></div>
+            <div class="content small-4 columns">&nbsp;</div>
+            <div class="content small-4 columns"><a href="#" data-reveal-id="crm-modal">CRM</a></div>
 
-        var result_b_sng = contact['bcd_business_single'];
-        if ( result_b_sng == undefined || result_b_sng == '' ) 
-        {
-        	result_b_sng = 'Marketing In Color';
+            <div class="content small-4 columns">&nbsp;</div>
+            <div class="content small-4 columns"><a href="#" data-reveal-id="dwc-modal">Dynamic Web Content</a></div>
+            <div class="content small-4 columns">&nbsp;</div>
+
+            <div class="content small-4 columns"><a href="#" data-reveal-id="de-modal">Dynamic Email</a></div>
+            <div class="content small-4 columns">&nbsp;</div>
+            <div class="content small-4 columns"><a href="#" data-reveal-id="ct-modal">Call Tracking</a></div>
+        </div>
+    </div>
+
+    <div class="results-main">
+        <div class="row medium-collapse">
+            <div class="small-12 small-centered columns">
+                <div class="overlay bgnd-after"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+
+                <div id="type_alpha" class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="type_beta" class="overlay type two epsilon"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="company_name" class="overlay busname">
+                    <img src="./images/mic-bc-grfx-main-clear-name.png" />
+                    <div id="dynamicContentID0">&nbsp;</div>
+                </div>
+                <div id="team_alpha" class="overlay team three alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="team_beta" class="overlay team three beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="crm_alpha" class="overlay crm four alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="crm_beta" class="overlay crm four beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="online_alpha" class="overlay online five alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="online_beta" class="overlay online five beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="frequency_alpha" class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="owner_alpha" class="overlay owner eight alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div id="owner_beta" class="overlay owner eight beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                <div class="overlay foot">
+                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ea-modal" xid="dynamicContentID1" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+        <h2 id="modalTitle">Email Automation</h2>
+        <div id="dynamicContentID1">&nbsp;</div>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="crm-modal" xid="dynamicContentID2" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+        <h2 id="modalTitle">CRM</h2>
+        <div id="dynamicContentID2">&nbsp;</div>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="dwc-modal" xid="dynamicContentID3" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+        <h2 id="modalTitle">Dynamic Web Content</h2>
+        <div id="dynamicContentID3">&nbsp;</div>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="de-modal" xid="dynamicContentID4" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+        <h2 id="modalTitle">Dynamic Email</h2>
+        <div id="dynamicContentID4">&nbsp;</div>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="ct-modal" xid="dynamicContentID5" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+        <h2 id="modalTitle">Call Tracking</h2>
+        <div id="dynamicContentID5">&nbsp;</div>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+
+<?php include 'page-includes.php'; ?>
+<script type="text/javascript">
+    function titleCase(string) { return string.charAt(0).toUpperCase() + string.slice(1); } 
+    function getParameterByName(name, url) {
+        if (!url) {
+          url = window.location.href;
         }
-        var result_b_pos = contact['bcd_business_name_possessive'];
-        if ( result_b_pos == undefined || result_b_pos == '' ) 
-        {
-        	result_b_pos = 'Marketing In Color\'s';
-        }
-        var result_site = contact['bcd_website'];
-        if ( result_site == undefined || result_site == '' ) 
-        {
-        	result_site = 'marketingincolor.com';
-        }
-        var result_product = contact['bcd_product'];
-        if ( result_product == undefined || result_product == '' ) 
-        {
-        	result_product = 'Ad Campaign';
-        }
-        var result_accessory = contact['bcd_accessory'];
-        if ( result_accessory == undefined || result_accessory == '' ) 
-        {
-        	result_accessory = 'Website Analytics';
-        }
-        var result_his = contact['bcd_pronoun_his'];
-        if ( result_his == undefined || result_his == '' ) 
-        {
-        	result_his = 'her';
-        }
-        var result_him = contact['bcd_pronoun_him'];
-        if ( result_him == undefined || result_him == '' ) 
-        {
-        	result_him = 'her';
-        }
-        var result_he = contact['bcd_pronoun_he'];
-        if ( result_he == undefined || result_he == '' ) 
-        {
-        	result_he = 'She';
-        }
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+        var ss_type      = getParameterByName('ss_type'); //B2B or B2C
+        var ss_team      = getParameterByName('ss_team'); //Yes or No
+        var ss_crm       = getParameterByName('ss_crm'); //Yes or No
+        var ss_online    = getParameterByName('ss_online'); //Yes or No;
+        var ss_frequency = getParameterByName('ss_frequency'); //Frequently or Infrequently;
+
+        console.log('Type: ' + ss_type + '\nTeam: ' + ss_team);
+
+        var result_name = 'Tina' ;
+        var result_b_sng = 'Tina\'s Tattoos';
+        var result_b_pos = 'Tina\'s Tattoos\'';
+        var result_site = 'TinasTatoos.com';
+        var result_product = 'Tattoo';
+        var result_accessory = 'Piercing';
+        var result_his = 'her';
+        var result_him = 'her';
+        var result_he = 'she';
         var email_automation_blurb = 'email_automation_blurb';
         var crm_blurb = 'crm_blurb';
         var dynamic_web_content_blurb = 'dynamic_web_content_blurb';
         var dynamic_email_blurb = 'dynamic_email_blurb';
         var call_tracking_blurb = 'call_tracking_blurb';
 
-        //---------------------------------------------------------------//
+          //---------------------------------------------------------------//
         //Email Automation Blurbs
         if( (ss_frequency == 'Frequently') && (ss_team == 'Yes') ) {
             email_automation_blurb = '<p>With email automation, ' + result_name + ' at ' + result_b_sng + ' can help ' + result_his + ' sales team communicate with their growing database of customers when they are most likely to make a purchase.</p><br/><p>For example, according to ' + result_b_pos + ' data, their customers buy a ' + result_product + ' about once a month. So automated emails are sent out to customers three weeks after each purchase, reminding them to buy again soon. This automation makes it very easy for each salesperson to provide a purchase reminder at the right time.</p>';
@@ -252,26 +290,17 @@ var callThisOnReturn = function(resp) {
         if((ss_type == 'B2C') && (ss_team == 'No') && (ss_crm == 'No') ) {
             call_tracking_blurb = '<p>' + titleCase(result_name) + ' at ' + result_b_sng + ' does all call tracking on one simple platform. The call tracking is built into a marketing automation system that also includes a Customer Relationship Management system. ' + titleCase(result_he) + ' has the information ' + result_he + ' needs to close sales – all in real-time. ' + titleCase(result_he) + ' can view which campaigns brought customers to the website and each page they visited. Both phone and form leads can all be easily tracked in one platform. ' + titleCase(result_name) + ' is also able to run accurate and complete ROI reports for all of ' + result_his + ' marketing initiatives. It\'s a powerful tool that streamlines and optimizes the sales process.</p>';
         }
-
         // Define containers for dynamic content
-        // Results Page message one
-        var elemX = document.getElementById('dynamicContentIDX');
-        elemX.innerHTML = 'Your Boom City company is<br>' + result_b_sng + '.<br>';
-        //Results PSage message two
-        var elemY = document.getElementById('dynamicContentIDY');
-        elemY.innerHTML = 'to see how its owner,' + result_name + ', got ' + result_his + ' business booming.';
+        //var elem0 = document.getElementById('dynamicContentID0');
+        //elem0.innerHTML = '<div>' + result_b_sng +'</div>';
+        //var elemX = document.getElementById('dynamicContentIDX');
+        //elemX.innerHTML = 'Sales Team: ' + ss_team + '&nbsp;|&nbsp;' + 'CRM: ' + ss_crm + '&nbsp;|&nbsp;' + 'Frequency: ' + ss_frequency + '&nbsp;|&nbsp;' + 'Online Purchase: ' + ss_online + '&nbsp;|&nbsp;' + 'Type: ' + ss_type + '<br>';
 
-        // Business signage
-        var elem0 = document.getElementById('dynamicContentID0');
-        var space_count = ( result_b_sng.split(' ').length-1 );
-        if( space_count < 2 ){
-            elem0.innerHTML = '<div class="sign">' + result_b_sng +'</div>';
-        } else {
-            elem0.innerHTML = '<div class="long-sign">' + result_b_sng +'</div>';
-        }
         // Email Automation Container
         var elem1 = document.getElementById('dynamicContentID1');
+        console.log(email_automation_blurb);
         elem1.innerHTML = email_automation_blurb;
+        
         // CRM Container
         var elem2 = document.getElementById('dynamicContentID2');
         elem2.innerHTML = crm_blurb;
@@ -319,8 +348,8 @@ var callThisOnReturn = function(resp) {
         } else {
             document.getElementById('owner_alpha').className += " off";
             document.getElementById('owner_beta').className += " on";
-        }
-    } else {
-        /*window.location.href='http://marketingincolor.com/boomcity';*/
-    }
-};
+        };
+
+</script>
+</body>
+</html>
