@@ -58,7 +58,9 @@ Primary use:    Digital Marketing
 .tablet-footer { position: relative; bottom:0px; }
 .clouds { width: 50%; }
 .results-clouds { padding-top:3em !important; }
-.sign { padding-top: .125em; display: inline-block; }
+.sign { padding-top: .125em; display: inline-block; font-family: 'Open Sans', sans-serif; }
+.long-sign { font-family: 'Open Sans', sans-serif; overflow:hidden; }
+
 
 
 /* ==========================================================================

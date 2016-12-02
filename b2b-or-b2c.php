@@ -10,13 +10,6 @@
     <?php include 'page-includes.php'; ?>
     <script type="text/javascript">
 
-        var callThisOnReturn = function(resp) {
-            if(resp && resp.contact) {
-                var contact = resp.contact;
-                console.warn(contact);
-            }
-        };
-
         var path = document.URL;
         linkpath = path.substring(0,path.lastIndexOf("/"));
         $(document).ready(function(){
@@ -34,7 +27,6 @@
     var _ss = _ss || [];
     _ss.push(['_setDomain', 'https://koi-UUHGVW.marketingautomation.services/net']);
     _ss.push(['_setAccount', 'KOI-YU6QP0']);
-    _ss.push(['_setResponseCallback', callThisOnReturn]);
     _ss.push(['_trackPageView']);
     (function() {
         var ss = document.createElement('script');
