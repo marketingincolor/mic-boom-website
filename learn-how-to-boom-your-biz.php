@@ -41,8 +41,8 @@
             <div class="content small-10 medium-8 large-6 small-centered columns">
             <!-- <img src="images/party-icon.png" alt="Party Hat Icon" class="party-hat"> -->
                 <h3>Congratulations!</h3>
-                <h4>Your Boom City business is now up and running. Check your email now to check it out!</h4>
-                <p class="learn-p">You'll also learn how marketing automation gets your buisness booming - in Boom City and in real life!</p>
+                <h4 class="congrats-headline">Your Boom City business is almost ready to open its doors. Give the Boom City crew a few minutes to hang the sign on the storefront, then check your email to check it out!</h4>
+                <p class="learn-p">You’ll also learn how marketing automation gets your business booming – in Boom City and in real life!</p>
             </div>
         </div>
     </div>

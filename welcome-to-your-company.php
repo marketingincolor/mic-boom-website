@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
     <?php include 'page-includes.php'; ?>
+
+
     <script type="text/javascript">
     var _ss = _ss || [];
     _ss.push(['_setDomain', 'https://koi-UUHGVW.marketingautomation.services/net']);
@@ -40,8 +42,8 @@
         <div class="row">
             <div class="content small-10 medium-8 large-6 small-centered columns">
                     <h3>Congratulations!</h3>
-                    <h4>Your Boom City business is now up and running. Check your email now to check it out!</h4>
-                    <p class="welcome-p">You'll also learn how marketing automation gets your business booming - in Boom City and in real life!</p>
+                    <h4 class="congrats-headline">Your Boom City business is almost ready to open its doors. Give the Boom City crew a few minutes to hang the sign on the storefront, then check your email to check it out!</h4>
+                    <p class="welcome-p">You’ll also learn how marketing automation gets your business booming – in Boom City and in real life!</p>
             </div>
         </div>
     </div>
