@@ -256,10 +256,10 @@ var callThisOnReturn = function(resp) {
         // Define containers for dynamic content
         // Results Page message one
         var elemX = document.getElementById('dynamicContentIDX');
-        elemX.innerHTML = 'Your Boom City company is<br>' + result_b_sng + '.<br>';
+        elemX.innerHTML = 'Your Boom City business is ' + result_b_sng + '.';
         //Results PSage message two
         var elemY = document.getElementById('dynamicContentIDY');
-        elemY.innerHTML = 'to see how its owner,' + result_name + ', got ' + result_his + ' business booming.';
+        elemY.innerHTML = 'Click on the clouds to learn how ' + result_b_sng +' uses these marketing automation tools.';
 
         // Business signage
         var elem0 = document.getElementById('dynamicContentID0');

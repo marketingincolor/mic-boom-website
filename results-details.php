@@ -24,7 +24,6 @@
             scr.parentNode.insertBefore(ss, scr);
         })();
     </script>
-
 </head>
 <body class="boomcity">
     <div class="header">
@@ -35,7 +34,13 @@
         </div>
     </div>
 
-    <div class="interact results-clouds">
+    <div class="interact">
+        <div class="row">
+            <div class="small-10 medium-12 large-10 small-centered text-center columns">
+                <h3 id="dynamicContentIDX">Your Boom City business is<br>&nbsp;<br></h3>
+                <h3 id="dynamicContentIDY">Click on the clouds to learn how Adam uses these marketing automation tools.</h3>
+            </div>
+        </div>
         <div class="row">
             <div class="small-10 medium-12 large-10 small-centered columns">
                 <div class="row">
@@ -63,6 +68,11 @@
                         <a href="#" data-reveal-id="ct-modal"><img src="images/call-tracking-cloud.png" class="clouds"/></a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-10 medium-12 large-10 small-centered text-center columns">
+                <h3 class="email-p">Ready to boom your real-life biz? Check your email!</h3>
             </div>
         </div>
     </div>
@@ -123,8 +133,8 @@
         <div id="dynamicContentID5">&nbsp;</div>
         <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </div>
-    <span id="dynamicContentIDX" style="display:none;">&nbsp;</span>
-    <span id="dynamicContentIDY" style="display:none;">&nbsp;</span>
+    <span id="dynamicXContentIDX" style="display:none;">&nbsp;</span>
+    <span id="dynamicXContentIDY" style="display:none;">&nbsp;</span>
 <?php include 'page-includes.php'; ?>
 </body>
 </html>
