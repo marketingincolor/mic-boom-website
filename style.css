@@ -11,6 +11,7 @@ Primary use:    Digital Marketing
 [Table of contents]
 
 1.0 Main
+1.1 Modal Controls
 2.0 Foundation Overides
 3.0 Overlay Controls
 
@@ -25,6 +26,7 @@ Primary use:    Digital Marketing
     5.4 Large Screens
     5.5 XLarge Screens
     5.6 XXLarge Screens
+
 
 /* ==========================================================================
 1.0 MAIN
@@ -64,6 +66,13 @@ Primary use:    Digital Marketing
 .results-p { margin-bottom: 2em !important; }
 .interact h3 { font-weight:bold; }
 .email-p { font-size: .75em !important; }
+.none { display:none; }
+
+/* ==========================================================================
+1.1 Modal Controls
+========================================================================== */
+
+.reveal-modal .close-reveal-modal { top: 0rem; right: 0rem; }
 
 /* ==========================================================================
 2.0 FOUNDATION OVERIDES
@@ -340,6 +349,7 @@ and (max-device-width : 667px) {
     .results-main { top: 15%; }
     .sign { padding-top: 1.125em; }
     .email-p { padding: 3em 0; }
+    .arrow-controls { width: 50%; }
 
     /*.overlay.nine.alpha { background: url(./images/email-automation-button.png) no-repeat scroll 50% 75% / 150% 150%; }*/
 } /* min-width 1025px, large screens */
