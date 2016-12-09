@@ -304,6 +304,8 @@ and (max-device-width : 667px) {
     #dynamicContentIDY p { padding: 1em 0; }
     #dynamicContentClick { /*max-width:40%;*/ }
     #click-here-cloud { width: 100%; padding:1em 0; }
+    #modalTitle { font-size:2em; }
+    .reveal-modal .close-reveal-modal { font-size: 2em !important; }
     .foot-cta img { width: 31%; }
     .foot-cta-home img { width: 33%; margin: 0 auto; display:block; }
     .spot1 { display:initial; }

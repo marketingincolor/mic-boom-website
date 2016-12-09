@@ -37,34 +37,34 @@
     <div class="interact">
         <div class="row">
             <div class="small-10 medium-12 medium-10 small-centered text-center columns">
-                <h3 id="dynamicContentIDX">Your Boom City business is<br>&nbsp;<br></h3>
-                <h3 id="dynamicContentIDY">Click on the clouds to learn how Adam uses these marketing automation tools.</h3>
+                <h3 id="dynamicContentIDX">Your Boom City business is Marketing In Color</h3>
+                <h3 id="dynamicContentIDY">Click on the clouds to learn how Cheryl uses these marketing automation tools.</h3>
             </div>
         </div>
         <div class="row">
             <div class="small-10 medium-12 medium-10 small-centered columns">
                 <div class="row">
-                    <div class="content small-4 columns">
+                    <div id="email-cloud" class="content small-4 columns">
                         <a href="#" data-reveal-id="ea-modal"><img src="images/email-automation-cloud.png" class="clouds"/></a>
                     </div>
                     <div class="content small-4 columns">&nbsp;</div>
-                    <div class="content small-4 columns">
+                    <div id="crm-cloud" class="content small-4 columns">
                         <a href="#" data-reveal-id="crm-modal"><img src="images/crm-cloud.png" class="clouds"/></a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="content small-4 columns">&nbsp;</div>
-                    <div class="content small-4 columns">
+                    <div id="dwc-cloud" class="content small-4 columns">
                         <a href="#" data-reveal-id="dwc-modal"><img src="images/dynamic-web-content-cloud.png" class="clouds"/></a>
                     </div>
                     <div class="content small-4 columns">&nbsp;</div>
                 </div>
                 <div class="row">
-                    <div class="content small-4 columns">
+                    <div id="de-cloud" class="content small-4 columns">
                         <a href="#" data-reveal-id="de-modal"><img src="images/dynamic-email-button.png" class="clouds"/></a>
                     </div>
                     <div class="content small-4 columns">&nbsp;</div>
-                    <div class="content small-4 columns">
+                    <div id="ct-cloud" class="content small-4 columns">
                         <a href="#" data-reveal-id="ct-modal"><img src="images/call-tracking-cloud.png" class="clouds"/></a>
                     </div>
                 </div>
@@ -168,33 +168,186 @@
 <?php include 'page-includes.php'; ?>
 <script>
 
-    // Set Modal Size Based on Screen Height
-    var modalSize = "";
-    var width = $(window).width();
-    if ( width < 768 )
-    {
-        modalSize == 'small';
-    }
-    else if ( width >= 768 && width < 1024 )
-    {
-        modalSize = 'medium';
-    }
-    else {
-        modalSize = 'large';
-    }
-    //$('#ea-modal').addClass(modalSize);
+    
+    //EA Arrows
+    $('#email-cloud').click( function() {
+        var modalHeight  = $('#ea-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#ea-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#ea-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
 
-    //Add Arrows
-    $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" data-reveal-id="ct-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#ea-modal-2');
-    $('#ea-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" data-reveal-id="de-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
-    $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" data-reveal-id="dwc-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#crm-modal-2');
-    $('#crm-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" data-reveal-id="ct-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
-    $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" data-reveal-id="de-modal"><img src="images/left-arrow.png" class="arrow-controls" /></a></div>').insertAfter('#dwc-modal-2');
-    $('#dwc-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" data-reveal-id="crm-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
-    $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" data-reveal-id="ea-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#de-modal-2');
-    $('#de-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" data-reveal-id="dwc-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
-    $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" data-reveal-id="crm-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#ct-modal-2');
-    $('#ct-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" data-reveal-id="ea-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
+    //CRM Arrows
+    $('#crm-cloud').click( function() {
+        var modalHeight  = $('#crm-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#crm-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#crm-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //DWC Arrows
+    $('#dwc-cloud').click( function() {
+        var modalHeight  = $('#dwc-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#dwc-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#dwc-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Dynamic Email
+    $('#de-cloud').click( function() {
+        var modalHeight  = $('#de-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#de-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#de-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Call Tracking
+    $('#ct-cloud').click( function() {
+        var modalHeight  = $('#ct-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#ct-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#ct-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Email Automation Arrows
+    $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-ea-previous" off-data-reveal-id="ct-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#ea-modal-2');
+    $('#ea-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-ea-next" off-data-reveal-id="de-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
+
+    //CRM Arrows
+    $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-crm-previous" off-data-reveal-id="dwc-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#crm-modal-2');
+    $('#crm-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-crm-next" off-data-reveal-id="ct-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
+
+    //DWC Arrows
+    $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-dwc-previous" off-data-reveal-id="de-modal"><img src="images/left-arrow.png" class="arrow-controls" /></a></div>').insertAfter('#dwc-modal-2');
+    $('#dwc-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-dwc-next" off-data-reveal-id="crm-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
+
+    //DE Arrows
+    $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-de-previous" off-data-reveal-id="ea-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#de-modal-2');
+    $('#de-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-de-next" off-data-reveal-id="dwc-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
+
+    //CT Arrows
+    $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-ct-previous" off-data-reveal-id="crm-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#ct-modal-2');
+    $('#ct-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-ct-next" off-data-reveal-id="ea-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
+
+    //Open EA Previous
+    $('a.open-ea-previous').on('click', function() {
+        $('#ct-modal').foundation('reveal','open');
+        var modalHeight  = $('#ct-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#ct-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#ct-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Open EA Next
+    $('a.open-ea-next').on('click', function() {
+        $('#de-modal').foundation('reveal', 'open');
+        var modalHeight  = $('#de-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#de-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#de-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Open CRM Previous
+    $('a.open-crm-previous').on('click', function() {
+        $('#dwc-modal').foundation('reveal','open');
+        var modalHeight  = $('#dwc-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#dwc-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#dwc-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Open CRM Next
+    $('a.open-crm-next').on('click', function() {
+        $('#ct-modal').foundation('reveal', 'open');
+        var modalHeight  = $('#ct-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#ct-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#ct-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Open DWC Previous
+    $('a.open-dwc-previous').on('click', function() {
+        $('#de-modal').foundation('reveal','open');
+        var modalHeight  = $('#de-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#de-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#de-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Open DWC Next
+    $('a.open-dwc-next').on('click', function() {
+        $('#crm-modal').foundation('reveal', 'open');
+        var modalHeight  = $('#crm-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#crm-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#crm-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Open DE Previous
+    $('a.open-de-previous').on('click', function() {
+        $('#ea-modal').foundation('reveal','open');
+        var modalHeight  = $('#ea-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#ea-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#ea-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Open DE Next
+    $('a.open-de-next').on('click', function() {
+        $('#dwc-modal').foundation('reveal', 'open');
+        var modalHeight  = $('#dwc-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#dwc-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#dwc-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Open CT Previous
+    $('a.open-ct-previous').on('click', function() {
+        $('#crm-modal').foundation('reveal','open');
+        var modalHeight  = $('#crm-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#crm-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#crm-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
+
+    //Open CT Next
+    $('a.open-ct-next').on('click', function() {
+        $('#ea-modal').foundation('reveal', 'open');
+        var modalHeight  = $('#ea-modal').height();
+        var headerHeight = 80;
+        var arrowHeight  = modalHeight/2;
+        var arrowPlacement = arrowHeight - headerHeight;
+        $('#ea-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
+        $('#ea-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+    });
 
 </script>
 </body>

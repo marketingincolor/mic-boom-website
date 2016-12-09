@@ -6,4 +6,5 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 <script>
   $(document).foundation();
+  //$(document).foundation('reveal', 'reflow');
 </script>
