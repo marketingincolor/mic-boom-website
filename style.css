@@ -72,7 +72,8 @@ Primary use:    Digital Marketing
 1.1 Modal Controls
 ========================================================================== */
 
-.reveal-modal .close-reveal-modal { top: 0rem; right: 0rem; }
+.reveal-modal .close-reveal-modal { top: 0rem !important; right: 0rem !important; font-size:initial !important; }
+
 
 /* ==========================================================================
 2.0 FOUNDATION OVERIDES
@@ -305,7 +306,7 @@ and (max-device-width : 667px) {
     #dynamicContentClick { /*max-width:40%;*/ }
     #click-here-cloud { width: 100%; padding:1em 0; }
     #modalTitle { font-size:2em; }
-    .reveal-modal .close-reveal-modal { font-size: 2em !important; }
+    .reveal-modal .close-reveal-modal { font-size:40px !important; }
     .foot-cta img { width: 31%; }
     .foot-cta-home img { width: 33%; margin: 0 auto; display:block; }
     .spot1 { display:initial; }
@@ -341,7 +342,7 @@ and (max-device-width : 667px) {
     #click-here-cloud { width: 60%; padding-bottom:2em; }
     #dynamicContentIDY { margin-bottom: 3em; }
     .main { /*top:15%;*/ top:0%; }
-    .interact, .intro { position:absolute; }
+    .interact, .intro { position:absolute; margin-top:2em;}
     .query { font-size:1.125em; }
     .welcome-main { top: 0%; }
     .welcome-p { font-size:1em !important; }
