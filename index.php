@@ -34,9 +34,9 @@
 	        <div class="row">
 	            <div class="content small-10 small-centered columns">
 	                <h3>See how marketing automation can make your business boom.</h3>
-	                    <p>Play the Boom City game - it's quick, easy and fun! Simply answer a few questions to build a Boom City business modeled after your real-life business. Then you'll learn about all of the marketing automation tools that can make your business boom - effortlessly!</p>
-	                    <p class="start-ps">Ready to enter the thriving metropolis of Boom City?</p><br/>
-	                <a href="#" class="play-button" data-reveal-id="formModal">PLAY NOW</a>
+	                    <p>Simply answer a few questions about your real-life business to build a similar, but fictitious Boom City business. In the process, you'll learn about all of the marketing automation tools that can make your real business boom – effortlessly!</p>
+	                    <p class="start-ps">Ready to create your Boom City business?</p><br/>
+	                <a href="#" class="play-button" data-reveal-id="formModal">LET'S GO!</a>
 	            </div>
 	        </div>
 	        <div id="formModal" class="reveal-modal large" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">

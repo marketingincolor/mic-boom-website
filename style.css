@@ -60,7 +60,7 @@ Primary use:    Digital Marketing
 .clouds { width: 50%; }
 .results-clouds { padding-top:3em !important; }
 .sign { padding-top: .125em; display: inline-block; font-family: 'Open Sans', sans-serif; }
-.long-sign { font-family: 'Open Sans', sans-serif; overflow:hidden; }
+.long-sign { font-family: 'Open Sans', sans-serif; overflow:hidden; padding-bottom:1px; }
 .congrats-headline { font-size:.9em !important; }
 .results-main { top:20%; }
 .results-p { margin-bottom: 2em !important; }

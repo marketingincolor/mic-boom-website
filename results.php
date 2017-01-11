@@ -72,7 +72,9 @@
         </div>
         <div class="row">
             <div class="small-10 medium-12 medium-10 small-centered text-center columns">
-                <h3 class="email-p">Ready to boom your real-life biz? Check your email!</h3>
+                <h3 class="email-p">After you've checked out all the cloud cloud content, get ready to boom your real-life biz! Check your email for details.<br /> 
+		(Or, start over to create another Boom City business!)
+		</h3>
             </div>
         </div>
     </div>
