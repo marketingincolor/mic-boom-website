@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php error_reporting(0); ?>
 <html lang="en"><?php //include 'create-queries.php'; ?>
 <head>
     <meta charset="utf-8" />
