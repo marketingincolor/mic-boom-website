@@ -61,31 +61,30 @@
     </div>
 
     <div class="main">
-        <div class="row medium-collapse">
-            <div class="small-12 small-centered columns">
-                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two alpha <?php echo ($type_class == 'b2b' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two beta <?php echo ($type_class == 'b2c' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three alpha <?php echo ($team_class == 'yes' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three beta <?php echo ($team_class == 'no' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay foot">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
-                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+            <div class="row medium-collapse">
+                <div class="small-12 small-centered columns">
+                    <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay type two alpha <?php echo ($type_class == 'b2b' ? '' : 'off'); ?>">
+                        <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay type two beta <?php echo ($type_class == 'b2c' ? '' : 'off'); ?>">
+                        <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay team three alpha <?php echo ($team_class == 'yes' ? '' : 'off'); ?>">
+                        <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay team three beta <?php echo ($team_class == 'no' ? '' : 'off'); ?>">
+                        <img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                    <div class="overlay foot">
+                        <img src="./images/mic-bc-grfx-main-clear.png" /></br>
+                        <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
 </body>
 </html>

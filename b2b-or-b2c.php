@@ -41,7 +41,7 @@
 
 </head>
 <body class="boomcity">
-    <div class="header">
+    <div class="header" style="border: 2px solid blue;">
         <div class="row">
             <div class="small-10 medium-3 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
@@ -49,7 +49,7 @@
         </div>
     </div>
 
-    <div class="interact">
+    <div class="interact" style="border: 2px solid red;">
         <div class="row">
             <div class="content small-10 small-centered columns">
                 <p class="query">Are your marketing initiatives targeted primarily to other businesses or to consumers?</p>
@@ -59,32 +59,11 @@
             </div>
         </div>
     </div>
-
-    <div class="main">
-        <div class="row medium-collapse">
-            <div class="small-12 small-centered columns">
-                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay start beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay start alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay foot">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
-                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
-                </div>
-            </div>
+    
+    <div id="force-bottom">
+        <div id="begin" style="border: 2px solid green;"><img src="./images/mic-bc-grfx-main-clear.png" style="position:relative;"/></div>
+        <div class="foot-cta" style="border:2px solid orange;"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" style="margin:0 auto; display:block;"/></a>
         </div>
     </div>
-
-
-
-</body>
+    </body>
 </html>

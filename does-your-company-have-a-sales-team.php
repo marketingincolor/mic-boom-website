@@ -60,30 +60,12 @@
         </div>
     </div>
 
-    <div class="main">
-        <div class="row medium-collapse">
-            <div class="small-12 small-centered columns">
-                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay start alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two gamma"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two delta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay foot">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
-                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
-                </div>
-            </div>
+    <div id="force-bottom">
+        <div id="does-your" style="border: 2px solid green;"><img src="./images/mic-bc-grfx-main-clear.png" style="position:relative;"/></div>
+        <div class="foot-cta" style="border:2px solid orange;"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" style="margin:0 auto; display:block;"/></a>
         </div>
     </div>
+
 
 </body>
 </html>

@@ -35,7 +35,7 @@ Primary use:    Digital Marketing
 #wrapper { min-height:96%; position:relative; }
 .header { background-color: #CDE3F4; text-align:center; position:relative; padding:.5em 0; }
 .header-home { background-color: #CDE3F4; text-align:center; position:relative; }
-.main, .results-main { display:block; position:relative; top:0; width:100%; }
+.main, .results-main { display:block; position:relative; width:100%; }
 .secondary { position: relative; }
 .foot { }
 .foot-cta { background-color: #B2B4BB; padding:1em; }
@@ -203,32 +203,32 @@ and (max-device-width : 667px) {
     .welcome-interact { height:150px; margin-top:2em; }
     .query { font-size:.75em; }
     .interact button { font-size:1.1.6666em; /*padding: 0.15rem 0.75rem;*/ padding: .4rem 1.4rem; }
-    .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 75% / 150% 150%; }
-    .overlay.bgnd-2x { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 50% 75% / 100% 100%; }
+    .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 25% 25% / 100% 100%; }
+    .overlay.bgnd-2x { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 25% 25% / 100% 100%; }
     /*.overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-results.png) repeat-x scroll 50% 75% / 100% 100%; }*/
-    .overlay.bgnd-results-beta { background: url(./images/small-results.png) repeat-x scroll 50% 75% / 150% 150%; }
-    .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 75% / 150% 150%; }
-    .overlay.start.alpha { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 75% / 150% 150%; }
-    .overlay.start.beta { background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.result { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.alpha { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.beta { background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.delta { background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.epsilon { background: url(./images/mic-bc-grfx-main-b2c-open.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.feta { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.three.alpha { background: url(./images/mic-bc-grfx-main-team-yes.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.three.beta { background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.three.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.four.alpha { background: url(./images/mic-bc-grfx-main-crm-yes.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.four.beta { background: url(./images/mic-bc-grfx-main-crm-no.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.five.alpha { background: url(./images/mic-bc-grfx-main-os-yes.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.five.beta { background: url(./images/mic-bc-grfx-main-os-no.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.six.alpha { background: url(./images/mic-bc-grfx-main-ribbon.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.seven.alpha { background: url(./images/mic-bc-grfx-main-ribbon-shine.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.bgnd-results-beta { background: url(./images/small-results.png) repeat-x scroll 25% 25% / 100% 100%; }
+    .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 25% 25% / 100% 100%; }
+    .overlay.start.alpha { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 25% 25% / 100% 100%; }
+    .overlay.start.beta { background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.result { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.alpha { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.beta { background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.delta { background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.epsilon { background: url(./images/mic-bc-grfx-main-b2c-open.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.feta { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.three.alpha { background: url(./images/mic-bc-grfx-main-team-yes.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.three.beta { background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.three.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.four.alpha { background: url(./images/mic-bc-grfx-main-crm-yes.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.four.beta { background: url(./images/mic-bc-grfx-main-crm-no.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.five.alpha { background: url(./images/mic-bc-grfx-main-os-yes.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.five.beta { background: url(./images/mic-bc-grfx-main-os-no.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.six.alpha { background: url(./images/mic-bc-grfx-main-ribbon.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.seven.alpha { background: url(./images/mic-bc-grfx-main-ribbon-shine.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 25% 25% / 100% 100%; }
     .clouds { width: 100%; }
     #dynamicContentID0 { }
     #dynamicContentID0 div { font-size:0.75em; }
@@ -268,7 +268,7 @@ and (max-device-width : 667px) {
     .main { top:15%; }
     .results-main { top:initial; }
     .results-main { display:block; position:relative; top:17%; width:100%; }
-    .interact, .intro { position:absolute;  }
+    .interact, .intro { position:relative;  }
     .interact-welcome { height: 50px; }
     .query { font-size:1.125em; }
     .interact button { font-size:1.125em; /*padding:0.25rem 0.95rem;*/ padding: .4rem 1.5rem; }
@@ -307,7 +307,7 @@ and (max-device-width : 667px) {
     #click-here-cloud { width: 100%; padding:1em 0; }
     #modalTitle { font-size:2em; }
     .reveal-modal .close-reveal-modal { font-size:40px !important; }
-    .foot-cta img { width: 31%; }
+    .foot-cta img { width: 15%; }
     .foot-cta-home img { width: 33%; margin: 0 auto; display:block; }
     .spot1 { display:initial; }
     .spot2 { left: 45%; -webkit-animation: move2 5s infinite; display:initial; }
@@ -316,7 +316,7 @@ and (max-device-width : 667px) {
     .spotlight { border-top: 260px solid rgba(255,255,255,0.25); border-left: 40px solid transparent; border-right: 40px solid transparent; }
     .welcome-paragraph { padding-top:0; }
     .welcome-main { top: 15%; }
-    .learn-interact { height: 0px; }
+    .learn-interact { }
     .party-hat { width:10%; padding-top:4em; }
     .spotlight { 
         filter: blur(7px;);
@@ -341,7 +341,7 @@ and (max-device-width : 667px) {
     h3 { line-height:1.4em !important; }
     #click-here-cloud { width: 60%; padding-bottom:2em; }
     #dynamicContentIDY { margin-bottom: 3em; }
-    .main { /*top:15%;*/ top:0%; }
+    .main { }
     .interact, .intro { position:relative; }
     .query { font-size:1.125em; }
     .welcome-main { top: 0%; }
@@ -378,3 +378,18 @@ and (max-device-width : 667px) {
     .interact, .intro { position:absolute; }
     .query { font-size:1.25em; }
 } /* min-width 1921px, xxlarge screens */
+/* ==========================================================================
+5.7 TESTING
+========================================================================== */
+#begin {
+    background: 
+        url(./images/mic-bc-grfx-main-construct.png) no-repeat center / contain,
+        url(./images/mic-bc-grfx-main-bgnd.png)  center / contain;
+}
+
+#does-your { 
+    background:
+        url(),
+        url(./images/mic-bc-grfx-main-bgnd.png)  center / contain; 
+}
+#force-bottom { position: fixed; bottom: 0; width: 100%;}
