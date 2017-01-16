@@ -41,15 +41,15 @@
 
 </head>
 <body class="boomcity">
-    <div class="header">
+    <div class="header" style="border: 2px solid blue;">
         <div class="row">
-            <div class="small-10 medium-3 small-centered columns">
+            <div class="small-10 medium-4 small-centered columns">
                 <img src="./images/mic-bc-grfx-main-hdr.png" />
             </div>
         </div>
     </div>
 
-    <div class="interact">
+    <div class="interact" style="border: 2px solid red;">
         <div class="row">
             <div class="content small-10 small-centered columns">
                 <p class="query">Are your marketing initiatives targeted primarily to other businesses or to consumers?</p>
@@ -59,20 +59,13 @@
             </div>
         </div>
     </div>
-
-    <div class="main">
-        <div class="row medium-collapse">
-            <div class="small-12 small-centered columns">
-                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay foot">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
-                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
-                </div>
-            </div>
+    
+    <div id="force-bottom">
+        <div id="begin" style="border: 2px solid green;">
+        <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/></div>
+        <div class="foot-cta" style="border:2px solid orange;"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" style="margin:0 auto; display:block;"/></a>
         </div>
     </div>
-
-
-
-</body>
+    <div class="bottom-color">TESTING HERE</div>
+    </body>
 </html>
