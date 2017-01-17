@@ -1,5 +1,17 @@
 <!DOCTYPE html>
-<?php error_reporting(0); ?>
+<?php error_reporting(0); 
+
+
+if ( isset($_GET["type"]) && $_GET["type"] == "b2b") {
+    $congratulations = "congratulations-b2b";
+}
+else {
+    $congratulations = "congratulations-b2c";
+}
+
+
+
+?>
 <html lang="en"><?php include 'create-queries.php'; ?>
 <head>
     <meta http-equiv="Pragma" content="no-cache">
@@ -30,42 +42,34 @@
 
 </head>
 <body class="boomcity">
-    <div class="header">
-        <div class="row">
-            <div class="small-10 medium-4 small-centered columns">
-                <img src="./images/mic-bc-grfx-main-hdr.png" />
-            </div>
-        </div>
-    </div>
-
-    <div class="learn-interact">
-        <img src="images/party-icon.png" class="party-hat alt="Party Hat Icon">
-        <div class="row">
-            <div class="content small-10 medium-8 large-6 small-centered columns">
-                    <h3>Congratulations!</h3>
-                    <h4 class="congrats-headline">Your Boom City business is almost ready to open its doors. Give the Boom City crew a few minutes to hang the sign on the storefront, then check your email to check it out!</h4>
-                    <p class="welcome-p">You’ll also learn how marketing automation gets your business booming – in Boom City and in real life!</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="main welcome-main">
-        <div class="row medium-collapse">
-            <div class="small-12 small-centered columns">
-                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two alpha <?php echo ($type_class == 'b2b' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two beta <?php echo ($type_class == 'b2c' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency seven alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay foot">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
-                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="row">
+                <div class="small-10 medium-4 small-centered columns">
+                    <img src="./images/mic-bc-grfx-main-hdr.png" />
                 </div>
             </div>
         </div>
+
+        <div class="interact">
+            <img src="images/party-icon.png" class="party-hat alt="Party Hat Icon">
+            <div class="row">
+                <div class="content small-10 medium-8 large-6 small-centered columns">
+                        <h3>Congratulations!</h3>
+                        <h4 class="congrats-headline">Your Boom City business is almost ready to open its doors. Give the Boom City crew a few minutes to hang the sign on the storefront, then check your email to check it out!</h4>
+                        <p class="welcome-p">You’ll also learn how marketing automation gets your business booming – in Boom City and in real life!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="force-bottom">
+            <div id="<?php echo $congratulations ?>" class="layers-border">
+                <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/></div>
+        </div>
+
+<!--         <footer>
+            <div class="foot-cta-home" style="background-color:#b2b4bb !important;"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic_logo.png" /></a></div>
+        </footer> -->
     </div>
 
 <?php include 'page-includes.php'; ?>

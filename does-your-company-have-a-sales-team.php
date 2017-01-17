@@ -1,5 +1,15 @@
 <!DOCTYPE html>
-<?php error_reporting(0); ?>
+<?php 
+error_reporting(0); 
+
+if ($_GET["type"] == "b2c" && $_GET[""]) {
+    $boom_city_biz = "page-b2c";
+}
+else {
+    $boom_city_biz = "page-b2b";
+}
+
+?>
 <html lang="en"><?php include 'create-queries.php'; ?>
 <head>
     <meta http-equiv="Pragma" content="no-cache">
@@ -41,49 +51,34 @@
 
 </head>
 <body class="boomcity">
-    <div class="header">
-        <div class="row">
-	        <div class="small-10 medium-4 small-centered columns">
-                <img src="./images/mic-bc-grfx-main-hdr.png" />
-            </div>
-        </div>
-    </div>
-
-    <div class="interact">
-        <div class="row">
-            <div class="content small-10 small-centered columns">
-                <p class="query">Does your company have a sales team?</p>
-                <button id="step3-a">Yes</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <button id="step3-b">No</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="main">
-        <div class="row medium-collapse">
-            <div class="small-12 small-centered columns">
-                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay start alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two gamma"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two delta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay foot">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
-                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="row">
+    	        <div class="small-10 medium-4 small-centered columns">
+                    <img src="./images/mic-bc-grfx-main-hdr.png" />
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="interact">
+            <div class="row">
+                <div class="content small-10 small-centered columns">
+                    <p class="query">Does your company have a sales team?</p>
+                    <button id="step3-a">Yes</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="step3-b">No</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="images">
+            <div id="<?php echo $boom_city_biz ?>" class="layers-border">
+                <img src="./images/clear.png" id="clear"/></div>
+            <div class="footer"></div>
+        </div>
+<!--         <footer>
+            <div class="foot-cta-home" style="background-color:#b2b4bb !important;"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic_logo.png" /></a></div>
+        </footer> -->
+    </div>
 </body>
 </html>

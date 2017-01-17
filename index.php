@@ -9,7 +9,7 @@
 
 </head>
 <body class="boomcity start">
-	<div id="wrapper">
+	<div class="wrapper">
 	    <div class="header-home">
 	        <div class="spotlight spot1"></div>
 	        <div class="spotlight spot2"></div>

@@ -1,5 +1,27 @@
 <!DOCTYPE html>
-<?php error_reporting(0); ?>
+<?php error_reporting(0);
+
+//B2C && NO TEAM 
+if ($_GET["type"] == "b2c" && $_GET["team"] == "no") {
+    $boom_city_biz = "page-b2c-no-sales";
+}
+
+// B2C && TEAM
+elseif ($_GET["type"] == "b2c" && $_GET["team"] == "yes") {
+    $boom_city_biz = "page-b2c-sales";
+}
+
+// B2B && NO TEAM
+elseif ( $_GET["type"] == "b2b" && $_GET["team"] == "no") {
+    $boom_city_biz = "page-b2b-no-sales";
+}
+
+// B2B && TEAM
+elseif ($_GET["type"] == "b2b" && $_GET["team"] == "yes") {
+    $boom_city_biz = "page-b2b-sales";
+}
+
+?>
 <html lang="en"><?php include 'create-queries.php'; ?>
 <head>
     <meta http-equiv="Pragma" content="no-cache">
@@ -41,51 +63,34 @@
 
 </head>
 <body class="boomcity">
-    <div class="header">
-        <div class="row">
-            <div class="small-10 medium-4 small-centered columns">
-                <img src="./images/mic-bc-grfx-main-hdr.png" />
-            </div>
-        </div>
-    </div>
-
-    <div class="interact">
-        <div class="row">
-            <div class="content small-10 small-centered columns">
-                <p class="query">Do you have a Customer Relationship Management (CRM) system?</p>
-                <button id="step4-a">Yes</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <button id="step4-b">No</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="main">
-        <div class="row medium-collapse">
-            <div class="small-12 small-centered columns">
-                <div class="overlay bgnd"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two alpha <?php echo ($type_class == 'b2b' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay type two beta <?php echo ($type_class == 'b2c' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three alpha <?php echo ($team_class == 'yes' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay team three beta <?php echo ($team_class == 'no' ? '' : 'off'); ?>">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay crm four beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay online five beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay frequency six beta off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay foot">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
-                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="row">
+                <div class="small-10 medium-4 small-centered columns">
+                    <img src="./images/mic-bc-grfx-main-hdr.png" />
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="interact">
+            <div class="row">
+                <div class="content small-10 small-centered columns">
+                    <p class="query">Do you have a Customer Relationship Management (CRM) system?</p>
+                    <button id="step4-a">Yes</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="step4-b">No</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="images">
+            <div id="<?php echo $boom_city_biz ?>" class="layers-border">
+                <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/></div>
+            <div class="footer"></div>
+        </div>
+<!--         <footer>
+            <div class="foot-cta-home" style="background-color:#b2b4bb !important;"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic_logo.png" /></a></div>
+        </footer> -->
+    </div>
 </body>
 </html>

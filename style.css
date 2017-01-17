@@ -3,7 +3,7 @@
 
 Project:        MA Game
 Version:        0.0.2
-Last change:    12/08/16 [Final Copy Edits, AD]
+Last change:    12/08/16 [Major layout changes]
 Assigned to:    ET, AD
 Primary use:    Digital Marketing
 
@@ -35,9 +35,8 @@ Primary use:    Digital Marketing
 #wrapper { min-height:96%; position:relative; }
 .header { background-color: #CDE3F4; text-align:center; position:relative; padding:.5em 0; }
 .header-home { background-color: #CDE3F4; text-align:center; position:relative; }
-.main, .results-main { display:block; position:relative; top:0; width:100%; }
+.main, .results-main { display:block; position:relative; width:100%; }
 .secondary { position: relative; }
-.foot { }
 .foot-cta { background-color: #B2B4BB; padding:1em; }
 .foot-cta-home { background-color: #848792; padding:1em;  bottom:0px;  bottom:0px; }
 #dynamicContentID0 div { width:30%; margin:auto; line-height:1.125; font-weight:bold; }
@@ -51,7 +50,7 @@ Primary use:    Digital Marketing
 .intro .content p { text-align:left; line-height:1.125; }
 .intro-home .content p { text-align:left; line-height:1.125; }
 .content { text-align:center; }
-.interact, .intro {  width:100%; z-index:100; }
+.interact, .intro {  width:100%; z-index:100; padding-top:2em; }
 .interact, .intro-home {   width:100%; z-index:100; }
 .interact button { background-color:#fff; border-color:#f07d00; color:#f07d00; border-radius:25px; border-width:1px; padding:0.25rem 0.95rem; margin:0; }
 .interact button:hover, .interact button:focus { background-color:#f07d00; }
@@ -82,7 +81,7 @@ body { font-size: 14px !important; }
 p { line-height: 1.5em !important; margin-bottom:5px !important; font-family: 'Open Sans', sans-serif !important; color: #404040 !important; }
 h3 { font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; }
 h4 { font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; line-height: 1.2em !important; }
-footer { position: absolute ; bottom:0;width:100%; height:30px; padding-top: 2em; height:4%;}
+footer { bottom:0;width:100%;  padding-top: 2em; /*height:4%;*/}
 
 /* ==========================================================================
 3.0 OVERLAY CONTROLS
@@ -152,6 +151,173 @@ footer { position: absolute ; bottom:0;width:100%; height:30px; padding-top: 2em
 }
 
 /* ==========================================================================
+5.7 TESTING
+========================================================================== */
+#white-space { height: 100px; background-color:#ffffff; }
+
+
+/* ==========================================================================
+5.7 CONSTRUCTION PAGE
+========================================================================== */
+#page-1 {
+    background: 
+        url(./images/const.png) no-repeat center / contain,
+        url(./images/crane.gif) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;
+}
+
+/* ==========================================================================
+5.7 B2B OR B2C?
+========================================================================== */
+#page-b2b { 
+    background:
+        url(./images/bulldozer.gif) no-repeat center / contain,
+        url(./images/dirt.png) no-repeat center / contain,
+        url(./images/b2b.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;
+}
+
+#page-b2c {
+    background:
+        url(./images/bulldozer.gif) no-repeat center / contain,
+        url(./images/dirt.png) no-repeat center / contain,
+        url(./images/b2c.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;
+}
+
+/* ==========================================================================
+5.7 DOES && DO SALES TEAM
+========================================================================== */
+#page-b2c-sales {
+    background:
+        url(./images/sales-team.gif) no-repeat center / contain,
+        url(./images/b2c.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;
+}
+
+#page-b2c-no-sales {
+    background:
+        url(./images/b2c.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;
+
+}
+
+#page-b2b-sales {
+    background:
+        url(./images/sales-team.gif) no-repeat center / contain,
+        url(./images/b2b.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;
+        /*SALES PEOPLE NEEDED*/
+}
+
+#page-b2b-no-sales {
+    background:
+        url(./images/b2b.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;
+
+}
+
+
+/* ==========================================================================
+5.7 ONLINE PURCHASING
+========================================================================== */
+
+#page-b2b-no-sales-no-crm {
+    background:
+        url(./images/b2b.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;   
+
+}
+
+#page-b2b-no-sales-yes-crm {
+    background:
+        url(./images/b2b.png) no-repeat center / contain,
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/background.png) repeat center / 100% 100%;     
+}
+
+#page-b2b-sales-yes-crm { 
+    background:
+
+        url(./images/sales-team.gif) no-repeat center / contain,
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;    
+}
+
+#page-b2c-sales-yes-crm {
+    background:
+        url(./images/sales-team.gif) no-repeat center / contain,
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%; 
+}
+
+#page-b2c-no-sales-yes-crm {
+    background:
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;     
+}
+
+#page-b2b-sales-no-crm {
+    background:
+        url(./images/sales-team.gif) no-repeat center / contain,
+        url(./images/b2b.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;    
+}
+
+#page-b2c-sales-no-crm {
+    background:
+        url(./images/sales-team.gif) no-repeat center / contain,
+        url(./images/b2c.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%;  
+}
+
+#page-b2c-no-sales-no-crm {
+    background:
+        url(./images/ribbon.png) no-repeat center/ cover,
+        url(./images/b2c.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%; 
+}
+
+/* ==========================================================================
+5.7 CONGRATULATIONS
+========================================================================== */
+#congratulations-b2b {
+    background:
+        url(./images/ribbon.png) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%; 
+}
+
+
+#congratulations-b2c {
+    background:
+        url(./images/ribbon.png) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain,
+        url(./images/background.png) repeat center / 100% 100%; 
+}
+
+
+body,html { width:100%; max-height:100%;}
+.wrapper { height:100%; max-height: 100%;  } 
+.header { height:auto;  }
+.interact { height:auto; }
+
+#force-bottom { position: relative; bottom: 0; width: 100%;  }
+.bottom-color {  position:fixed; bottom:0; background-color:red; height:25%; width:100%;}
+.footer { background-color:#b2b4bb; height:100%;}
+.footer-logo { position:fixed; width:100%; height:auto; bottom:0; }
+/* ==========================================================================
+5.8 TESTING BOXES
+========================================================================== */
+.header { border: 2px solid blue; }
+.interact { border: 2px solid red; }
+.layers-border { border: 2px solid green; }
+.foot-cta { border: 2px solid orange; }
+
+/* ==========================================================================
 5.1.1 IPHONE 5
 ========================================================================== */
 @media only screen 
@@ -201,34 +367,34 @@ and (max-device-width : 667px) {
     .interact, .intro-home {  }
     .interact { height:90px; }
     .welcome-interact { height:150px; margin-top:2em; }
-    .query { font-size:.75em; }
+    .query { font-size:.75em; padding-bottom:1em;}
     .interact button { font-size:1.1.6666em; /*padding: 0.15rem 0.75rem;*/ padding: .4rem 1.4rem; }
-    .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 75% / 150% 150%; }
-    .overlay.bgnd-2x { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 50% 75% / 100% 100%; }
+    .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 25% 25% / 100% 100%; }
+    .overlay.bgnd-2x { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 25% 25% / 100% 100%; }
     /*.overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-results.png) repeat-x scroll 50% 75% / 100% 100%; }*/
-    .overlay.bgnd-results-beta { background: url(./images/small-results.png) repeat-x scroll 50% 75% / 150% 150%; }
-    .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 75% / 150% 150%; }
-    .overlay.start.alpha { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 75% / 150% 150%; }
-    .overlay.start.beta { background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.result { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.alpha { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.beta { background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.delta { background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.epsilon { background: url(./images/mic-bc-grfx-main-b2c-open.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.two.feta { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.three.alpha { background: url(./images/mic-bc-grfx-main-team-yes.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.three.beta { background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.three.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.four.alpha { background: url(./images/mic-bc-grfx-main-crm-yes.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.four.beta { background: url(./images/mic-bc-grfx-main-crm-no.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.five.alpha { background: url(./images/mic-bc-grfx-main-os-yes.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.five.beta { background: url(./images/mic-bc-grfx-main-os-no.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.six.alpha { background: url(./images/mic-bc-grfx-main-ribbon.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.seven.alpha { background: url(./images/mic-bc-grfx-main-ribbon-shine.gif) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 50% 75% / 150% 150%; }
-    .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 50% 75% / 150% 150%; }
+    .overlay.bgnd-results-beta { background: url(./images/small-results.png) repeat-x scroll 25% 25% / 100% 100%; }
+    .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 25% 25% / 100% 100%; }
+    .overlay.start.alpha { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 25% 25% / 100% 100%; }
+    .overlay.start.beta { background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.result { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.alpha { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.beta { background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.delta { background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.epsilon { background: url(./images/mic-bc-grfx-main-b2c-open.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.feta { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.three.alpha { background: url(./images/mic-bc-grfx-main-team-yes.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.three.beta { background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.three.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.four.alpha { background: url(./images/mic-bc-grfx-main-crm-yes.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.four.beta { background: url(./images/mic-bc-grfx-main-crm-no.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.five.alpha { background: url(./images/mic-bc-grfx-main-os-yes.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.five.beta { background: url(./images/mic-bc-grfx-main-os-no.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.six.alpha { background: url(./images/mic-bc-grfx-main-ribbon.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.seven.alpha { background: url(./images/mic-bc-grfx-main-ribbon-shine.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 25% 25% / 100% 100%; }
     .clouds { width: 100%; }
     #dynamicContentID0 { }
     #dynamicContentID0 div { font-size:0.75em; }
@@ -248,6 +414,7 @@ and (max-device-width : 667px) {
     .spot2 { display:none; left: 35%; }
     .spot3 { display:none; }
     .sign { padding-top: .0125em; }
+    #force-bottom { margin-top: 12em; }
 } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -256,8 +423,8 @@ and (max-device-width : 667px) {
 5.3 MEDIUM SCREENS
 ========================================================================== */
 @media only screen and (min-width: 40.063em) {
-    footer { height: 2%; }
-    .foot-cta-home { margin-top:0em; }
+    footer {/* height: 2%;*/ }
+    .foot-cta-home { margin-top:0em; height:auto; position: absolute;}
     .intro .content .play-button { font-size:1.428em; }
     .intro-home .content .play-button { font-size:1.428em; }
     .start .content p { font-size: 1em !important; padding: 0 3em; }
@@ -268,7 +435,7 @@ and (max-device-width : 667px) {
     .main { top:15%; }
     .results-main { top:initial; }
     .results-main { display:block; position:relative; top:17%; width:100%; }
-    .interact, .intro { position:absolute;  }
+    .interact, .intro { position:relative;  }
     .interact-welcome { height: 50px; }
     .query { font-size:1.125em; }
     .interact button { font-size:1.125em; /*padding:0.25rem 0.95rem;*/ padding: .4rem 1.5rem; }
@@ -307,7 +474,7 @@ and (max-device-width : 667px) {
     #click-here-cloud { width: 100%; padding:1em 0; }
     #modalTitle { font-size:2em; }
     .reveal-modal .close-reveal-modal { font-size:40px !important; }
-    .foot-cta img { width: 31%; }
+    .foot-cta img { width: 15%; }
     .foot-cta-home img { width: 33%; margin: 0 auto; display:block; }
     .spot1 { display:initial; }
     .spot2 { left: 45%; -webkit-animation: move2 5s infinite; display:initial; }
@@ -316,7 +483,7 @@ and (max-device-width : 667px) {
     .spotlight { border-top: 260px solid rgba(255,255,255,0.25); border-left: 40px solid transparent; border-right: 40px solid transparent; }
     .welcome-paragraph { padding-top:0; }
     .welcome-main { top: 15%; }
-    .learn-interact { height: 0px; }
+    .learn-interact { }
     .party-hat { width:10%; padding-top:4em; }
     .spotlight { 
         filter: blur(7px;);
@@ -328,6 +495,9 @@ and (max-device-width : 667px) {
     .sign { padding-top: .75em; }
     .email-p { font-size: 1em !important; }
 
+
+    #force-bottom { margin-top:22em; }
+
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
@@ -336,12 +506,12 @@ and (max-device-width : 667px) {
 5.4 LARGE SCREENS
 ========================================================================== */
 @media only screen and (min-width: 64.063em) {
-    footer { height: 4%; }
+    footer { /*height: 4%*/ }
     .foot-cta-home img { width: 16%; }
     h3 { line-height:1.4em !important; }
     #click-here-cloud { width: 60%; padding-bottom:2em; }
     #dynamicContentIDY { margin-bottom: 3em; }
-    .main { /*top:15%;*/ top:0%; }
+    .main { }
     .interact, .intro { position:relative; }
     .query { font-size:1.125em; }
     .welcome-main { top: 0%; }
@@ -353,6 +523,10 @@ and (max-device-width : 667px) {
     .sign { padding-top: 1.125em; }
     .email-p { padding: 3em 0; }
     .arrow-controls { width: 50%; }
+
+    #force-bottom { margin-top: 10em; }
+    #clear { max-height: ; }
+
 
     /*.overlay.nine.alpha { background: url(./images/email-automation-button.png) no-repeat scroll 50% 75% / 150% 150%; }*/
 } /* min-width 1025px, large screens */
@@ -375,12 +549,7 @@ and (max-device-width : 667px) {
 ========================================================================== */
 @media only screen and (min-width: 120.063em) {
     .main { /*top:5%;*/ }
-    .interact, .intro { position:absolute; }
+    .interact, .intro { position:absolute;}
     .query { font-size:1.25em; }
 } /* min-width 1921px, xxlarge screens */
-
-/* ==========================================================================
-TESTING
-========================================================================== */
-
 

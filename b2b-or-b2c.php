@@ -41,31 +41,31 @@
 
 </head>
 <body class="boomcity">
-    <div class="header" style="border: 2px solid blue;">
-        <div class="row">
-            <div class="small-10 medium-4 small-centered columns">
-                <img src="./images/mic-bc-grfx-main-hdr.png" />
+    <div class="wrapper">
+        <div class="header">
+            <div class="row">
+                <div class="small-10 medium-4 small-centered columns">
+                    <img src="./images/mic-bc-grfx-main-hdr.png" />
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="interact" style="border: 2px solid red;">
-        <div class="row">
-            <div class="content small-10 small-centered columns">
-                <p class="query">Are your marketing initiatives targeted primarily to other businesses or to consumers?</p>
-                <button id="step2-a">B2B</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <button id="step2-b">B2C</button>
+        <div class="interact">
+            <div class="row">
+                <div class="content small-10 small-centered columns">
+                    <p class="query">Are your marketing initiatives targeted primarily to other businesses or to consumers?</p>
+                    <button id="step2-a">B2B</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="step2-b">B2C</button>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div id="force-bottom">
-        <div id="begin" style="border: 2px solid green;">
-        <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/></div>
-        <div class="foot-cta" style="border:2px solid orange;"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" style="margin:0 auto; display:block;"/></a>
+        
+        <div id="images">
+            <div id="page-1" class="layers-border">
+                <img src="./images/clear.png" id="clear"/></div>
+            <div class="footer" style="background-color:transparent;"></div>
         </div>
     </div>
-    <div class="bottom-color">TESTING HERE</div>
-    </body>
+</body>
 </html>
