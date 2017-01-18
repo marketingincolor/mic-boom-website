@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <?php error_reporting(0); 
-if ($_GET["type"] == "b2c" && $_GET["team"] == "yes") {
+//B2C && NO TEAM 
+if ($_GET["type"] == "b2c" && $_GET["team"] == "no") {
+    $boom_city_biz = "page-b2c-no-sales";
+}
+
+// B2C && TEAM
+elseif ($_GET["type"] == "b2c" && $_GET["team"] == "yes") {
     $boom_city_biz = "page-b2c-sales";
 }
-else {
+
+// B2B && NO TEAM
+elseif ( $_GET["type"] == "b2b" && $_GET["team"] == "no") {
+    $boom_city_biz = "page-b2b-no-sales";
+}
+
+// B2B && TEAM
+elseif ($_GET["type"] == "b2b" && $_GET["team"] == "yes") {
     $boom_city_biz = "page-b2b-sales";
 }
 ?>
@@ -69,13 +82,17 @@ else {
         </div>
 
         <div id="images">
-            <div id="<?php echo $boom_city_biz; ?>" class="layers-border">
-                <img src="./images/clear.png" id="clear" style="position:relative; background-size: 100% 100%;"/></div>
-            <div class="footer" style="border:2px solid orange;"></div>
+            <div id="<?php echo $boom_city_biz; ?>" class="layers-border row"><img src="./images/clear.png" id="clear"/></div>
         </div>
-<!--         <footer>
-            <div class="foot-cta-home" style="background-color:#b2b4bb !important;"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic_logo.png" /></a></div>
-        </footer> -->
+
+        <div class="foot">
+            <div class="row collapse">
+                <div class="content small-12 small-centered columns">
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </body>

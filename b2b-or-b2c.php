@@ -62,10 +62,17 @@
         </div>
         
         <div id="images">
-            <div id="page-1" class="layers-border">
-                <img src="./images/clear.png" id="clear"/></div>
-            <div class="footer" style="background-color:transparent;"></div>
+            <div id="page-1" class="row layers-border"><img src="./images/clear.png" id="clear"/></div>
         </div>
+
+        <div class="foot">
+            <div class="row collapse">
+                <div class="content small-12 small-centered columns">
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>

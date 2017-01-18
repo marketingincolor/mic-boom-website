@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<?php error_reporting(0); ?>
+<?php error_reporting(0); 
+
+
+?>
 <html lang="en"><?php include 'create-queries.php'; ?>
 <head>
 	<meta http-equiv="Pragma" content="no-cache">
@@ -61,13 +64,18 @@
             </div>
         </div>
         <div id="images">
-            <div id="page-online-purchasing" class="layers-border">
-                <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/></div>
-            <div class="footer" style="border:2px solid orange;"></div>
+            <div id="page-online-purchasing" class="layers-border row">
+                <img src="./images/clear.png" id="clear"/></div>
         </div>
+
+        <div class="foot">
+            <div class="row collapse">
+                <div class="content small-12 small-centered columns">
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
+            </div>
+        </div>
+
     </div>
-</body>
-
-
 </body>
 </html>

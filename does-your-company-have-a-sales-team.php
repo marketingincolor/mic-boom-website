@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<?php 
-error_reporting(0); 
-
-if ($_GET["type"] == "b2c" && $_GET[""]) {
+<?php error_reporting(0); 
+if ($_GET["type"] == "b2c") {
     $boom_city_biz = "page-b2c";
 }
 else {
     $boom_city_biz = "page-b2b";
 }
-
 ?>
 <html lang="en"><?php include 'create-queries.php'; ?>
 <head>
     <meta http-equiv="Pragma" content="no-cache">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta content="B2C" property="step1:value">
+    <meta content="B2B" property="step1:value">
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
@@ -72,13 +69,17 @@ else {
         </div>
 
         <div id="images">
-            <div id="<?php echo $boom_city_biz ?>" class="layers-border">
-                <img src="./images/clear.png" id="clear"/></div>
-            <div class="footer"></div>
+            <div id="<?php echo $boom_city_biz ?>" class="layers-border row"><img src="./images/clear.png" id="clear"/></div>
         </div>
-<!--         <footer>
-            <div class="foot-cta-home" style="background-color:#b2b4bb !important;"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic_logo.png" /></a></div>
-        </footer> -->
+
+        <div class="foot">
+            <div class="row collapse">
+                <div class="content small-12 small-centered columns">
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>

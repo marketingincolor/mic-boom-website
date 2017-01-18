@@ -49,8 +49,8 @@ Primary use:    Digital Marketing
 .intro-home .content .play-button { font-size:2.5em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
 .intro .content p { text-align:left; line-height:1.125; }
 .intro-home .content p { text-align:left; line-height:1.125; }
-.content { text-align:center; }
-.interact, .intro {  width:100%; z-index:100; padding-top:2em; }
+.content { text-align:center; margin-bottom:.53em; }
+.interact, .intro {  width:100%; z-index:100; padding-top:1em; background-color:#ffffff; }
 .interact, .intro-home {   width:100%; z-index:100; }
 .interact button { background-color:#fff; border-color:#f07d00; color:#f07d00; border-radius:25px; border-width:1px; padding:0.25rem 0.95rem; margin:0; }
 .interact button:hover, .interact button:focus { background-color:#f07d00; }
@@ -151,89 +151,80 @@ footer { bottom:0;width:100%;  padding-top: 2em; /*height:4%;*/}
 }
 
 /* ==========================================================================
-5.7 TESTING
+5.0 TESTING
 ========================================================================== */
 #white-space { height: 100px; background-color:#ffffff; }
 
+#images { background: rgba(255, 255, 255, 1) url(./images/background.png) repeat center / 100% 100%; text-align:center; }
+#images div { width:auto; margin:0 auto; display:inline-block; }
+body { background-color:#B2B4BB !important; }
+.foot { background-color:#B2B4BB; }
 
 /* ==========================================================================
-5.7 CONSTRUCTION PAGE
+5.1 CONSTRUCTION PAGE
 ========================================================================== */
 #page-1 {
     background: 
         url(./images/const.png) no-repeat center / contain,
-        url(./images/crane.gif) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;
+        url(./images/crane.gif) no-repeat center / contain;
 }
 
 /* ==========================================================================
-5.7 B2B OR B2C?
+5.2 B2B OR B2C?
 ========================================================================== */
 #page-b2b { 
     background:
         url(./images/bulldozer.gif) no-repeat center / contain,
         url(./images/dirt.png) no-repeat center / contain,
-        url(./images/b2b.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;
+        url(./images/b2b.png) no-repeat center / contain;
 }
 
 #page-b2c {
     background:
         url(./images/bulldozer.gif) no-repeat center / contain,
         url(./images/dirt.png) no-repeat center / contain,
-        url(./images/b2c.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;
+        url(./images/b2c.png) no-repeat center / contain;
 }
 
 /* ==========================================================================
-5.7 DOES && DO SALES TEAM
+5.3 SALES TEAM
 ========================================================================== */
 #page-b2c-sales {
     background:
         url(./images/sales-team.gif) no-repeat center / contain,
-        url(./images/b2c.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;
+        url(./images/b2c.png) no-repeat center / contain;
 }
 
 #page-b2c-no-sales {
     background:
-        url(./images/b2c.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;
-
+        url(./images/b2c.png) no-repeat center / contain;
 }
 
 #page-b2b-sales {
     background:
         url(./images/sales-team.gif) no-repeat center / contain,
-        url(./images/b2b.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;
-        /*SALES PEOPLE NEEDED*/
+        url(./images/b2b.png) no-repeat center / contain;
 }
 
 #page-b2b-no-sales {
     background:
-        url(./images/b2b.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;
-
+        url(./images/b2b.png) no-repeat center / contain;
 }
 
-
 /* ==========================================================================
-5.7 ONLINE PURCHASING
+5.4 CRM
 ========================================================================== */
 
 #page-b2b-no-sales-no-crm {
     background:
-        url(./images/b2b.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;   
-
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain;
 }
 
 #page-b2b-no-sales-yes-crm {
     background:
-        url(./images/b2b.png) no-repeat center / contain,
         url(./images/crm.gif) no-repeat center/ contain,
-        url(./images/background.png) repeat center / 100% 100%;     
+        url(./images/b2b.png) no-repeat center / contain;  
 }
 
 #page-b2b-sales-yes-crm { 
@@ -241,44 +232,51 @@ footer { bottom:0;width:100%;  padding-top: 2em; /*height:4%;*/}
 
         url(./images/sales-team.gif) no-repeat center / contain,
         url(./images/crm.gif) no-repeat center/ contain,
-        url(./images/b2b.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;    
+        url(./images/b2b.png) no-repeat center / contain;
 }
 
 #page-b2c-sales-yes-crm {
     background:
         url(./images/sales-team.gif) no-repeat center / contain,
         url(./images/crm.gif) no-repeat center/ contain,
-        url(./images/b2c.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%; 
+        url(./images/b2c.png) no-repeat center / contain;
 }
 
 #page-b2c-no-sales-yes-crm {
     background:
         url(./images/crm.gif) no-repeat center/ contain,
-        url(./images/b2c.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;     
+        url(./images/b2c.png) no-repeat center / contain;
 }
 
 #page-b2b-sales-no-crm {
     background:
+        url(./images/nocrm.gif) no-repeat center/ contain,
         url(./images/sales-team.gif) no-repeat center / contain,
-        url(./images/b2b.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;    
+        url(./images/b2b.png) no-repeat center / contain;
 }
 
 #page-b2c-sales-no-crm {
     background:
+        url(./images/nocrm.gif) no-repeat center/ contain,
         url(./images/sales-team.gif) no-repeat center / contain,
-        url(./images/b2c.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%;  
+        url(./images/b2c.png) no-repeat center / contain;
 }
 
 #page-b2c-no-sales-no-crm {
     background:
-        url(./images/ribbon.png) no-repeat center/ cover,
-        url(./images/b2c.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%; 
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain;
+}
+
+/* ==========================================================================
+5.7 ONLINE PURCHASING
+========================================================================== */
+
+#page-b2b-no-sales-no-crm-no-online {
+    background:
+        url(./images/nooline.gif) no-repeat center/ contain,
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain;
 }
 
 /* ==========================================================================
@@ -287,16 +285,14 @@ footer { bottom:0;width:100%;  padding-top: 2em; /*height:4%;*/}
 #congratulations-b2b {
     background:
         url(./images/ribbon.png) no-repeat center/ contain,
-        url(./images/b2b.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%; 
+        url(./images/b2b.png) no-repeat center / contain;
 }
 
 
 #congratulations-b2c {
     background:
         url(./images/ribbon.png) no-repeat center/ contain,
-        url(./images/b2c.png) no-repeat center / contain,
-        url(./images/background.png) repeat center / 100% 100%; 
+        url(./images/b2c.png) no-repeat center / contain;
 }
 
 
@@ -349,8 +345,8 @@ and (max-device-width : 667px) {
     .intro .content .play-button { font-size:1.28em; }
     .intro-home .content .play-button { font-size:1.28em; }
     .start .content p { font-size: 1em !important; }
-    .foot-cta img { width: 65%; }
-    .foot-cta img { width: 65%; }
+    /*.foot-cta img { width: 65%; }*/
+    /*.foot-cta img { width: 65%; }*/
     .foot-cta-home img { width: 65%; display: block; margin: 0 auto; }
     .content h3 { font-size: 1.45em !important; font-weight:600 !important; margin-bottom: 0.25em; }
     .content h4 { font-size: 1.125em; font-weight:bold !important; margin-bottom: 0.25em; }
@@ -365,9 +361,9 @@ and (max-device-width : 667px) {
     .email-p { padding: 2em 0; }
     .interact, .intro { position:relative; }
     .interact, .intro-home {  }
-    .interact { height:90px; }
+    /*.interact { height:90px; }*/
     .welcome-interact { height:150px; margin-top:2em; }
-    .query { font-size:.75em; padding-bottom:1em;}
+    .query { font-size:.75em; /*padding-bottom:1em;*/}
     .interact button { font-size:1.1.6666em; /*padding: 0.15rem 0.75rem;*/ padding: .4rem 1.4rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 25% 25% / 100% 100%; }
     .overlay.bgnd-2x { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 25% 25% / 100% 100%; }
@@ -474,7 +470,7 @@ and (max-device-width : 667px) {
     #click-here-cloud { width: 100%; padding:1em 0; }
     #modalTitle { font-size:2em; }
     .reveal-modal .close-reveal-modal { font-size:40px !important; }
-    .foot-cta img { width: 15%; }
+    /*.foot-cta img { width: 15%; }*/
     .foot-cta-home img { width: 33%; margin: 0 auto; display:block; }
     .spot1 { display:initial; }
     .spot2 { left: 45%; -webkit-animation: move2 5s infinite; display:initial; }
