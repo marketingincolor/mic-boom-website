@@ -504,6 +504,7 @@ and (max-device-width : 667px) {
     .email-p { padding: 2em 0; }
     .interact, .intro { position:relative; }
     .interact, .intro-home {  }
+    .interact { padding: 2em 0em; }
     /*.interact { height:90px; }*/
     .welcome-interact { height:150px; margin-top:2em; }
     .query { font-size:.75em; /*padding-bottom:1em;*/}
@@ -576,6 +577,7 @@ and (max-device-width : 667px) {
     .results-main { display:block; position:relative; top:17%; width:100%; }
     .interact, .intro { position:relative;  }
     .interact-welcome { height: 50px; }
+    .interact { padding:6em 0em; }
     .query { font-size:1.125em; }
     .interact button { font-size:1.125em; /*padding:0.25rem 0.95rem;*/ padding: .4rem 1.5rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 25% / 100% 100%; }
@@ -688,7 +690,7 @@ and (max-device-width : 667px) {
 ========================================================================== */
 @media only screen and (min-width: 120.063em) {
     .main { /*top:5%;*/ }
-    .interact, .intro { position:absolute;}
+    .interact, .intro { position:relative;}
     .query { font-size:1.25em; }
 } /* min-width 1921px, xxlarge screens */
 
