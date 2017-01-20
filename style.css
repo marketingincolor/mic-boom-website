@@ -157,7 +157,7 @@ footer { bottom:0;width:100%;  padding-top: 2em; /*height:4%;*/}
 ========================================================================== */
 #white-space { height: 100px; background-color:#ffffff; }
 
-#images { background: rgba(255, 255, 255, 1) url(./images/background.png) repeat center / 100% 100%; text-align:center; }
+#images { background: rgba(255, 255, 255, 1) url(./images/background.png) repeat-x center / contain; text-align:center; }
 #images div { width:auto; margin:0 auto; display:inline-block; }
 body { background-color:#B2B4BB !important; }
 .foot { background-color:#B2B4BB; }
