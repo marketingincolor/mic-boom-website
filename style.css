@@ -32,6 +32,7 @@ Primary use:    Digital Marketing
 1.0 MAIN
 ========================================================================== */
 .boomcity { }
+.foot { position:absolute; bottom:0px; width:100%; }
 .foot-cta img { width:40%; }
 #wrapper { min-height:96%; position:relative; }
 .header { background-color: #CDE3F4; text-align:center; position:relative; padding:.5em 0; }

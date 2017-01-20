@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <?php error_reporting(0); 
 
-
 if ( isset($_GET["type"]) && $_GET["type"] == "b2b") {
     $congratulations = "congratulations-b2b";
 }
 else {
     $congratulations = "congratulations-b2c";
 }
-
-
 
 ?>
 <html lang="en"><?php include 'create-queries.php'; ?>
@@ -62,14 +59,18 @@ else {
             </div>
         </div>
 
-        <div id="force-bottom">
+        <div id="images">
             <div id="<?php echo $congratulations ?>" class="layers-border">
                 <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/></div>
         </div>
 
-<!--         <footer>
-            <div class="foot-cta-home" style="background-color:#b2b4bb !important;"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic_logo.png" /></a></div>
-        </footer> -->
+        <div class="foot">
+            <div class="row collapse">
+                <div class="content small-12 small-centered columns">
+                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
+                </div>
+            </div>
+        </div>
     </div>
 
 <?php include 'page-includes.php'; ?>
