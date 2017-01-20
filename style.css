@@ -32,6 +32,7 @@ Primary use:    Digital Marketing
 1.0 MAIN
 ========================================================================== */
 .boomcity { }
+.foot-cta img { width:40%; }
 #wrapper { min-height:96%; position:relative; }
 .header { background-color: #CDE3F4; text-align:center; position:relative; padding:.5em 0; }
 .header-home { background-color: #CDE3F4; text-align:center; position:relative; }
@@ -186,6 +187,7 @@ body { background-color:#B2B4BB !important; }
         url(./images/b2c.png) no-repeat center / contain;
 }
 
+
 /* ==========================================================================
 5.3 SALES TEAM
 ========================================================================== */
@@ -211,6 +213,16 @@ body { background-color:#B2B4BB !important; }
         url(./images/b2b.png) no-repeat center / contain;
 }
 
+#just-b2c-building { 
+    background:
+        url(./images/b2c.png) no-repeat center / contain;
+}
+
+#just-b2b-building {
+    background:
+        url(./images/b2c.png) no-repeat center / contain;
+}
+
 /* ==========================================================================
 5.4 CRM
 ========================================================================== */
@@ -220,13 +232,11 @@ body { background-color:#B2B4BB !important; }
         url(./images/nocrm.gif) no-repeat center/ contain,
         url(./images/b2b.png) no-repeat center / contain;
 }
-
 #page-b2b-no-sales-yes-crm {
     background:
         url(./images/crm.gif) no-repeat center/ contain,
         url(./images/b2b.png) no-repeat center / contain;  
 }
-
 #page-b2b-sales-yes-crm { 
     background:
 
@@ -234,34 +244,29 @@ body { background-color:#B2B4BB !important; }
         url(./images/crm.gif) no-repeat center/ contain,
         url(./images/b2b.png) no-repeat center / contain;
 }
-
 #page-b2c-sales-yes-crm {
     background:
         url(./images/sales-team.gif) no-repeat center / contain,
         url(./images/crm.gif) no-repeat center/ contain,
         url(./images/b2c.png) no-repeat center / contain;
 }
-
 #page-b2c-no-sales-yes-crm {
     background:
         url(./images/crm.gif) no-repeat center/ contain,
         url(./images/b2c.png) no-repeat center / contain;
 }
-
 #page-b2b-sales-no-crm {
     background:
         url(./images/nocrm.gif) no-repeat center/ contain,
         url(./images/sales-team.gif) no-repeat center / contain,
         url(./images/b2b.png) no-repeat center / contain;
 }
-
 #page-b2c-sales-no-crm {
     background:
         url(./images/nocrm.gif) no-repeat center/ contain,
         url(./images/sales-team.gif) no-repeat center / contain,
         url(./images/b2c.png) no-repeat center / contain;
 }
-
 #page-b2c-no-sales-no-crm {
     background:
         url(./images/nocrm.gif) no-repeat center/ contain,
@@ -278,6 +283,143 @@ body { background-color:#B2B4BB !important; }
         url(./images/nocrm.gif) no-repeat center/ contain,
         url(./images/b2b.png) no-repeat center / contain;
 }
+
+/* ==========================================================================
+5.7 CUSTOMER PURCHASE FREQUENCY B2C
+========================================================================== */
+
+#page-b2c-sales-yes-crm-yes-online {
+    background:
+        url(./images/online.gif) no-repeat center/ contain,
+        url(./images/sales-team.gif) no-repeat center/ contain,
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain;
+}
+#page-b2c-sales-yes-crm-no-online {
+    background:
+        url(./images/noonline.gif) no-repeat center/ contain,
+    	url(./images/sales-team.gif) no-repeat center/ contain,
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain;
+}
+#page-b2c-sales-no-crm-yes-online {
+    background:
+     	url(./images/online.gif) no-repeat center/ contain,
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/sales-team.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain;
+}
+#page-b2c-sales-no-crm-no-online {
+    background:
+        url(./images/noonline.gif) no-repeat center/ contain,
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/sales-team.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain;
+}
+#page-b2c-no-sales-no-crm-yes-online {
+    background:
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/online.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain
+}
+#page-b2c-no-sales-yes-crm-yes-online {
+    background:
+        url(./images/online.gif) no-repeat center/ contain,
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain;
+}
+#page-b2c-no-sales-no-crm-yes-online {
+    background:
+        url(./images/nocrm.gif) no-repeat center/ contain,
+    	url(./images/online.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain;
+}
+
+#page-b2c-no-sales-no-crm-no-online {
+    background:
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/noonline.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain;
+}
+
+#page-b2c-no-sales-yes-crm-no-online { 
+    background:
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/noonline.gif) no-repeat center/ contain,
+        url(./images/b2c.png) no-repeat center / contain;
+}
+
+/* ==========================================================================
+5.7 CUSTOMER PURCHASE FREQUENCY B2B
+========================================================================== */
+
+#page-b2b-sales-yes-crm-yes-online {
+    background:
+        url(./images/online.gif) no-repeat center/ contain,
+        url(./images/sales-team.gif) no-repeat center/ contain,
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain;
+}
+#page-b2b-sales-yes-crm-no-online {
+    background:
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/online.gif) no-repeat center/ contain,
+        url(./images/sales-team.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain;
+}
+#page-b2b-sales-no-crm-yes-online {
+    background:
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/online.gif) no-repeat center/ contain,
+        url(./images/sales-team.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain;
+}
+#page-b2b-sales-no-crm-no-online {
+    background:
+        url(./images/noonline.gif) no-repeat center/ contain,
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/sales-team.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain;
+}
+#page-b2b-no-sales-no-crm-yes-online {
+    background:
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/online.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain
+}
+#page-b2b-no-sales-yes-crm-no-online {
+    background:
+        url(./images/noonline.gif) no-repeat center/ contain,
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain;
+}
+#page-b2b-no-sales-yes-crm-yes-online {
+    background:
+        url(./images/online.gif) no-repeat center/ contain,
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain;
+}
+#page-b2b-sales-yes-crm-no-online {
+    background:
+        url(./images/noonline.gif) no-repeat center/ contain,
+        url(./images/sales-team.gif) no-repeat center/ contain,
+        url(./images/crm.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain;
+}
+#page-b2b-no-sales-no-crm-yes-online {
+    background:
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/online.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center / contain;
+}
+
+#page-b2b-no-sales-no-crm-no-online {
+    background:
+        url(./images/nocrm.gif) no-repeat center/ contain,
+        url(./images/noonline.gif) no-repeat center/ contain,
+        url(./images/b2b.png) no-repeat center/ contain;
+}
+
 
 /* ==========================================================================
 5.7 CONGRATULATIONS

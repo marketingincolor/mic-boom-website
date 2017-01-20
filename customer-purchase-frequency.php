@@ -1,54 +1,121 @@
 <!DOCTYPE html>
-<?php error_reporting(0); 
+<?php 
 
-// B2C && NO TEAM && YES CRM
-if ($_GET["type"] == "b2c" && $_GET["team"] == "no" && $_GET["crm"] == "yes") {
-    $boom_city_biz = "page-b2c-no-sales-yes-crm";
+error_reporting(0); 
+
+/* ==========================================================================
+IF B2B && ONLINE
+========================================================================== */
+if ( $_GET["type"] == "b2b" && $_GET["online"] == "yes") {
+
+    //B2B && YES TEAM && YES CRM && YES ONLINE
+    if ( $_GET["type"] == "b2b" && $_GET["team"] =="yes" && $_GET["crm"] =="yes" && $_GET["online"] == "yes" ) {
+        $boom_city_biz ="page-b2b-sales-yes-crm-yes-online";
+
+    }
+    //B2B && YES TEAM && NO CRM && YES ONLINE
+    elseif ( $_GET["type"] == "b2b" && $_GET["team"] =="yes" && $_GET["crm"] =="no" && $_GET["online"] == "yes" ) {
+        $boom_city_biz ="page-b2b-sales-no-crm-yes-online";
+    }
+    //B2B && NO TEAM && NO CRM && YES ONLINE
+    elseif ( $_GET["type"] == "b2b" && $_GET["team"] =="no" && $_GET["crm"] =="no" && $_GET["online"] == "yes" ) {
+        $boom_city_biz ="page-b2b-no-sales-no-crm-yes-online";
+
+    }
+    //B2B && NO TEAM && YES CRM && YES ONLINE
+    elseif ( $_GET["type"] == "b2b" && $_GET["team"] =="no" && $_GET["crm"] =="yes" && $_GET["online"] == "yes" ) {
+        $boom_city_biz ="page-b2b-no-sales-yes-crm-yes-online";
+    }
 }
 
-// B2B && NO TEAM && YES CRM
-elseif ($_GET["type"] == "b2b" && $_GET["team"] == "no" && $_GET["crm"] == "yes") {
-    $boom_city_biz = "page-b2b-no-sales-yes-crm";
-}
+/* ==========================================================================
+ELSEIF B2B && NOT ONLINE
+========================================================================== */
+elseif ( $_GET["type"] == "b2b" && $_GET["online"] == "no" ) {
 
-// B2C && YES TEAM && NO CRM
-elseif ( $_GET["type"] == "b2c" && $_GET["team"] == "yes" && $_GET["crm"] == "no") {
-    $boom_city_biz = "page-b2c-sales-no-crm";
-}
+    // B2B && NO TEAM && NO CRM && NO ONLINE
+    if ( $_GET["type"] == "b2b" && $_GET["team"] =="no" && $_GET["crm"] =="no" && $_GET["online"] == "no" ) {
+        $boom_city_biz ="page-b2b-no-sales-no-crm-no-online";
+    }
+    // B2B && YES TEAM && NO CRM && NO ONLINE
+    elseif ( $_GET["type"] == "b2b" && $_GET["team"] =="yes" && $_GET["crm"] =="no" && $_GET["online"] == "no" ) {
+        $boom_city_biz ="page-b2b-sales-no-crm-no-online";
+    }
+    // B2B && YES TEAM && YES CRM && NO ONLINE
+    elseif ( $_GET["type"] == "b2b" && $_GET["team"] =="yes" && $_GET["crm"] =="yes" && $_GET["online"] == "no" ) {
+        $boom_city_biz ="page-b2b-sales-yes-crm-no-online";
+    }
+    // B2B && NO TEAM && NO CRM && YES ONLINE
+    elseif ( $_GET["type"] == "b2b" && $_GET["team"] =="no" && $_GET["crm"] =="no" && $_GET["online"] == "yes" ) {
+        $boom_city_biz ="page-b2b-no-sales-no-crm-yes-online";
+    }
+    // B2B && NO TEAM && YES CRM && NO ONLINE
+    elseif ( $_GET["type"] == "b2b" && $_GET["team"] =="no" && $_GET["crm"] =="yes" && $_GET["online"] == "no" ) {
+        $boom_city_biz ="page-b2b-no-sales-yes-crm-no-online";
+    }
 
-// B2B && YES TEAM && YES CRM
-elseif ($_GET["type"] == "b2b" && $_GET["team"] == "yes" && $_GET["crm"] == "yes") {
-    $boom_city_biz = "page-b2b-sales-yes-crm";
-}
-
-// B2B && NO TEAM && NO CRM
-elseif ($_GET["type"] == "b2b" && $_GET["team"] == "no" && $_GET["crm"] == "no") {
-    $boom_city_biz = "page-b2b-no-sales-no-crm";
-}
-
-// B2B && YES TEAM && YES CRM
-elseif ($_GET["type"] == "b2b" && $_GET["team"] == "yes" && $_GET["crm"] == "yes") {
-    $boom_city_biz = "page-b2b-sales-yes-crm";
-}
-
-// B2C && YES TEAM && YES CRM
-elseif ($_GET["type"] == "b2c" && $_GET["team"] == "yes" && $_GET["crm"] == "yes") {
-    $boom_city_biz = "page-b2c-sales-yes-crm";
-}
-
-// B2B && YES TEAM && NO CRM
-elseif ($_GET["type"] == "b2b" && $_GET["team"] == "yes" && $_GET["crm"] == "no") {
-    $boom_city_biz = "page-b2b-sales-no-crm";
-}
-
-// B2C && NO TEAM && NO CRM
-elseif ($_GET["type"] == "b2c" && $_GET["team"] == "no" && $_GET["crm"] == "no") {
-    $boom_city_biz = "page-b2c-no-sales-no-crm";
 }
 
 
+/* ==========================================================================
+IF B2C && ONLINE
+========================================================================== */
+if ( $_GET["type"] == "b2c" && $_GET["online"] == "yes") {
 
+    //B2C && YES TEAM && YES CRM && YES ONLINE
+    if ( $_GET["type"] == "b2c" && $_GET["team"] =="yes" && $_GET["crm"] =="yes" && $_GET["online"] == "yes" ) {
+    	$boom_city_biz ="page-b2c-sales-yes-crm-yes-online";
 
+    }
+    //B2C && YES TEAM && NO CRM && YES ONLINE
+    elseif ( $_GET["type"] == "b2c" && $_GET["team"] =="yes" && $_GET["crm"] =="no" && $_GET["online"] == "yes" ) {
+        $boom_city_biz ="page-b2c-sales-no-crm-yes-online";
+    }
+    //B2C && NO TEAM && NO CRM && YES ONLINE
+    elseif ( $_GET["type"] == "b2c" && $_GET["team"] =="no" && $_GET["crm"] =="no" && $_GET["online"] == "yes" ) {
+        $boom_city_biz ="page-b2c-no-sales-no-crm-yes-online";
+
+    }
+    //B2C && NO TEAM && YES CRM && YES ONLINE
+    elseif ( $_GET["type"] == "b2c" && $_GET["team"] =="no" && $_GET["crm"] =="yes" && $_GET["online"] == "yes" ) {
+        $boom_city_biz ="page-b2c-no-sales-yes-crm-yes-online";
+    }
+}
+
+/* ==========================================================================
+ELSEIF B2C && NOT ONLINE
+========================================================================== */
+elseif ( $_GET["type"] == "b2c" && $_GET["online"] == "no" ) {
+
+    //B2C && NO TEAM && NO CRM && NO ONLINE
+    if ( $_GET["type"] == "b2c" && $_GET["team"] =="no" && $_GET["crm"] =="no" && $_GET["online"] == "no" ) {
+        $boom_city_biz ="page-b2c-no-sales-no-crm-no-online";
+    }
+
+    //B2C && YES TEAM && NO CRM && NO ONLINE
+    elseif ( $_GET["type"] == "b2c" && $_GET["team"] =="yes" && $_GET["crm"] =="no" && $_GET["online"] == "no" ) {
+        $boom_city_biz ="page-b2c-sales-no-crm-no-online";
+    }
+    //type=b2c&team=yes&crm=yes&online=no
+    elseif ( $_GET["type"] == "b2c" && $_GET["team"] =="yes" && $_GET["crm"] =="yes" && $_GET["online"] == "no" ) {
+        $boom_city_biz ="page-b2c-sales-yes-crm-no-online";
+    }
+
+    //type=b2c&team=no&crm=no&online=yes
+    elseif ( $_GET["type"] == "b2c" && $_GET["team"] =="no" && $_GET["crm"] =="no" && $_GET["online"] == "yes" ) {
+        $boom_city_biz ="page-b2c-no-sales-no-crm-yes-online";
+    }
+
+    //type=b2c&team=no&crm=yes&online=no
+    elseif ( $_GET["type"] == "b2c" && $_GET["team"] =="no" && $_GET["crm"] =="no" && $_GET["online"] == "yes" ) {
+        $boom_city_biz ="page-b2c-no-sales-no-crm-yes-online";
+    }
+
+    // B2C && NO TEAM && YES CRM && NO ONLINE
+    elseif ( $_GET["type"] == "b2c" && $_GET["team"] =="no" && $_GET["crm"] =="yes" && $_GET["online"] == "no" ) {
+        $boom_city_biz ="page-b2c-no-sales-yes-crm-no-online";
+    }
+}
 ?>
 <html lang="en"><?php include 'create-queries.php'; ?>
 <head>
