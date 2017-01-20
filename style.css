@@ -32,7 +32,6 @@ Primary use:    Digital Marketing
 1.0 MAIN
 ========================================================================== */
 .boomcity { }
-.foot { position:absolute; bottom:0px; width:100%; }
 .foot-cta img { width:40%; }
 #wrapper { min-height:96%; position:relative; }
 .header { background-color: #CDE3F4; text-align:center; position:relative; padding:.5em 0; }
@@ -427,17 +426,16 @@ body { background-color:#B2B4BB !important; }
 ========================================================================== */
 #congratulations-b2b {
     background:
-        url(./images/ribbon.png) no-repeat center/ contain,
+        /*url(./images/ribbon.png) no-repeat center/ contain,*/
         url(./images/b2b.png) no-repeat center / contain;
 }
 
 
 #congratulations-b2c {
     background:
-        url(./images/ribbon.png) no-repeat center/ contain,
+        /*url(./images/ribbon.png) no-repeat center/ contain,*/
         url(./images/b2c.png) no-repeat center / contain;
 }
-
 
 body,html { width:100%; max-height:100%;}
 .wrapper { height:100%; max-height: 100%;  } 
@@ -451,11 +449,11 @@ body,html { width:100%; max-height:100%;}
 /* ==========================================================================
 5.8 TESTING BOXES
 ========================================================================== */
-.header { border: 2px solid blue; }
+/*.header { border: 2px solid blue; }
 .interact { border: 2px solid red; }
 .layers-border { border: 2px solid green; }
 .foot-cta { border: 2px solid orange; }
-
+*/
 /* ==========================================================================
 5.1.1 IPHONE 5
 ========================================================================== */
@@ -577,7 +575,7 @@ and (max-device-width : 667px) {
     .results-main { display:block; position:relative; top:17%; width:100%; }
     .interact, .intro { position:relative;  }
     .interact-welcome { height: 50px; }
-    .interact { padding:6em 0em; }
+    .interact { padding:2em 0em 5em 0em; }
     .query { font-size:1.125em; }
     .interact button { font-size:1.125em; /*padding:0.25rem 0.95rem;*/ padding: .4rem 1.5rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 25% / 100% 100%; }
@@ -625,7 +623,7 @@ and (max-device-width : 667px) {
     .welcome-paragraph { padding-top:0; }
     .welcome-main { top: 15%; }
     .learn-interact { }
-    .party-hat { width:10%; padding-top:4em; }
+    .party-hat { width:10%; }
     .spotlight { 
         filter: blur(7px;);
         -webkit-filter: blur(7px);
@@ -658,7 +656,7 @@ and (max-device-width : 667px) {
     .welcome-main { top: 0%; }
     .welcome-p { font-size:1em !important; }
     .content p { font-size: 1em; }
-    .party-hat { padding-top:3em; width: 4%; }
+    .party-hat { width: 4%; }
     .results-clouds { padding-top:6em !important; }
     .results-main { top: 15%; }
     .sign { padding-top: 1.125em; }

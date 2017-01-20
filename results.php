@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php error_reporting(0); ?>
+
 <html lang="en"><?php //include 'create-queries.php'; ?>
 <head>
     <meta charset="utf-8" />
@@ -80,36 +80,17 @@
         </div>
     </div>
 
-    <div class="results-main">
-        <div class="row medium-collapse">
-            <div class="small-12 small-centered columns">
-                <div class="overlay bgnd-results-beta show-for-small-only"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay bgnd-results show-for-medium-up"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+    <div class="images">
+        <div class="row">
 
-                <div id="type_alpha" class="overlay type two alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="type_beta" class="overlay type two epsilon"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="company_name" class="overlay busname">
-                    <img src="./images/mic-bc-grfx-main-clear-name-small.png" class="show-for-small-only">
-                    <img src="./images/mic-bc-grfx-main-clear-name.png" class="show-for-medium-up" />
-                    <div id="dynamicContentID0">&nbsp;</div>
-                </div>
-                <div id="team_alpha" class="overlay team three alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="team_beta" class="overlay team three beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="crm_alpha" class="overlay crm four alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="crm_beta" class="overlay crm four beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="online_alpha" class="overlay online five alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="online_beta" class="overlay online five beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="frequency_alpha" class="overlay frequency six alpha off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="owner_alpha" class="overlay owner eight alpha"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div id="owner_beta" class="overlay owner eight beta"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-                <div class="overlay foot">
-                    <img src="./images/mic-bc-grfx-main-clear.png" /></br>
-                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
-                </div>
             </div>
         </div>
     </div>
+
+<!--     <div id="images">
+        <div id="<?php #echo $congratulations ?>" class="row layers-border">
+            <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/></div>
+    </div> -->
     <div id="modal-content">
         <div class="row">
             <div id="ea-modal" xid="dynamicContentID1" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">
