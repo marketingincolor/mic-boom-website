@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <?php error_reporting(0);
 
-if ($_GET["type"] == "b2c" && $_GET["team"] == "no") {
-    $boom_city_biz = "page-b2c-no-sales";
+if ( isset($_GET["type"]) && $_GET["type"] == "b2b") {
+    $boom_city_biz = "congratulations-b2b";
 }
 else {
-    $boom_city_biz = "page-b2c-sales";
+    $boom_city_biz = "congratulations-b2c";
 }
 
 ?>
@@ -36,33 +36,30 @@ else {
     </script>
 
 </head>
-<body class="boomcity">
+<body class="boomcity body-page">
+
+    <!-- WRAPPER -->
     <div class="wrapper">
-        <div class="header">
-            <div class="row">
-                <div class="small-10 medium-4 small-centered columns">
-                    <img src="./images/mic-bc-grfx-main-hdr.png" />
+
+        <!-- EVERYTHING EXCEPT FOOTER -->
+        <div class="everything">
+
+            <!-- HEADER -->
+            <?php require 'templates/header.php'; ?>
+
+            <!-- INTERACT -->
+            <?php require 'templates/congrats-interact.php'; ?>
+            
+            <!-- IMAGES -->
+            <div id="images">
+                <div id="<?php echo $boom_city_biz ?>" class="row layers-border">
+                    <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/>
                 </div>
             </div>
-        </div>
 
-        <div class="interact">
-        <img src="images/party-icon.png" alt="Party Hat Icon" class="party-hat">
-            <div class="row">
-                <div class="content small-10 medium-8 large-6 small-centered columns">
-                <!-- <img src="images/party-icon.png" alt="Party Hat Icon" class="party-hat"> -->
-                    <h3>Congratulations!</h3>
-                    <h4 class="congrats-headline">Your Boom City business is almost ready to open its doors. Give the Boom City crew a few minutes to hang the sign on the storefront, then check your email to check it out!</h4>
-                    <p class="learn-p">You’ll also learn how marketing automation gets your business booming – in Boom City and in real life!</p>
-                </div>
-            </div>
         </div>
-
-        <div id="images">
-            <div id="<?php echo $boom_city_biz ?>" class="layers-border">
-                <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/></div>
-            <div class="footer"></div>
-        </div>
+        <!-- FOOTER -->
+        <?php require 'templates/footer.php'; ?>
     </div>
 <?php include 'page-includes.php'; ?>
 </body>

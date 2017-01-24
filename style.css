@@ -32,9 +32,15 @@ Primary use:    Digital Marketing
 1.0 MAIN
 ========================================================================== */
 .boomcity { }
-.foot-cta img { width:40%; }
+.interact p:nth-child(2) { padding-bottom:.5em; }
+.everything { min-height: 90%; }
+.else { height: 10%; }
+.index-p { padding-bottom:1em; }
+.foot-cta img { width:80%; }
+.foot-cta-index img { width:80%; padding:1em; }
+.footer-home { background-color: #848792 !important; }
 #wrapper { min-height:96%; position:relative; }
-.header { background-color: #CDE3F4; text-align:center; position:relative; padding:.5em 0; }
+.header { background-color: #CDE3F4; text-align:center; position:relative; padding:1em 0em; }
 .header-home { background-color: #CDE3F4; text-align:center; position:relative; }
 .main, .results-main { display:block; position:relative; width:100%; }
 .secondary { position: relative; }
@@ -44,12 +50,12 @@ Primary use:    Digital Marketing
 #dynamicContentClick { /*display:inline-block;*/ }
 #container { height:100%; }
 #modalTitle { color:#f07d00; font-weight:bold; }
-.start .content p:last-child { margin-bottom:2em; }
+/*.start .content p:last-child { margin-bottom:2em; }*/
 .start-p { margin-bottom:1.5em; }
 .intro .content .play-button { font-size:2.5em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
-.intro-home .content .play-button { font-size:2.5em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
-.intro .content p { text-align:left; line-height:1.125; }
-.intro-home .content p { text-align:left; line-height:1.125; }
+.interact-home .content .play-button { font-size:1.28em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
+/*.intro .content p { text-align:left; line-height:1.125; }*/
+/*.intro-home .content p { text-align:left; line-height:1.125; }*/
 .content { text-align:center; margin-bottom:.53em; }
 .interact, .intro {  width:100%; z-index:100; padding-top:1em; background-color:#ffffff; }
 .interact, .intro-home {   width:100%; z-index:100; }
@@ -79,7 +85,7 @@ Primary use:    Digital Marketing
 2.0 FOUNDATION OVERIDES
 ========================================================================== */
 body { font-size: 14px !important; }
-p { line-height: 1.5em !important; margin-bottom:5px !important; font-family: 'Open Sans', sans-serif !important; color: #404040 !important; }
+p { line-height: 1.5em !important; margin-bottom:5px !important; font-family: 'Open Sans', sans-serif !important; color: #404040 !important; font-size:14px !important;}
 h3 { font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; }
 h4 { font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; line-height: 1.2em !important; }
 footer { bottom:0;width:100%;  padding-top: 2em; /*height:4%;*/}
@@ -155,10 +161,12 @@ footer { bottom:0;width:100%;  padding-top: 2em; /*height:4%;*/}
 5.0 TESTING
 ========================================================================== */
 #white-space { height: 100px; background-color:#ffffff; }
-
+#images-results { background: rgba(255, 255, 255, 1) url(./images/background-results.png) repeat-x center / contain; text-align:center;  }
 #images { background: rgba(255, 255, 255, 1) url(./images/background.png) repeat-x center / contain; text-align:center; }
 #images div { width:auto; margin:0 auto; display:inline-block; }
-body { background-color:#B2B4BB !important; }
+body { background-color:#B2B4BB; }
+.body-home { background-color:#fff; }
+.body-page { background-color: #B2B4BB; }
 .foot { background-color:#B2B4BB; }
 
 /* ==========================================================================
@@ -426,16 +434,18 @@ body { background-color:#B2B4BB !important; }
 ========================================================================== */
 #congratulations-b2b {
     background:
-        /*url(./images/ribbon.png) no-repeat center/ contain,*/
+        url(./images/ribbon.png) no-repeat center/ contain,
         url(./images/b2b.png) no-repeat center / contain;
 }
 
 
 #congratulations-b2c {
     background:
-        /*url(./images/ribbon.png) no-repeat center/ contain,*/
+        url(./images/ribbon.png) no-repeat center/ contain,
         url(./images/b2c.png) no-repeat center / contain;
 }
+
+#clear-name { max-height:25px; }
 
 body,html { width:100%; max-height:100%;}
 .wrapper { height:100%; max-height: 100%;  } 
@@ -449,11 +459,11 @@ body,html { width:100%; max-height:100%;}
 /* ==========================================================================
 5.8 TESTING BOXES
 ========================================================================== */
-/*.header { border: 2px solid blue; }
-.interact { border: 2px solid red; }
+/*.header, .header-home { border: 2px solid blue; }
+.interact, .interact-home { border: 2px solid red; }
 .layers-border { border: 2px solid green; }
-.foot-cta { border: 2px solid orange; }
-*/
+.foot-cta, .foot { border: 2px solid orange; }*/
+
 /* ==========================================================================
 5.1.1 IPHONE 5
 ========================================================================== */
@@ -480,24 +490,26 @@ and (max-device-width : 667px) {
 5.2 SMALL SCREENS
 ========================================================================== */
 @media only screen {
+    .home-headline { text-align:center; }
+    .interact-home { padding:2em 0em; background-color:#fff; }
     h3 { line-height: 1.2em !important; }
     #click-here-cloud { padding:.5em; margin: .5em; }
     .foot-cta-home { margin-top:5em; }
     .intro .content .play-button { font-size:1.28em; }
     .intro-home .content .play-button { font-size:1.28em; }
-    .start .content p { font-size: 1em !important; }
+/*    .start .content p { font-size: 1em !important; }*/
     /*.foot-cta img { width: 65%; }*/
     /*.foot-cta img { width: 65%; }*/
     .foot-cta-home img { width: 65%; display: block; margin: 0 auto; }
     .content h3 { font-size: 1.45em !important; font-weight:600 !important; margin-bottom: 0.25em; }
     .content h4 { font-size: 1.125em; font-weight:bold !important; margin-bottom: 0.25em; }
-    .content p { font-size: 1em; margin-bottom:1em !important; }
+/*    .content p { font-size: 1em; margin-bottom:1em !important; }*/
     .welcome-interact h3 { margin:.5em 0; }
     .welcome-interact p { margin-top: .5em; }
     .learn-interact { height: 250px; }
     .learn-interact h3 { margin: .5em 0 1em; }
     .learn-interact p { margin-top:1em; }
-    .start .content h3 { letter-spacing: .04em; padding-bottom: .7em; margin-top: 0; margin-bottom: 0;}
+    .start .content h3 { letter-spacing: .04em; padding-bottom: .7em; margin-top: 0; margin-bottom: 0; }
     .results-main { top: 20%; }
     .email-p { padding: 2em 0; }
     .interact, .intro { position:relative; }
@@ -505,34 +517,35 @@ and (max-device-width : 667px) {
     .interact { padding: 2em 0em; }
     /*.interact { height:90px; }*/
     .welcome-interact { height:150px; margin-top:2em; }
-    .query { font-size:.75em; /*padding-bottom:1em;*/}
+    .query { font-size:.75em; padding-bottom:1.5em;}
     .interact button { font-size:1.1.6666em; /*padding: 0.15rem 0.75rem;*/ padding: .4rem 1.4rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 25% 25% / 100% 100%; }
     .overlay.bgnd-2x { background: url(./images/mic-bc-grfx-main-bgnd-start.png) repeat-x scroll 25% 25% / 100% 100%; }
     /*.overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-results.png) repeat-x scroll 50% 75% / 100% 100%; }*/
     .overlay.bgnd-results-beta { background: url(./images/small-results.png) repeat-x scroll 25% 25% / 100% 100%; }
     .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 25% 25% / 100% 100%; }
-    .overlay.start.alpha { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.start.alpha { background: url(./images/const.png) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 25% 25% / 100% 100%; }
     .overlay.start.beta { background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.result { background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.two.alpha { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.two.beta { background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.result { background: url(./images/const.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.alpha { background: url(./images/b2b.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.beta { background: url(./images/b2c.png) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.two.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.two.delta { background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.two.epsilon { background: url(./images/mic-bc-grfx-main-b2c-open.png) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.two.feta { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.three.alpha { background: url(./images/mic-bc-grfx-main-team-yes.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.epsilon { background: url(./images/b2c-open.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.two.feta { background: url(./images/b2b.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.three.alpha { background: url(./images/sales-team.gif) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.three.beta { background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.three.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.four.alpha { background: url(./images/mic-bc-grfx-main-crm-yes.gif) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.four.beta { background: url(./images/mic-bc-grfx-main-crm-no.gif) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.five.alpha { background: url(./images/mic-bc-grfx-main-os-yes.gif) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.five.beta { background: url(./images/mic-bc-grfx-main-os-no.gif) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.six.alpha { background: url(./images/mic-bc-grfx-main-ribbon.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.four.alpha { background: url(./images/crm.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.four.beta { background: url(./images/nocrm.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.five.alpha { background: url(./images/online.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.five.beta { background: url(./images/noonline.gif) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.six.alpha { background: url(./images/ribbon.png) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.seven.alpha { background: url(./images/mic-bc-grfx-main-ribbon-shine.gif) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 25% 25% / 100% 100%; }
+    .overlay.benches { background: url(./images/benches.png) no-repeat scroll 25% 25% / 100% 100%; }        
     .clouds { width: 100%; }
     #dynamicContentID0 { }
     #dynamicContentID0 div { font-size:0.75em; }
@@ -561,21 +574,25 @@ and (max-device-width : 667px) {
 5.3 MEDIUM SCREENS
 ========================================================================== */
 @media only screen and (min-width: 40.063em) {
+    .home-headline { text-align:left; }
+    .foot-cta-index img { width:40%; padding:1em; }
     footer {/* height: 2%;*/ }
+    body > div > div.interact-home > div.row > div > p:nth-child(2) { font-size: .875rem; }
+    .interact-home p {text-align:left;}
     .foot-cta-home { margin-top:0em; height:auto; position: absolute;}
     .intro .content .play-button { font-size:1.428em; }
     .intro-home .content .play-button { font-size:1.428em; }
-    .start .content p { font-size: 1em !important; padding: 0 3em; }
-    .content h3 { font-size:1.571em !important; font-weight:600 !important; margin-bottom: 0.25em; padding-bottom: .8em; }
-    .content h4 { font-size: 1.2em !important; margin-bottom: 0.25em; }
-    .welcome-p { font-size:1.149em !important; margin-bottom: 0.25em; }
-    .content p { font-size: 1.2em; margin-bottom:0.8em !important; margin-top: .8em !important;  }
+/*    .start .content p { font-size: 1em !important; padding: 0 3em; }*/
+    .content h3 { font-size:1.3125rem !important; font-weight:600 !important; margin-bottom: 0.25em; padding-bottom: .8em; }
+    .content h4 { font-size: 1.2em !important; margin-bottom: 0.25em; padding-bottom:.5em; }
+/*    .content p { font-size: 1.2em; margin-bottom:0.8em !important; margin-top: .8em !important;  }*/
     .main { top:15%; }
     .results-main { top:initial; }
     .results-main { display:block; position:relative; top:17%; width:100%; }
     .interact, .intro { position:relative;  }
     .interact-welcome { height: 50px; }
-    .interact { padding:2em 0em 5em 0em; }
+    .interact { padding:3em 0em 4em 0em; }
+    .interact-home { font-size: 1.428em; padding:2em 0em 3em 0em; background-color:#fff; }
     .query { font-size:1.125em; }
     .interact button { font-size:1.125em; /*padding:0.25rem 0.95rem;*/ padding: .4rem 1.5rem; }
     .overlay.bgnd { background: url(./images/mic-bc-grfx-main-bgnd.png) repeat-x scroll 50% 25% / 100% 100%; }
@@ -583,23 +600,23 @@ and (max-device-width : 667px) {
     /*.overlay.bgnd.results { background: url(./images/mic-bc-gfrx-main-bgnd-results.png) repeat-x scroll 50% 25% / 100% 100%; }*/
     .overlay.bgnd-results { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 25% / 100% 100%; }
     .overlay.bgnd-after { background: url(./images/mic-bc-grfx-main-bgnd-after.png) repeat-x scroll 50% 25% / 100% 100%; }
-    .overlay.start.alpha {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.start.alpha {background: url(./images/const.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.start.beta {background: url(./images/mic-bc-grfx-main-construct-anim.gif) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.result {background: url(./images/mic-bc-grfx-main-construct.png) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.two.alpha {background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.two.beta {background: url(./images/mic-bc-grfx-main-b2c.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.result {background: url(./images/const.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.alpha {background: url(./images/b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.beta {background: url(./images/b2c.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.two.gamma {background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.two.delta {background: url(./images/mic-bc-grfx-main-construct2-anim.gif) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.two.epsilon {background: url(./images/mic-bc-grfx-main-b2c-open.png) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.two.feta { background: url(./images/mic-bc-grfx-main-b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.three.alpha {background: url(./images/mic-bc-grfx-main-team-yes.gif) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.epsilon {background: url(./images/b2c-open.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.two.feta { background: url(./images/b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.three.alpha {background: url(./images/sales-team.gif) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.three.beta {background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.three.gamma {background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.four.alpha {background: url(./images/mic-bc-grfx-main-crm-yes.gif) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.four.beta {background: url(./images/mic-bc-grfx-main-crm-no.gif) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.five.alpha {background: url(./images/mic-bc-grfx-main-os-yes.gif) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.five.beta {background: url(./images/mic-bc-grfx-main-os-no.gif) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.six.alpha { background: url(./images/mic-bc-grfx-main-ribbon.png) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.four.alpha {background: url(./images/crm.gif) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.four.beta {background: url(./images/nocrm.gif) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.five.alpha {background: url(./images/online.gif) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.five.beta {background: url(./images/noonline.gif) no-repeat scroll 50% 25% / 100% 100%; }
+    .overlay.six.alpha { background: url(./images/ribbon.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.seven.alpha { background: url(./images/mic-bc-grfx-main-ribbon-shine.gif) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 50% 25% / 100% 100%; }
@@ -613,14 +630,13 @@ and (max-device-width : 667px) {
     #click-here-cloud { width: 100%; padding:1em 0; }
     #modalTitle { font-size:2em; }
     .reveal-modal .close-reveal-modal { font-size:40px !important; }
-    /*.foot-cta img { width: 15%; }*/
+    .foot-cta img { width: 40%; }
     .foot-cta-home img { width: 33%; margin: 0 auto; display:block; }
     .spot1 { display:initial; }
     .spot2 { left: 45%; -webkit-animation: move2 5s infinite; display:initial; }
     .spot3 { left: 50%; -webkit-animation: move 5s infinite; display:initial; }
     .spot4 { display:initial; }
     .spotlight { border-top: 260px solid rgba(255,255,255,0.25); border-left: 40px solid transparent; border-right: 40px solid transparent; }
-    .welcome-paragraph { padding-top:0; }
     .welcome-main { top: 15%; }
     .learn-interact { }
     .party-hat { width:10%; }
@@ -633,8 +649,9 @@ and (max-device-width : 667px) {
     }
     .sign { padding-top: .75em; }
     .email-p { font-size: 1em !important; }
-
-
+    .foot-cta-home img { width:40%; }
+    .else { height:10%; }
+    .index-p { padding-bottom:4em; }
     #force-bottom { margin-top:22em; }
 
 } /* min-width 641px, medium screens */
@@ -652,19 +669,23 @@ and (max-device-width : 667px) {
     #dynamicContentIDY { margin-bottom: 3em; }
     .main { }
     .interact, .intro { position:relative; }
+    .interact { padding:3.5em 0em 4em 0em; }
     .query { font-size:1.125em; }
     .welcome-main { top: 0%; }
-    .welcome-p { font-size:1em !important; }
-    .content p { font-size: 1em; }
+/*    .content p { font-size: 1em; }*/
     .party-hat { width: 4%; }
     .results-clouds { padding-top:6em !important; }
     .results-main { top: 15%; }
     .sign { padding-top: 1.125em; }
     .email-p { padding: 3em 0; }
     .arrow-controls { width: 50%; }
-
+    .everything { height: 93%; }
+    .else { height:7%; }
     #force-bottom { margin-top: 10em; }
-    #clear { max-height: ; }
+    #clear {  }
+    .index-p { padding-bottom:4em; font-size: 1rem; }
+    .query { font-size:1.25em; padding-bottom:1em; }
+
 
 
     /*.overlay.nine.alpha { background: url(./images/email-automation-button.png) no-repeat scroll 50% 75% / 150% 150%; }*/
@@ -678,7 +699,7 @@ and (max-device-width : 667px) {
 @media only screen and (min-width: 90.063em) {
     .main { /*top:5%;*/ }
     .interact, .intro { position:relative; }
-    .query { font-size:1.25em; }
+    .query { font-size:1.25em; padding-bottom:1em; }
 } /* min-width 1441px, xlarge screens */
 
 @media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */

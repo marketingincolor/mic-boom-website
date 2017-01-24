@@ -38,39 +38,28 @@ else {
     </script>
 
 </head>
-<body class="boomcity">
+<body class="boomcity body-page">
     <div class="wrapper">
-        <div class="header">
-            <div class="row">
-                <div class="small-10 medium-4 small-centered columns">
-                    <img src="./images/mic-bc-grfx-main-hdr.png" />
-                </div>
-            </div>
-        </div>
 
-        <div class="interact">
-            <img src="images/party-icon.png" class="party-hat alt="Party Hat Icon">
-            <div class="row">
-                <div class="content small-10 medium-8 large-10 small-centered columns">
-                        <h3>Congratulations!</h3>
-                        <h4 class="congrats-headline">Your Boom City business is almost ready to open its doors. Give the Boom City crew a few minutes to hang the sign on the storefront, then check your email to check it out!</h4>
-                        <p class="welcome-p">You’ll also learn how marketing automation gets your business booming – in Boom City and in real life!</p>
-                </div>
-            </div>
-        </div>
+        <!-- EVERYTHING EXCEPT FOOTER -->
+        <div class="everything">
 
-        <div id="images">
-            <div id="<?php echo $congratulations ?>" class="row layers-border">
-                <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/></div>
-        </div>
+            <!-- HEADER -->
+            <?php require 'templates/header.php'; ?>
 
-        <div class="foot">
-            <div class="row collapse">
-                <div class="content small-12 small-centered columns">
-                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
-                </div>
+            <!-- INTERACT -->
+            <?php require 'templates/congrats-interact.php'; ?>
+            
+            <!-- IMAGES -->
+            <div id="images">
+                <div id="<?php echo $congratulations ?>" class="row layers-border">
+                    <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/></div>
             </div>
+
         </div>
+        
+        <!-- FOOTER -->
+        <?php require 'templates/footer.php'; ?>
     </div>
 
 <?php include 'page-includes.php'; ?>

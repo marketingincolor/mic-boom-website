@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en"><?php //include 'create-queries.php'; ?>
 <head>
     <meta charset="utf-8" />
@@ -27,14 +26,11 @@
     </script>
 </head>
 <body class="boomcity">
-    <div class="header">
-        <div class="row">
-	        <div class="small-10 medium-4 small-centered columns">
-                <img src="./images/mic-bc-grfx-main-hdr.png" />
-            </div>
-        </div>
-    </div>
+    
+    <!-- HEADER -->
+    <?php require 'templates/header.php'; ?>
 
+    <!-- INTERACT -->
     <div class="interact">
         <div class="row">
             <div class="small-10 medium-12 medium-10 small-centered text-center columns">
@@ -42,31 +38,25 @@
                 <h3 id="dynamicContentIDY">Click on the clouds to learn how Cheryl uses these marketing automation tools.</h3>
             </div>
         </div>
+
+        <!-- CLOUDS -->
         <div class="row">
-            <div class="small-10 medium-12 medium-10 small-centered columns">
+            <div class="small-10 medium-12 large-12 small-offset-1 small-centered columns">
                 <div class="row">
-                    <div id="email-cloud" class="content small-4 columns">
-                        <a href="#" data-reveal-id="ea-modal"><img src="images/email-automation-cloud.png" class="clouds"/></a>
+                    <div id="email-cloud" class="content small-2 columns">
+                        <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
                     </div>
-                    <div class="content small-4 columns">&nbsp;</div>
-                    <div id="crm-cloud" class="content small-4 columns">
-                        <a href="#" data-reveal-id="crm-modal"><img src="images/crm-cloud.png" class="clouds"/></a>
+                    <div id="email-cloud" class="content small-2 columns">
+                        <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="content small-4 columns">&nbsp;</div>
-                    <div id="dwc-cloud" class="content small-4 columns">
-                        <a href="#" data-reveal-id="dwc-modal"><img src="images/dynamic-web-content-cloud.png" class="clouds"/></a>
+                    <div id="email-cloud" class="content small-2 columns">
+                        <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
                     </div>
-                    <div class="content small-4 columns">&nbsp;</div>
-                </div>
-                <div class="row">
-                    <div id="de-cloud" class="content small-4 columns">
-                        <a href="#" data-reveal-id="de-modal"><img src="images/dynamic-email-button.png" class="clouds"/></a>
+                    <div id="email-cloud" class="content small-2 columns">
+                        <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
                     </div>
-                    <div class="content small-4 columns">&nbsp;</div>
-                    <div id="ct-cloud" class="content small-4 columns">
-                        <a href="#" data-reveal-id="ct-modal"><img src="images/call-tracking-cloud.png" class="clouds"/></a>
+                    <div id="email-cloud" class="content small-2 end columns">
+                        <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
                     </div>
                 </div>
             </div>
@@ -74,23 +64,48 @@
         <div class="row">
             <div class="small-10 medium-12 medium-10 small-centered text-center columns">
                 <h3 class="email-p">After you've checked out all the cloud cloud content, get ready to boom your real-life biz! Check your email for details.<br /> 
-		(Or, start over to create another Boom City business!)
-		</h3>
+        (Or, start over to create another Boom City business!)
+        </h3>
             </div>
         </div>
     </div>
 
-    <div class="images">
-        <div class="row">
+    <!-- RESULT IMAGES -->
+    <div class="">
+        <div class="row medium-collapse">
+            <div class="small-12 small-centered columns">
+                <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
 
+                <div id="type_alpha" class="overlay type two feta"><img src="./images/clear.png" /></div>
+                <div id="type_beta" class="overlay type two epsilon"><img src="./images/clear.png" /></div>
+                <div id="company_name" class="overlay busname">
+                    <img id="clear-name" src="./images/clear-name.png" class="show-for-small-only">
+                    <img id="clear-name" src="./images/clear-name.png" class="show-for-medium-up" />
+                    <div id="dynamicContentID0">&nbsp;</div>
+                </div>
+                <div id="team_alpha" class="overlay team three alpha"><img src="./images/clear.png" /></div>
+                <div id="team_beta" class="overlay team three beta"><img src="./images/clear.png" /></div>
+                <div id="crm_alpha" class="overlay crm four alpha"><img src="./images/clear.png" /></div>
+                <div id="crm_beta" class="overlay crm four beta"><img src="./images/clear.png" /></div>
+                <div id="online_alpha" class="overlay online five alpha"><img src="./images/clear.png" /></div>
+                <div id="online_beta" class="overlay online five beta"><img src="./images/clear.png" /></div>
+                <div id="frequency_alpha" class="overlay frequency six alpha off"><img src="./images/clear.png" /></div>
+                <div id="owner_alpha" class="overlay owner eight alpha"><img src="./images/clear.png" /></div>
+                <div id="owner_beta" class="overlay owner eight beta"><img src="./images/clear.png" /></div>
+                <div id="benches" class="overlay benches"><img src="./images/clear.png"/></div>
             </div>
         </div>
     </div>
 
-<!--     <div id="images">
-        <div id="<?php #echo $congratulations ?>" class="row layers-border">
-            <img src="./images/clear.png" style="position:relative; background-size: 100% 100%;"/></div>
-    </div> -->
+    <!-- BACKGROUND IMAGES-->
+    <div id="images-results">
+        <div id="<?php echo $results; ?>" class="row layers-border"><img src="./images/clear.png" id="clear"/></div>
+    </div>
+
+    <!-- FOOTER -->
+    <?php require 'templates/footer.php'; ?>
+
+    <!-- MODAL MATERIAL -->
     <div id="modal-content">
         <div class="row">
             <div id="ea-modal" xid="dynamicContentID1" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">

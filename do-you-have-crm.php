@@ -60,38 +60,37 @@ elseif ($_GET["type"] == "b2b" && $_GET["team"] == "yes") {
     </script>
 
 </head>
-<body class="boomcity">
+<body class="boomcity body-page">
+
+    <!-- WRAPPER -->
     <div class="wrapper">
-        <div class="header">
-            <div class="row">
-                <div class="small-10 medium-4 small-centered columns">
-                    <img src="./images/mic-bc-grfx-main-hdr.png" />
+
+        <!-- WRAPS EVERYTHING EXCEPT FOOTER -->
+        <div class="everything">
+
+            <!-- HEADER -->
+            <?php require 'templates/header.php'; ?>
+
+            <!-- INTERACT -->
+            <div class="interact">
+                <div class="row">
+                    <div class="content small-10 small-centered columns">
+                        <p class="query">Do you have a Customer Relationship Management (CRM) system?</p>
+                        <button id="step4-a">Yes</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button id="step4-b">No</button>
+                    </div>
                 </div>
+            </div>
+            
+            <!-- IMAGES -->
+            <div id="images">
+                <div id="<?php echo $boom_city_biz; ?>" class="layers-border row"><img src="./images/clear.png" id="clear"/></div>
             </div>
         </div>
 
-        <div class="interact">
-            <div class="row">
-                <div class="content small-10 small-centered columns">
-                    <p class="query">Do you have a Customer Relationship Management (CRM) system?</p>
-                    <button id="step4-a">Yes</button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <button id="step4-b">No</button>
-                </div>
-            </div>
-        </div>
-
-        <div id="images">
-            <div id="<?php echo $boom_city_biz; ?>" class="layers-border row"><img src="./images/clear.png" id="clear"/></div>
-        </div>
-
-        <div class="foot">
-            <div class="row collapse">
-                <div class="content small-12 small-centered columns">
-                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
-                </div>
-            </div>
-        </div>
+        <!-- FOOTER -->
+        <?php require 'templates/footer.php';?>
 
     </div>
 

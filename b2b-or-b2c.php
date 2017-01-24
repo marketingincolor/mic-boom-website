@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Marketing Automation Game - Dynamic Content</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="foundation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css" />
     <?php include 'page-includes.php'; ?>
     <script type="text/javascript">
@@ -40,39 +41,37 @@
     </script>
 
 </head>
-<body class="boomcity">
+<body class="boomcity body-page">
+    
+    <!-- WRAPS EVERYTHING -->
     <div class="wrapper">
-        <div class="header">
-            <div class="row">
-                <div class="small-10 medium-4 small-centered columns">
-                    <img src="./images/mic-bc-grfx-main-hdr.png" />
+
+        <!-- WRAPS EVERYTHING BUT FOOTER -->
+        <div class="everything">
+
+            <!-- HEADER -->
+            <?php require 'templates/header.php'; ?>
+            
+            <!-- INTERACT -->
+            <div class="interact">
+                <div class="row">
+                    <div class="content small-10 small-centered columns">
+                        <p class="query">Are your marketing initiatives targeted primarily to other businesses or to consumers?</p>
+                        <button id="step2-a">B2B</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button id="step2-b">B2C</button>
+                    </div>
                 </div>
+            </div>
+            
+            <!-- IMAGES -->
+            <div id="images">
+                <div id="page-1" class="row layers-border"><img src="./images/clear.png" id="clear"/></div>
             </div>
         </div>
 
-        <div class="interact">
-            <div class="row">
-                <div class="content small-10 small-centered columns">
-                    <p class="query">Are your marketing initiatives targeted primarily to other businesses or to consumers?</p>
-                    <button id="step2-a">B2B</button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <button id="step2-b">B2C</button>
-                </div>
-            </div>
-        </div>
-        
-        <div id="images">
-            <div id="page-1" class="row layers-border"><img src="./images/clear.png" id="clear"/></div>
-        </div>
-
-        <div class="foot">
-            <div class="row collapse">
-                <div class="content small-12 small-centered columns">
-                    <div class="foot-cta"><a href="http://marketingincolor.com" target="_blank"><img src="./images/mic-bc-grfx-main-btyb.png" /></a></div>
-                </div>
-            </div>
-        </div>
-
+        <!-- FOOTER -->
+        <?php require 'templates/footer.php'; ?>
     </div>
 </body>
 </html>
