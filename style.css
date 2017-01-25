@@ -32,6 +32,7 @@ Primary use:    Digital Marketing
 1.0 MAIN
 ========================================================================== */
 .boomcity { }
+#types { padding:1.5em; }
 .interact p:nth-child(2) { padding-bottom:.5em; }
 .everything { min-height: 90%; }
 .else { height: 10%; }
@@ -71,7 +72,6 @@ Primary use:    Digital Marketing
 .results-main { top:20%; }
 .results-p { margin-bottom: 2em !important; }
 .interact h3 { font-weight:bold; }
-.email-p { font-size: .75em !important; }
 .none { display:none; }
 
 /* ==========================================================================
@@ -511,7 +511,6 @@ and (max-device-width : 667px) {
     .learn-interact p { margin-top:1em; }
     .start .content h3 { letter-spacing: .04em; padding-bottom: .7em; margin-top: 0; margin-bottom: 0; }
     .results-main { top: 20%; }
-    .email-p { padding: 2em 0; }
     .interact, .intro { position:relative; }
     .interact, .intro-home {  }
     .interact { padding: 2em 0em; }
@@ -549,9 +548,9 @@ and (max-device-width : 667px) {
     .clouds { width: 100%; }
     #dynamicContentID0 { }
     #dynamicContentID0 div { font-size:0.75em; }
-    #dynamicContentIDX, #dynamicContentIDY { font-size:0.75em; }
+    #dynamicContentIDX, #dynamicContentIDY {}
     #dynamicContentIDX { font-size: 1em; font-weight:600 !important; font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; }
-    #dynamicContentIDY { margin: 1.5em 0; }
+    #dynamicContentIDY {}
     #dynamicContentClick { /*max-width:40%;*/ }
     .spotlight { border-top: 100px solid rgba(255,255,255,0.25); border-left: 20px solid transparent; border-right: 30px solid transparent; }
     .party-hat { width:18%; display:block; margin:0 auto;}
@@ -620,10 +619,10 @@ and (max-device-width : 667px) {
     .overlay.seven.alpha { background: url(./images/mic-bc-grfx-main-ribbon-shine.gif) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 50% 25% / 100% 100%; }
-    .clouds { width: 50%; }
+    .clouds { /*width: 50%;*/ }
     #dynamicContentID0 div { font-size:1em; }
-    #dynamicContentIDX { font-size:2em; }
-    #dynamicContentIDY { font-size:1em; margin-bottom: 2.5em; }
+    #dynamicContentIDX { font-size:1.3125em; }
+    #dynamicContentIDY {  }
     #dynamicContentIDX, #dynamicContentIDY { padding: 0 0 0 0; }
     #dynamicContentIDY p { padding: 1em 0; }
     #dynamicContentClick { /*max-width:40%;*/ }
@@ -648,7 +647,6 @@ and (max-device-width : 667px) {
         -ms-filter: blur(7px); 
     }
     .sign { padding-top: .75em; }
-    .email-p { font-size: 1em !important; }
     .foot-cta-home img { width:40%; }
     .else { height:10%; }
     .index-p { padding-bottom:4em; }
@@ -666,7 +664,7 @@ and (max-device-width : 667px) {
     .foot-cta-home img { width: 16%; }
     h3 { line-height:1.4em !important; }
     #click-here-cloud { width: 60%; padding-bottom:2em; }
-    #dynamicContentIDY { margin-bottom: 3em; }
+    #dynamicContentIDY { }
     .main { }
     .interact, .intro { position:relative; }
     .interact { padding:3.5em 0em 4em 0em; }
@@ -677,7 +675,6 @@ and (max-device-width : 667px) {
     .results-clouds { padding-top:6em !important; }
     .results-main { top: 15%; }
     .sign { padding-top: 1.125em; }
-    .email-p { padding: 3em 0; }
     .arrow-controls { width: 50%; }
     .everything { height: 93%; }
     .else { height:7%; }

@@ -25,149 +25,157 @@
         })();
     </script>
 </head>
-<body class="boomcity">
-    
-    <!-- HEADER -->
-    <?php require 'templates/header.php'; ?>
+<body class="boomcity body-page">
 
-    <!-- INTERACT -->
-    <div class="interact">
-        <div class="row">
-            <div class="small-10 medium-12 medium-10 small-centered text-center columns">
-                <h3 id="dynamicContentIDX">Your Boom City business is Marketing In Color</h3>
-                <h3 id="dynamicContentIDY">Click on the clouds to learn how Cheryl uses these marketing automation tools.</h3>
-            </div>
-        </div>
+    <!-- WRAPPER -->
+    <div class="wrapper">
 
-        <!-- CLOUDS -->
-        <div class="row">
-            <div class="small-10 medium-12 large-12 small-offset-1 small-centered columns">
+        <!-- EVERYTHING EXCEPT FOOTER -->
+        <div class="">
+
+            <!-- HEADER -->
+            <?php require 'templates/header.php'; ?>
+
+            <!-- INTERACT -->
+            <div class="interact">
                 <div class="row">
-                    <div id="email-cloud" class="content small-2 columns">
-                        <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                    <div class="small-10 medium-10 medium-10 small-centered text-center columns">
+                        <h3 id="dynamicContentIDX">Your Boom City business is Marketing In Color</h3>
+                        <p id="dynamicContentIDY" class="results-paragraph">Click on the clouds to learn how Cheryl uses these marketing automation tools.</p>
                     </div>
-                    <div id="email-cloud" class="content small-2 columns">
-                        <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                </div>
+
+                <!-- CLOUDS -->
+                <div id="types" class="row">
+                    <div class="small-10 medium-10 large-10 small-offset-2 columns">
+                        <div class="row">
+                            <div id="email-cloud" class="content small-2 columns">
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            </div>
+                            <div id="email-cloud" class="content small-2 columns">
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            </div>
+                            <div id="email-cloud" class="content small-2 columns">
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            </div>
+                            <div id="email-cloud" class="content small-2 columns">
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            </div>
+                            <div id="email-cloud" class="content small-2 end columns">
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            </div>
+                        </div>
                     </div>
-                    <div id="email-cloud" class="content small-2 columns">
-                        <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
-                    </div>
-                    <div id="email-cloud" class="content small-2 columns">
-                        <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
-                    </div>
-                    <div id="email-cloud" class="content small-2 end columns">
-                        <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                </div>
+                <div class="row">
+                    <div class="small-10 medium-10 medium-10 small-centered text-center columns">
+                        <p class="email-paragraph">After you've checked out all the cloud cloud content, get ready to boom your real-life biz! Check your email for details.<br />(Or, start over to create another Boom City business!)
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="small-10 medium-12 medium-10 small-centered text-center columns">
-                <h3 class="email-p">After you've checked out all the cloud cloud content, get ready to boom your real-life biz! Check your email for details.<br /> 
-        (Or, start over to create another Boom City business!)
-        </h3>
+
+            <!-- RESULT IMAGES -->
+            <div class="">
+                <div class="row medium-collapse">
+                    <div class="small-12 small-centered columns">
+                        <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+
+                        <div id="type_alpha" class="overlay type two feta"><img src="./images/clear.png" /></div>
+                        <div id="type_beta" class="overlay type two epsilon"><img src="./images/clear.png" /></div>
+                        <div id="company_name" class="overlay busname">
+                            <img id="clear-name" src="./images/clear-name.png" class="show-for-small-only">
+                            <img id="clear-name" src="./images/clear-name.png" class="show-for-medium-up" />
+                            <div id="dynamicContentID0">&nbsp;</div>
+                        </div>
+                        <div id="team_alpha" class="overlay team three alpha"><img src="./images/clear.png" /></div>
+                        <div id="team_beta" class="overlay team three beta"><img src="./images/clear.png" /></div>
+                        <div id="crm_alpha" class="overlay crm four alpha"><img src="./images/clear.png" /></div>
+                        <div id="crm_beta" class="overlay crm four beta"><img src="./images/clear.png" /></div>
+                        <div id="online_alpha" class="overlay online five alpha"><img src="./images/clear.png" /></div>
+                        <div id="online_beta" class="overlay online five beta"><img src="./images/clear.png" /></div>
+                        <div id="frequency_alpha" class="overlay frequency six alpha off"><img src="./images/clear.png" /></div>
+                        <div id="owner_alpha" class="overlay owner eight alpha"><img src="./images/clear.png" /></div>
+                        <div id="owner_beta" class="overlay owner eight beta"><img src="./images/clear.png" /></div>
+                        <div id="benches" class="overlay benches"><img src="./images/clear.png"/></div>
+                    </div>
+                </div>
             </div>
+
+            <!-- BACKGROUND IMAGES-->
+            <div id="images-results">
+                <div id="<?php echo $results; ?>" class="row layers-border"><img src="./images/clear.png" id="clear"/></div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <?php require 'templates/footer-results.php'; ?>
+
+        <!-- MODAL MATERIAL -->
+        <div id="modal-content">
+            <div class="row">
+                <div id="ea-modal" xid="dynamicContentID1" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">
+                    <div id="ea-modal-2" class="medium-10 medium-centered columns">
+                        <h2 id="modalTitle">Email Automation</h2>
+                        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                    </div>
+                    <div class="small-12 medium-10 columns">
+                        <div id="dynamicContentID1">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="crm-modal" xid="dynamicContentID2" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">
+                    <div id="crm-modal-2" class="medium-10 medium-centered columns">
+                        <h2 id="modalTitle">CRM</h2>
+                        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                    </div>
+                    <div class="small-12 medium-10 columns">
+                        <div id="dynamicContentID2">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="dwc-modal" xid="dynamicContentID3" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">
+                    <div id="dwc-modal-2" class="medium-10 medium-centered columns">
+                        <h2 id="modalTitle">Dynamic Web Content</h2>
+                        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                    </div>
+                    <div class="small-12 medium-10 columns">
+                        <div id="dynamicContentID3">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="de-modal" xid="dynamicContentID4" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">
+                    <div id="de-modal-2" class="medium-10 medium-centered columns">
+                        <h2 id="modalTitle">Dynamic Email</h2>
+                        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                    </div>
+                    <div class="small-12 medium-10 columns">
+                        <div id="dynamicContentID4">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="ct-modal" xid="dynamicContentID5" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">
+                    <div id="ct-modal-2" class="medium-10 medium-centered columns">
+                        <h2 id="modalTitle">Call Tracking</h2>
+                        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                    </div>
+                    <div class="small-12 medium-10 columns">
+                        <div id="dynamicContentID5">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <span id="dynamicXContentIDX" style="display:none;">&nbsp;</span>
+            <span id="dynamicXContentIDY" style="display:none;">&nbsp;</span>
+            <?php include 'page-includes.php'; ?>
+
         </div>
     </div>
-
-    <!-- RESULT IMAGES -->
-    <div class="">
-        <div class="row medium-collapse">
-            <div class="small-12 small-centered columns">
-                <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
-
-                <div id="type_alpha" class="overlay type two feta"><img src="./images/clear.png" /></div>
-                <div id="type_beta" class="overlay type two epsilon"><img src="./images/clear.png" /></div>
-                <div id="company_name" class="overlay busname">
-                    <img id="clear-name" src="./images/clear-name.png" class="show-for-small-only">
-                    <img id="clear-name" src="./images/clear-name.png" class="show-for-medium-up" />
-                    <div id="dynamicContentID0">&nbsp;</div>
-                </div>
-                <div id="team_alpha" class="overlay team three alpha"><img src="./images/clear.png" /></div>
-                <div id="team_beta" class="overlay team three beta"><img src="./images/clear.png" /></div>
-                <div id="crm_alpha" class="overlay crm four alpha"><img src="./images/clear.png" /></div>
-                <div id="crm_beta" class="overlay crm four beta"><img src="./images/clear.png" /></div>
-                <div id="online_alpha" class="overlay online five alpha"><img src="./images/clear.png" /></div>
-                <div id="online_beta" class="overlay online five beta"><img src="./images/clear.png" /></div>
-                <div id="frequency_alpha" class="overlay frequency six alpha off"><img src="./images/clear.png" /></div>
-                <div id="owner_alpha" class="overlay owner eight alpha"><img src="./images/clear.png" /></div>
-                <div id="owner_beta" class="overlay owner eight beta"><img src="./images/clear.png" /></div>
-                <div id="benches" class="overlay benches"><img src="./images/clear.png"/></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- BACKGROUND IMAGES-->
-    <div id="images-results">
-        <div id="<?php echo $results; ?>" class="row layers-border"><img src="./images/clear.png" id="clear"/></div>
-    </div>
-
-    <!-- FOOTER -->
-    <?php require 'templates/footer.php'; ?>
-
-    <!-- MODAL MATERIAL -->
-    <div id="modal-content">
-        <div class="row">
-            <div id="ea-modal" xid="dynamicContentID1" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">
-                <div id="ea-modal-2" class="medium-10 medium-centered columns">
-                    <h2 id="modalTitle">Email Automation</h2>
-                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-                </div>
-                <div class="small-12 medium-10 columns">
-                    <div id="dynamicContentID1">&nbsp;</div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div id="crm-modal" xid="dynamicContentID2" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">
-                <div id="crm-modal-2" class="medium-10 medium-centered columns">
-                    <h2 id="modalTitle">CRM</h2>
-                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-                </div>
-                <div class="small-12 medium-10 columns">
-                    <div id="dynamicContentID2">&nbsp;</div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div id="dwc-modal" xid="dynamicContentID3" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">
-                <div id="dwc-modal-2" class="medium-10 medium-centered columns">
-                    <h2 id="modalTitle">Dynamic Web Content</h2>
-                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-                </div>
-                <div class="small-12 medium-10 columns">
-                    <div id="dynamicContentID3">&nbsp;</div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div id="de-modal" xid="dynamicContentID4" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">
-                <div id="de-modal-2" class="medium-10 medium-centered columns">
-                    <h2 id="modalTitle">Dynamic Email</h2>
-                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-                </div>
-                <div class="small-12 medium-10 columns">
-                    <div id="dynamicContentID4">&nbsp;</div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div id="ct-modal" xid="dynamicContentID5" class="slider reveal-modal" data-reveal aria-hidden="true" role="dialog">
-                <div id="ct-modal-2" class="medium-10 medium-centered columns">
-                    <h2 id="modalTitle">Call Tracking</h2>
-                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-                </div>
-                <div class="small-12 medium-10 columns">
-                    <div id="dynamicContentID5">&nbsp;</div>
-                </div>
-            </div>
-        </div>
-    <span id="dynamicXContentIDX" style="display:none;">&nbsp;</span>
-    <span id="dynamicXContentIDY" style="display:none;">&nbsp;</span>
-<?php include 'page-includes.php'; ?>
 <script>
-
-    
     //EA Arrows
     $('#email-cloud').click( function() {
         var modalHeight  = $('#ea-modal').height();
