@@ -39,7 +39,7 @@
 			<!-- INTERACT HOME CONTENT -->
 		    <div class="interact-home">
 		        <div class="row">
-		            <div class="content small-10 small-centered columns">
+		            <div class="content small-10 medium-9 small-centered columns">
 		                <h3 class="home-headline">See how marketing automation can make your business boom.</h3>
 		                    <p class="index-p">Simply answer a few questions about your real-life business to build a similar, but fictitious Boom City business. In the process, you'll learn about all of the marketing automation tools that can make your real business boom – effortlessly! Ready to create your Boom City business?</p><br/>
 		                <a href="#" class="play-button" data-reveal-id="formModal">LET'S GO!</a>

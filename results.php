@@ -45,9 +45,34 @@
                     </div>
                 </div>
 
-                <!-- CLOUDS -->
-                <div id="types" class="row">
-                    <div class="small-10 medium-10 large-10 small-offset-2 columns">
+                <!-- ICONS FOR SMALL -->
+                <div id="types" class="row hide-for-medium-up">
+                    <div class="small-12 columns">
+                        <div class="row">
+                            <div id="email-cloud" class="content small-4 small-offset-2 columns">
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            </div>
+                            <div id="email-cloud" class="content small-4 end columns">
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="email-cloud" class="content small-4 columns">
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            </div>
+                            <div id="email-cloud" class="content small-4 columns">
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            </div>
+                            <div id="email-cloud" class="content small-4 end columns">
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ICONS FOR MEDIUM UP -->
+                <div id="types" class="row show-for-medium-up">
+                    <div class="medium-10 medium-offset-2 columns">
                         <div class="row">
                             <div id="email-cloud" class="content small-2 columns">
                                 <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
@@ -68,7 +93,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="small-10 medium-10 medium-10 small-centered text-center columns">
+                    <div class="small-10 medium-10 small-centered text-center columns">
                         <p class="email-paragraph">After you've checked out all the cloud cloud content, get ready to boom your real-life biz! Check your email for details.<br />(Or, start over to create another Boom City business!)
                         </p>
                     </div>

@@ -54,7 +54,7 @@ Primary use:    Digital Marketing
 /*.start .content p:last-child { margin-bottom:2em; }*/
 .start-p { margin-bottom:1.5em; }
 .intro .content .play-button { font-size:2.5em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
-.interact-home .content .play-button { font-size:1.28em; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 1.75rem; margin:0; }
+.interact-home .content .play-button { font-size:1rem; font-weight: bold; background-color:#f07d00; border-color:#f07d00; color:#fff; border-radius:15px; padding:0.75rem 2rem; margin:0; }
 /*.intro .content p { text-align:left; line-height:1.125; }*/
 /*.intro-home .content p { text-align:left; line-height:1.125; }*/
 .content { text-align:center; margin-bottom:.53em; }
@@ -445,7 +445,7 @@ body { background-color:#B2B4BB; }
         url(./images/b2c.png) no-repeat center / contain;
 }
 
-#clear-name { max-height:25px; }
+#clear-name { max-height:5px; }
 
 body,html { width:100%; max-height:100%;}
 .wrapper { height:100%; max-height: 100%;  } 
@@ -501,7 +501,7 @@ and (max-device-width : 667px) {
     /*.foot-cta img { width: 65%; }*/
     /*.foot-cta img { width: 65%; }*/
     .foot-cta-home img { width: 65%; display: block; margin: 0 auto; }
-    .content h3 { font-size: 1.45em !important; font-weight:600 !important; margin-bottom: 0.25em; }
+    .content h3 { font-size: 1.5em !important; font-weight:600 !important; margin-bottom: 0.25em; }
     .content h4 { font-size: 1.125em; font-weight:bold !important; margin-bottom: 0.25em; }
 /*    .content p { font-size: 1em; margin-bottom:1em !important; }*/
     .welcome-interact h3 { margin:.5em 0; }
@@ -549,7 +549,7 @@ and (max-device-width : 667px) {
     #dynamicContentID0 { }
     #dynamicContentID0 div { font-size:0.75em; }
     #dynamicContentIDX, #dynamicContentIDY {}
-    #dynamicContentIDX { font-size: 1em; font-weight:600 !important; font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; }
+    #dynamicContentIDX { font-size: 1.5em; font-weight:600 !important; font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; }
     #dynamicContentIDY {}
     #dynamicContentClick { /*max-width:40%;*/ }
     .spotlight { border-top: 100px solid rgba(255,255,255,0.25); border-left: 20px solid transparent; border-right: 30px solid transparent; }
@@ -621,7 +621,7 @@ and (max-device-width : 667px) {
     .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 50% 25% / 100% 100%; }
     .clouds { /*width: 50%;*/ }
     #dynamicContentID0 div { font-size:1em; }
-    #dynamicContentIDX { font-size:1.3125em; }
+    #dynamicContentIDX { font-size:1.5em; }
     #dynamicContentIDY {  }
     #dynamicContentIDX, #dynamicContentIDY { padding: 0 0 0 0; }
     #dynamicContentIDY p { padding: 1em 0; }
@@ -629,7 +629,7 @@ and (max-device-width : 667px) {
     #click-here-cloud { width: 100%; padding:1em 0; }
     #modalTitle { font-size:2em; }
     .reveal-modal .close-reveal-modal { font-size:40px !important; }
-    .foot-cta img { width: 40%; }
+    .foot-cta img { width: 33%; }
     .foot-cta-home img { width: 33%; margin: 0 auto; display:block; }
     .spot1 { display:initial; }
     .spot2 { left: 45%; -webkit-animation: move2 5s infinite; display:initial; }
@@ -661,6 +661,7 @@ and (max-device-width : 667px) {
 ========================================================================== */
 @media only screen and (min-width: 64.063em) {
     footer { /*height: 4%*/ }
+    .header { padding: .5em 0em 1em 0em; }
     .foot-cta-home img { width: 16%; }
     h3 { line-height:1.4em !important; }
     #click-here-cloud { width: 60%; padding-bottom:2em; }
@@ -680,7 +681,7 @@ and (max-device-width : 667px) {
     .else { height:7%; }
     #force-bottom { margin-top: 10em; }
     #clear {  }
-    .index-p { padding-bottom:4em; font-size: 1rem; }
+    .index-p { padding-bottom:2em; font-size: 1rem; }
     .query { font-size:1.25em; padding-bottom:1em; }
 
 
