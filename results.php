@@ -109,7 +109,7 @@ error_reporting(0);
             <div class="">
                 <div class="row medium-collapse">
                     <div class="small-12 small-centered columns">
-                        <div class="overlay start off"><img src="./images/mic-bc-grfx-main-clear.png" /></div>
+                        <div class="overlay start off"><img src="./images/clear.png" /></div>
 
                         <div id="type_alpha" class="overlay type two feta"><img src="./images/clear.png" /></div>
                         <div id="type_beta" class="overlay type two epsilon"><img src="./images/clear.png" /></div>

@@ -10,9 +10,33 @@ function titleCase(string) {
 }
 
 var callThisOnReturn = function(resp) {
-    if(resp && resp.contact) {
-        var contact = resp.contact;
-        //console.warn(contact);
+    // if(resp && resp.contact) {
+    
+        if ( resp.contact )
+        {
+            var contact=resp.contact;
+        }
+
+        else {
+            var contact = { 
+                "What type of business best describes your business?":"B2B",
+                "Do you have a sales team?":"Yes",
+                "Do you use a CRM?":"No",
+                "Online Purchase?":"No",
+                "How often do your customers purchase your product or service?":"Frequently",
+                "bcd_name":"Cheryl",
+                "bcd_business_single":"Marketing In Color",
+                "bcd_business_name_possessive":"Marketing In Color\'s",
+                "bcd_website":"marketingincolor.com",
+                "bcd_product":"Ad Campaign",
+                "bcd_accessory":"website analytics",
+                "bcd_pronoun_his":"her",
+                "bcd_pronoun_him":"her",
+                "bcd_pronoun_he":"she"
+            }
+        }    
+
+        // var contact = resp.contact;
         //var name = contact['First Name'];
         var ss_id = contact['SharpSpring ID'];
         var ss_status = contact['Lead Status'];
@@ -93,6 +117,7 @@ var callThisOnReturn = function(resp) {
         var dynamic_web_content_blurb = 'dynamic_web_content_blurb';
         var dynamic_email_blurb = 'dynamic_email_blurb';
         var call_tracking_blurb = 'call_tracking_blurb';
+
 
         //---------------------------------------------------------------//
         //Email Automation Blurbs
@@ -320,7 +345,7 @@ var callThisOnReturn = function(resp) {
             document.getElementById('owner_alpha').className += " off";
             document.getElementById('owner_beta').className += " on";
         }
-    } else {
-        /*window.location.href='http://marketingincolor.com/boomcity';*/
-    }
+    // } else {
+    //     window.location.href='http://marketingincolor.com/boomcity';
+    // }
 };

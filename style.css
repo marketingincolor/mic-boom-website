@@ -536,7 +536,7 @@ and (max-device-width : 667px) {
     .overlay.two.epsilon { background: url(./images/b2c-open.png) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.two.feta { background: url(./images/b2b.png) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.three.alpha { background: url(./images/sales-team.gif) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.three.beta { background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 25% 25% / 100% 100%; }
+    /*.overlay.three.beta { background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 25% 25% / 100% 100%; }*/
     .overlay.three.gamma { background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.four.alpha { background: url(./images/crm.gif) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.four.beta { background: url(./images/nocrm.gif) no-repeat scroll 25% 25% / 100% 100%; }
@@ -612,7 +612,7 @@ and (max-device-width : 667px) {
     .overlay.two.epsilon {background: url(./images/b2c-open.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.two.feta { background: url(./images/b2b.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.three.alpha {background: url(./images/sales-team.gif) no-repeat scroll 50% 25% / 100% 100%; }
-    .overlay.three.beta {background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 50% 25% / 100% 100%; }
+    /*.overlay.three.beta {background: url(./images/mic-bc-grfx-main-team-no.png) no-repeat scroll 50% 25% / 100% 100%; }*/
     .overlay.three.gamma {background: url(./images/mic-bc-grfx-main-construct2.png) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.four.alpha {background: url(./images/crm.gif) no-repeat scroll 50% 25% / 100% 100%; }
     .overlay.four.beta {background: url(./images/nocrm.gif) no-repeat scroll 50% 25% / 100% 100%; }
@@ -680,7 +680,7 @@ and (max-device-width : 667px) {
     .results-main { top: 15%; }
     .sign { padding-top: 1.125em; }
     .arrow-controls { width: 50%; }
-    .everything { height: 93%; }
+    .everything { height: auto; }
     .else { height:7%; }
     #force-bottom { margin-top: 10em; }
     #clear {  }
@@ -688,6 +688,7 @@ and (max-device-width : 667px) {
     .query { font-size:1.25em; padding-bottom:1em; }
     .icons { width:60%; }
     #clear-name { max-height:18px; }
+    .body-home { background-color: #b2b4bb; }
 
 
 
