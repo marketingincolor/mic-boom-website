@@ -259,7 +259,7 @@ var callThisOnReturn = function(resp) {
         elemX.innerHTML = 'Your Boom City business is ' + result_b_sng + '.';
         //Results PSage message two
         var elemY = document.getElementById('dynamicContentIDY');
-        elemY.innerHTML = 'Click on the clouds to learn how ' + result_b_sng +' uses these marketing automation tools.';
+        elemY.innerHTML = 'Click on the icons to learn how ' + result_b_sng +' uses these marketing automation tools.';
 
         // Business signage
         var elem0 = document.getElementById('dynamicContentID0');

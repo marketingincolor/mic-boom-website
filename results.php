@@ -1,3 +1,8 @@
+<?php
+
+error_reporting(0);
+?>
+
 <!DOCTYPE html>
 <html lang="en"><?php //include 'create-queries.php'; ?>
 <head>
@@ -41,7 +46,7 @@
                 <div class="row">
                     <div class="small-10 medium-10 medium-10 small-centered text-center columns">
                         <h3 id="dynamicContentIDX">Your Boom City business is Marketing In Color</h3>
-                        <p id="dynamicContentIDY" class="results-paragraph">Click on the clouds to learn how Cheryl uses these marketing automation tools.</p>
+                        <p id="dynamicContentIDY" class="results-paragraph">Click on the icons to learn how Cheryl uses these marketing automation tools.</p>
                     </div>
                 </div>
 
@@ -50,21 +55,21 @@
                     <div class="small-12 columns">
                         <div class="row">
                             <div id="email-cloud" class="content small-4 small-offset-2 columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email-automation.png" class="icons"/></a>
                             </div>
-                            <div id="email-cloud" class="content small-4 end columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            <div id="crm-cloud" class="content small-4 end columns">
+                                <a href="#" data-reveal-id="crm-modal"><img src="images/crm.png" class="icons"/></a>
                             </div>
                         </div>
                         <div class="row">
-                            <div id="email-cloud" class="content small-4 columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            <div id="dwc-cloud" class="content small-4 columns">
+                                <a href="#" data-reveal-id="dwc-modal"><img src="images/dynamic-web-content.png" class="icons"/></a>
                             </div>
-                            <div id="email-cloud" class="content small-4 columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            <div id="de-cloud" class="content small-4 columns">
+                                <a href="#" data-reveal-id="de-modal"><img src="images/dynamic-email.png" class="icons"/></a>
                             </div>
-                            <div id="email-cloud" class="content small-4 end columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            <div id="ct-cloud" class="content small-4 end columns">
+                                <a href="#" data-reveal-id="ct-modal"><img src="images/call-tracking.png" class="icons"/></a>
                             </div>
                         </div>
                     </div>
@@ -75,19 +80,19 @@
                     <div class="medium-10 medium-offset-2 columns">
                         <div class="row">
                             <div id="email-cloud" class="content small-2 columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email-automation.png" class="icons"/></a>
                             </div>
-                            <div id="email-cloud" class="content small-2 columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            <div id="crm-cloud" class="content small-2 columns">
+                                <a href="#" data-reveal-id="crm-modal"><img src="images/crm.png" class="icons"/></a>
                             </div>
-                            <div id="email-cloud" class="content small-2 columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            <div id="dwc-cloud" class="content small-2 columns">
+                                <a href="#" data-reveal-id="dwc-modal"><img src="images/dynamic-web-content.png" class="icons"/></a>
                             </div>
-                            <div id="email-cloud" class="content small-2 columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            <div id="de-cloud" class="content small-2 columns">
+                                <a href="#" data-reveal-id="de-modal"><img src="images/dynamic-email.png" class="icons"/></a>
                             </div>
-                            <div id="email-cloud" class="content small-2 end columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email.png" class="clouds"/></a>
+                            <div id="ct-cloud" class="content small-2 end columns">
+                                <a href="#" data-reveal-id="ct-modal"><img src="images/call-tracking.png" class="icons"/></a>
                             </div>
                         </div>
                     </div>
@@ -122,7 +127,8 @@
                         <div id="frequency_alpha" class="overlay frequency six alpha off"><img src="./images/clear.png" /></div>
                         <div id="owner_alpha" class="overlay owner eight alpha"><img src="./images/clear.png" /></div>
                         <div id="owner_beta" class="overlay owner eight beta"><img src="./images/clear.png" /></div>
-                        <div id="benches" class="overlay benches"><img src="./images/clear.png"/></div>
+                        <div id="money" class="overlay money"><img src="./images/clear.png" /></div>
+                        <!-- <div id="benches" class="overlay benches"><img src="./images/clear.png"/></div> -->
                     </div>
                 </div>
             </div>
@@ -254,22 +260,19 @@
     //Email Automation Arrows
     $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-ea-previous" off-data-reveal-id="ct-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#ea-modal-2');
     $('#ea-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-ea-next" off-data-reveal-id="de-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
-
     //CRM Arrows
     $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-crm-previous" off-data-reveal-id="dwc-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#crm-modal-2');
     $('#crm-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-crm-next" off-data-reveal-id="ct-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
-
     //DWC Arrows
     $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-dwc-previous" off-data-reveal-id="de-modal"><img src="images/left-arrow.png" class="arrow-controls" /></a></div>').insertAfter('#dwc-modal-2');
     $('#dwc-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-dwc-next" off-data-reveal-id="crm-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
-
     //DE Arrows
     $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-de-previous" off-data-reveal-id="ea-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#de-modal-2');
     $('#de-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-de-next" off-data-reveal-id="dwc-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
-
     //CT Arrows
     $('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-ct-previous" off-data-reveal-id="crm-modal"><img src="images/left-arrow.png" class="arrow-controls"/></a></div>').insertAfter('#ct-modal-2');
     $('#ct-modal').append('<div class="show-for-medium-up medium-1 text-center columns"><a href="#" class="open-ct-next" off-data-reveal-id="ea-modal"><img src="images/right-arrow.png" class="arrow-controls"/></a></div>');
+
 
     //Open EA Previous
     $('a.open-ea-previous').on('click', function() {
@@ -284,7 +287,7 @@
 
     //Open EA Next
     $('a.open-ea-next').on('click', function() {
-        $('#de-modal').foundation('reveal', 'open');
+        $('#crm-modal').foundation('reveal', 'open');
         var modalHeight  = $('#de-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;
@@ -295,7 +298,7 @@
 
     //Open CRM Previous
     $('a.open-crm-previous').on('click', function() {
-        $('#dwc-modal').foundation('reveal','open');
+        $('#ea-modal').foundation('reveal','open');
         var modalHeight  = $('#dwc-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;
@@ -306,7 +309,7 @@
 
     //Open CRM Next
     $('a.open-crm-next').on('click', function() {
-        $('#ct-modal').foundation('reveal', 'open');
+        $('#dwc-modal').foundation('reveal', 'open');
         var modalHeight  = $('#ct-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;
@@ -317,7 +320,7 @@
 
     //Open DWC Previous
     $('a.open-dwc-previous').on('click', function() {
-        $('#de-modal').foundation('reveal','open');
+        $('#crm-modal').foundation('reveal','open');
         var modalHeight  = $('#de-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;
@@ -328,7 +331,7 @@
 
     //Open DWC Next
     $('a.open-dwc-next').on('click', function() {
-        $('#crm-modal').foundation('reveal', 'open');
+        $('#de-modal').foundation('reveal', 'open');
         var modalHeight  = $('#crm-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;
@@ -339,7 +342,7 @@
 
     //Open DE Previous
     $('a.open-de-previous').on('click', function() {
-        $('#ea-modal').foundation('reveal','open');
+        $('#dwc-modal').foundation('reveal','open');
         var modalHeight  = $('#ea-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;
@@ -350,7 +353,7 @@
 
     //Open DE Next
     $('a.open-de-next').on('click', function() {
-        $('#dwc-modal').foundation('reveal', 'open');
+        $('#ct-modal').foundation('reveal', 'open');
         var modalHeight  = $('#dwc-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;
@@ -361,7 +364,7 @@
 
     //Open CT Previous
     $('a.open-ct-previous').on('click', function() {
-        $('#crm-modal').foundation('reveal','open');
+        $('#de-modal').foundation('reveal','open');
         var modalHeight  = $('#crm-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;

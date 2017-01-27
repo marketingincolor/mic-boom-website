@@ -490,6 +490,8 @@ and (max-device-width : 667px) {
 5.2 SMALL SCREENS
 ========================================================================== */
 @media only screen {
+    #clear-name { max-height:5px; }
+    .icons { width: 50%; }
     .home-headline { text-align:center; }
     .interact-home { padding:2em 0em; background-color:#fff; }
     h3 { line-height: 1.2em !important; }
@@ -544,8 +546,8 @@ and (max-device-width : 667px) {
     .overlay.seven.alpha { background: url(./images/mic-bc-grfx-main-ribbon-shine.gif) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.eight.alpha { background: url(./images/mic-bc-grfx-main-owner-m.png) no-repeat scroll 25% 25% / 100% 100%; }
     .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 25% 25% / 100% 100%; }
-    .overlay.benches { background: url(./images/benches.png) no-repeat scroll 25% 25% / 100% 100%; }        
-    .clouds { width: 100%; }
+    /*.overlay.benches { background: url(./images/benches.png) no-repeat scroll 25% 25% / 100% 100%; }*/
+    .overlay.money { background: url(./images/Trees-Dollar-Bills.gif) no-repeat scroll 25% 25% / 100% 100%; }        
     #dynamicContentID0 { }
     #dynamicContentID0 div { font-size:0.75em; }
     #dynamicContentIDX, #dynamicContentIDY {}
@@ -573,6 +575,7 @@ and (max-device-width : 667px) {
 5.3 MEDIUM SCREENS
 ========================================================================== */
 @media only screen and (min-width: 40.063em) {
+    #clear-name { max-height:10px; }
     .home-headline { text-align:left; }
     .foot-cta-index img { width:40%; padding:1em; }
     footer {/* height: 2%;*/ }
@@ -649,7 +652,7 @@ and (max-device-width : 667px) {
     .sign { padding-top: .75em; }
     .foot-cta-home img { width:40%; }
     .else { height:10%; }
-    .index-p { padding-bottom:4em; }
+    .index-p { padding-bottom:2em; }
     #force-bottom { margin-top:22em; }
 
 } /* min-width 641px, medium screens */
@@ -683,6 +686,8 @@ and (max-device-width : 667px) {
     #clear {  }
     .index-p { padding-bottom:2em; font-size: 1rem; }
     .query { font-size:1.25em; padding-bottom:1em; }
+    .icons { width:60%; }
+    #clear-name { max-height:18px; }
 
 
 

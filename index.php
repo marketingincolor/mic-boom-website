@@ -22,7 +22,7 @@
 		        <div class="spotlight spot3"></div>
 		        <div class="spotlight spot4"></div>
 		        <div class="row">
-		            <div class="small-10 medium-6 large-4 small-centered columns">
+		            <div class="small-10 medium-4 large-4 small-centered columns">
 		                <img src="./images/mic-bc-grfx-main-hdr.png" />
 		            </div>
 		        </div>
