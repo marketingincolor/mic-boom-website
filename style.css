@@ -676,6 +676,7 @@ and (max-device-width : 667px) {
     .welcome-main { top: 0%; }
 /*    .content p { font-size: 1em; }*/
     .party-hat { width: 4%; }
+    .interact-home { min-height:450px; }
     .results-clouds { padding-top:6em !important; }
     .results-main { top: 15%; }
     .sign { padding-top: 1.125em; }
