@@ -32,6 +32,7 @@ Primary use:    Digital Marketing
 1.0 MAIN
 ========================================================================== */
 .boomcity { }
+.text-under-icon { padding: .5em; font-weight:bold; font-size: 12px !important; line-height: 1.3em !important; }
 #types { padding:1.5em; }
 .interact p:nth-child(2) { padding-bottom:.5em; }
 .everything { min-height: 90%; }
@@ -47,7 +48,7 @@ Primary use:    Digital Marketing
 .secondary { position: relative; }
 .foot-cta { background-color: #B2B4BB; padding:1em; }
 .foot-cta-home { background-color: #848792; padding:1em;  bottom:0px;  bottom:0px; }
-#dynamicContentID0 div { width:30%; margin:auto; line-height:1.125; font-weight:bold; }
+#dynamicContentID0 div {  margin:auto; line-height:1.125; font-weight:bold; }
 #dynamicContentClick { /*display:inline-block;*/ }
 #container { height:100%; }
 #modalTitle { color:#f07d00; font-weight:bold; }
@@ -465,14 +466,27 @@ body,html { width:100%; max-height:100%;}
 .foot-cta, .foot { border: 2px solid orange; }*/
 
 /* ==========================================================================
-5.1.1 IPHONE 5
+5.1.1 IPHONE 5 PORTRAIT
 ========================================================================== */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) { 
-
+    .sign-width { width: 30%; }
     .interact button { font-size: .8em; }
     .interact .content h3 { font-size: 1.245em; }
+    #dynamicContentID0 div { font-size:0.55em; }
+
+}
+
+/* ==========================================================================
+5.1.1 IPHONE 5 LANDSCAPE
+========================================================================== */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+	#dynamicContentID0 { padding-top:.5em; }
+
 }
 
 /* ==========================================================================
@@ -490,6 +504,8 @@ and (max-device-width : 667px) {
 5.2 SMALL SCREENS
 ========================================================================== */
 @media only screen {
+    .sign-width { width: 27%; }
+
     #clear-name { max-height:5px; }
     .icons { width: 50%; }
     .home-headline { text-align:center; }
@@ -548,8 +564,7 @@ and (max-device-width : 667px) {
     .overlay.eight.beta { background: url(./images/mic-bc-grfx-main-owner-f.png) no-repeat scroll 25% 25% / 100% 100%; }
     /*.overlay.benches { background: url(./images/benches.png) no-repeat scroll 25% 25% / 100% 100%; }*/
     .overlay.money { background: url(./images/Trees-Dollar-Bills.gif) no-repeat scroll 25% 25% / 100% 100%; }        
-    #dynamicContentID0 { }
-    #dynamicContentID0 div { font-size:0.75em; }
+    #dynamicContentID0 div { font-size:0.55em; }
     #dynamicContentIDX, #dynamicContentIDY {}
     #dynamicContentIDX { font-size: 1.5em; font-weight:600 !important; font-family: 'Open Sans', sans-serif !important; color: #6e727f !important; }
     #dynamicContentIDY {}
@@ -575,6 +590,8 @@ and (max-device-width : 667px) {
 5.3 MEDIUM SCREENS
 ========================================================================== */
 @media only screen and (min-width: 40.063em) {
+    #dynamicContentID0 div { width:27%; }
+    .sign-width { width: 100%;}
     #clear-name { max-height:10px; }
     .home-headline { text-align:left; }
     .foot-cta-index img { width:40%; padding:1em; }

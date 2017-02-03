@@ -55,21 +55,26 @@ error_reporting(0);
                     <div class="small-12 columns">
                         <div class="row">
                             <div id="email-cloud" class="content small-4 small-offset-2 columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email-automation.png" class="icons"/></a>
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email-automation.png" class="icons"/></a><br />
+                                <p class="text-under-icon results-paragraph">Email Automation</p>
                             </div>
                             <div id="crm-cloud" class="content small-4 end columns">
-                                <a href="#" data-reveal-id="crm-modal"><img src="images/crm.png" class="icons"/></a>
+                                <a href="#" data-reveal-id="crm-modal"><img src="images/crm.png" class="icons"/></a><br />
+                                <p class="text-under-icon results-paragraph">CRM</p>
                             </div>
                         </div>
                         <div class="row">
                             <div id="dwc-cloud" class="content small-4 columns">
-                                <a href="#" data-reveal-id="dwc-modal"><img src="images/dynamic-web-content.png" class="icons"/></a>
+                                <a href="#" data-reveal-id="dwc-modal"><img src="images/dynamic-web-content.png" class="icons"/></a><br />
+                                <p class="text-under-icon results-paragraph">Dynamic Web Content</p>
                             </div>
                             <div id="de-cloud" class="content small-4 columns">
-                                <a href="#" data-reveal-id="de-modal"><img src="images/dynamic-email.png" class="icons"/></a>
+                                <a href="#" data-reveal-id="de-modal"><img src="images/dynamic-email.png" class="icons"/></a><br />
+                                <p class="text-under-icon results-paragraph">Dynamic Email</p>
                             </div>
                             <div id="ct-cloud" class="content small-4 end columns">
-                                <a href="#" data-reveal-id="ct-modal"><img src="images/call-tracking.png" class="icons"/></a>
+                                <a href="#" data-reveal-id="ct-modal"><img src="images/call-tracking.png" class="icons"/></a><br />
+                                <p class="text-under-icon results-paragraph">Call Tracking</p>
                             </div>
                         </div>
                     </div>
@@ -80,26 +85,31 @@ error_reporting(0);
                     <div class="medium-10 medium-offset-2 columns">
                         <div class="row">
                             <div id="email-cloud" class="content small-2 columns">
-                                <a href="#" data-reveal-id="ea-modal"><img src="images/email-automation.png" class="icons"/></a>
+                                <a href="#" data-reveal-id="ea-modal"><img src="images/email-automation.png" class="icons"/></a><br />
+                                <p class="text-under-icon results-paragraph">Email Automation</p>
                             </div>
                             <div id="crm-cloud" class="content small-2 columns">
-                                <a href="#" data-reveal-id="crm-modal"><img src="images/crm.png" class="icons"/></a>
+                                <a href="#" data-reveal-id="crm-modal"><img src="images/crm.png" class="icons"/></a><br />
+                                <p class="text-under-icon results-paragraph">CRM</p>
                             </div>
                             <div id="dwc-cloud" class="content small-2 columns">
-                                <a href="#" data-reveal-id="dwc-modal"><img src="images/dynamic-web-content.png" class="icons"/></a>
+                                <a href="#" data-reveal-id="dwc-modal"><img src="images/dynamic-web-content.png" class="icons"/></a><br />
+                                <p class="text-under-icon results-paragraph">Dynamic Web Content</p>
                             </div>
                             <div id="de-cloud" class="content small-2 columns">
-                                <a href="#" data-reveal-id="de-modal"><img src="images/dynamic-email.png" class="icons"/></a>
+                                <a href="#" data-reveal-id="de-modal"><img src="images/dynamic-email.png" class="icons"/></a><br />
+                                <p class="text-under-icon results-paragraph">Dynamic Email</p>
                             </div>
                             <div id="ct-cloud" class="content small-2 end columns">
-                                <a href="#" data-reveal-id="ct-modal"><img src="images/call-tracking.png" class="icons"/></a>
+                                <a href="#" data-reveal-id="ct-modal"><img src="images/call-tracking.png" class="icons"/></a><br />
+                                <p class="text-under-icon results-paragraph">Call Tracking</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="small-10 medium-10 small-centered text-center columns">
-                        <p class="email-paragraph">After you've checked out all the cloud cloud content, get ready to boom your real-life biz! Check your email for details.<br />(Or, start over to create another Boom City business!)
+                        <p class="email-paragraph">After you've clicked on the icons to learn more, get ready to boom your real-life biz! Check your email for details.<br />(Or, <a href="index.php">start over</a> to create another Boom City business!)
                         </p>
                     </div>
                 </div>
@@ -208,17 +218,21 @@ error_reporting(0);
     </div>
 <script>
     //EA Arrows
-    $('#email-cloud').click( function() {
+    $('#email-cloud > a > img').click( function() {
         var modalHeight  = $('#ea-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;
         var arrowPlacement = arrowHeight - headerHeight;
         $('#ea-modal > div:nth-child(4) > a > img').css('margin-top', arrowPlacement);
         $('#ea-modal > div:nth-child(2) > a > img').css('margin-top', arrowPlacement);
+        console.log("Modal Height: " + modalHeight);
+        console.log("Header Height: " + headerHeight);
+        console.log("Arrow Height: " + arrowHeight);
+        console.log("Arrow Placement: " + arrowPlacement);
     });
 
     //CRM Arrows
-    $('#crm-cloud').click( function() {
+    $('#crm-cloud > a > img').click( function() {
         var modalHeight  = $('#crm-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;
@@ -228,7 +242,7 @@ error_reporting(0);
     });
 
     //DWC Arrows
-    $('#dwc-cloud').click( function() {
+    $('#dwc-cloud > a > img').click( function() {
         var modalHeight  = $('#dwc-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;
@@ -238,7 +252,7 @@ error_reporting(0);
     });
 
     //Dynamic Email
-    $('#de-cloud').click( function() {
+    $('#de-cloud > a > img').click( function() {
         var modalHeight  = $('#de-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;
@@ -248,7 +262,7 @@ error_reporting(0);
     });
 
     //Call Tracking
-    $('#ct-cloud').click( function() {
+    $('#ct-cloud > a > img').click( function() {
         var modalHeight  = $('#ct-modal').height();
         var headerHeight = 80;
         var arrowHeight  = modalHeight/2;

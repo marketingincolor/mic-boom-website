@@ -9,6 +9,10 @@ function titleCase(string) {
     return string.charAt(0).toUpperCase() + string.slice(1); 
 }
 
+function splitString(stringToSplit, separator) {
+    return arrayOfStrings = stringToSplit.split(separator);
+}
+
 var callThisOnReturn = function(resp) {
     // if(resp && resp.contact) {
     
@@ -287,13 +291,34 @@ var callThisOnReturn = function(resp) {
         elemY.innerHTML = 'Click on the icons to learn how ' + result_b_sng +' uses these marketing automation tools.';
 
         // Business signage
-        var elem0 = document.getElementById('dynamicContentID0');
+        var elem0       = document.getElementById('dynamicContentID0');
+        var w           = window.innerWidth;
         var space_count = ( result_b_sng.split(' ').length-1 );
-        if( space_count < 2 ){
-            elem0.innerHTML = '<div class="sign">' + result_b_sng +'</div>';
-        } else {
-            elem0.innerHTML = '<div class="long-sign">' + result_b_sng +'</div>';
+        // var length      = result_b_sng.length;
+        // var space       = " ";
+        // var results_b_sng = splitString(result_b_sng, space);
+        // results_b_sng.splice(2, 0, "<br/>");
+        // results_b_sng.join(' ');
+        // console.log("Join: " + results_b_sng);
+        // console.log(results_b_sng);
+        // console.log ("Split String: " + splitString(result_b_sng, space));
+        // console.log("Length: " + length);
+
+        if ( w > 420 ) {
+            elem0.innerHTML = '<div class="sign">' + result_b_sng +'</div>'; 
         }
+
+        else {
+
+            if( space_count > 2 ) {
+                elem0.innerHTML = '<div class="long-sign sign-width">' + result_b_sng +'</div>';
+                console.log("Long Sign");
+            } else {
+                elem0.innerHTML = '<div class="sign">' + result_b_sng +'</div>';
+                console.log("Normal Sign");
+            }
+        }
+
         // Email Automation Container
         var elem1 = document.getElementById('dynamicContentID1');
         elem1.innerHTML = email_automation_blurb;
